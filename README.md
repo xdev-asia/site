@@ -2,7 +2,7 @@
 
 Source of [xdev.asia](https://xdev.asia), the website for [xDev](https://github.com/xdev-asia/xdev).
 
-Next.js (App Router) with a static export: `pnpm build` writes plain files to `out/`, which Cloudflare Pages serves.
+Next.js (App Router) with a static export: `pnpm build` writes plain files to `out/`, which GitHub Pages serves (`.github/workflows/pages.yml` deploys every push to main).
 
 ```sh
 corepack pnpm install
