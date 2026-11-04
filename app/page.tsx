@@ -22,7 +22,7 @@ function Crop({ src, alt, h, x, y, edge }: { src: string; alt: string; h: number
 
 const BUILDS = [
   { os: 'Windows', rows: [['x64', 'Setup .exe or .msi', 'xdev.exe'], ['ARM64', 'Setup .exe', 'xdev.exe']] },
-  { os: 'macOS', rows: [['Apple silicon', '.dmg', 'xdev .tar.gz'], ['Intel', '.dmg', 'xdev .tar.gz']] },
+  { os: 'macOS', rows: [['Apple silicon', '.dmg', 'xdev .tar.gz']] },
   { os: 'Linux', rows: [['x64', 'AppImage or .deb', 'xdev .tar.gz'], ['ARM64', 'AppImage or .deb', 'xdev .tar.gz']] },
 ];
 
@@ -47,11 +47,11 @@ export default function Home() {
         <section className="hero" aria-labelledby="hero-title">
           <div className="hero-copy wrap">
             <h1 id="hero-title" className="lines">
-              <span className="line"><span data-line style={i(0)}>Docs that know</span></span>
-              <span className="line"><span data-line style={i(1)}>the code moved.</span></span>
+              <span className="line"><span data-line style={i(0)}>Your agents,</span></span>
+              <span className="line"><span data-line style={i(1)}>side by side.</span></span>
             </h1>
             <p className="hero-sub" data-rise style={i(2)}>
-              Your Markdown stays the source of truth. xDev flags each doc a commit left behind, then hands the current ones to your coding agents.
+              xDev is a local-first agentic IDE. Run Claude Code, Codex and other coding agents in real terminals, each in its own git worktree. Review every diff before it lands, and give agents your docs over MCP.
             </p>
             <p data-rise style={i(3)}>
               <a className="button" href="#get">Download xDev</a>
@@ -145,7 +145,7 @@ export default function Home() {
 
         <section className="lineup" id="download" aria-labelledby="download-title">
           <div className="wrap">
-            <h2 id="download-title" className="block-head" data-reveal>Six builds in every release</h2>
+            <h2 id="download-title" className="block-head" data-reveal>Five builds in every release</h2>
             <table className="rows" data-reveal>
               <caption className="sr-only">Downloads by platform: chip, desktop installer and command-line tool</caption>
               <thead className="sr-only">
@@ -171,7 +171,7 @@ export default function Home() {
         <section className="cta" id="get" aria-labelledby="cta-title">
           <div className="cta-inner wrap grid">
             <div className="cta-copy">
-              <h2 id="cta-title" className="closing" data-reveal>Start with one folder.</h2>
+              <h2 id="cta-title" className="closing" data-reveal>Start with one repo.</h2>
               <p data-reveal style={i(1)}>
                 Free and open source under Apache-2.0. The installers are not code-signed yet, so Windows or macOS may ask once before the first launch.
               </p>
@@ -182,10 +182,11 @@ export default function Home() {
       </main>
 
       <footer className="foot wrap">
-        <p className="muted">Local-first docs for people and agents</p>
+        <p className="muted">Local-first agentic IDE</p>
         <p className="foot-links">
           <a className="link" href={REPO}>GitHub</a>
           <a className="link" href={`${REPO}/releases`}>Releases</a>
+          <a className="link" href={`${REPO}/blob/main/docs/architecture.md`}>Architecture</a>
           <a className="link" href={`${REPO}/tree/main/docs/adr`}>Decisions</a>
         </p>
         <p className="muted foot-end">

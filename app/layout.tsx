@@ -15,9 +15,9 @@ const mono = JetBrains_Mono({ // taste-skill-ignore: mono for code only
   display: 'swap',
 });
 
-const title = 'xDev — docs that know the code moved';
+const title = 'xDev — local-first agentic IDE';
 const description =
-  'xDev keeps your Markdown docs as the source of truth, flags the ones a commit left behind, and hands them to coding agents as AGENTS.md, CLAUDE.md, GEMINI.md, Cursor rules and MCP.';
+  'xDev is a local-first agentic IDE. Run Claude Code, Codex and other coding agents side by side, each in its own git worktree, review every diff, and hand them your docs over MCP.';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://xdev.asia'),

@@ -5,7 +5,7 @@ import { useEffect, useState, type FormEvent } from 'react';
 const RELEASES = 'https://github.com/xdev-asia/xdev/releases/latest';
 const CHIPS = {
   Windows: ['x64', 'ARM64'],
-  macOS: ['Apple silicon', 'Intel'],
+  macOS: ['Apple silicon'],
   Linux: ['x64', 'ARM64'],
 } as const;
 type Os = keyof typeof CHIPS;
@@ -40,7 +40,7 @@ export default function GetDialog() {
       </span>
       <div className="segmented" role="radiogroup" aria-labelledby="chip-label">
         {CHIPS[os].map((c, i) => (
-          <button key={c} type="button" role="radio" aria-checked={i === chip} onClick={() => setChip(i)}>
+          <button key={c} type="button" role="radio" aria-checked={i === (CHIPS[os][chip] ? chip : 0)} onClick={() => setChip(i)}>
             {c}
           </button>
         ))}
@@ -49,7 +49,7 @@ export default function GetDialog() {
         After install: <code>xdev check {folder.trim() || '.'}</code>
       </p>
       <button className="ui-btn primary big" type="submit">
-        Download for {os} {CHIPS[os][chip]}
+        Download for {os} {CHIPS[os][chip] ?? CHIPS[os][0]}
       </button>
     </form>
   );
