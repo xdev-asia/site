@@ -48,8 +48,8 @@ const jsonLd = {
   operatingSystem: 'Windows, macOS, Linux',
   description,
   license: 'https://www.apache.org/licenses/LICENSE-2.0',
-  downloadUrl: 'https://github.com/xdev-asia/xdev/releases/latest',
-  codeRepository: 'https://github.com/xdev-asia/xdev',
+  downloadUrl: 'https://github.com/xdev-asia/xdev-ide/releases/latest',
+  codeRepository: 'https://github.com/xdev-asia/xdev-ide',
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
 };
 

@@ -2,7 +2,7 @@
 
 import { useEffect, useState, type FormEvent } from 'react';
 
-const RELEASES = 'https://github.com/xdev-asia/xdev/releases/latest';
+const RELEASES = 'https://github.com/xdev-asia/xdev-ide/releases/latest';
 const CHIPS = {
   Windows: ['x64', 'ARM64'],
   macOS: ['Apple silicon'],

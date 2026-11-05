@@ -6,7 +6,7 @@ import HowSteps from '@/components/HowSteps';
 import Reveal from '@/components/Reveal';
 import Showcase from '@/components/Showcase';
 
-const REPO = 'https://github.com/xdev-asia/xdev';
+const REPO = 'https://github.com/xdev-asia/xdev-ide';
 const LATEST = `${REPO}/releases/latest`;
 const MCP_CMD = 'claude mcp add xdev -- xdev mcp ./docs';
 
