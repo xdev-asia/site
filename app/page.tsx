@@ -12,13 +12,8 @@ const MCP_CMD = 'claude mcp add xdev -- xdev mcp ./docs';
 
 const i = (n: number) => ({ '--i': n }) as CSSProperties;
 
-function Crop({ src, alt, h, x, y, edge }: { src: string; alt: string; h: number; x: number; y: number; edge: 'top' | 'bottom' }) {
-  return (
-    <div className={`crop crop-${edge}`} style={{ '--h': `${h}px` } as CSSProperties}>
-      <img src={src} alt={alt} width={1280} height={800} style={{ '--x': `${x}px`, '--y': `${y}px` } as CSSProperties} loading="lazy" />
-    </div>
-  );
-}
+// Agent CLIs xDev IDE can launch in a tab today.
+const AGENTS = ['Claude Code', 'Codex', 'Gemini', 'Qwen Code', 'OpenCode', 'Amp', 'Cursor', 'Grok', 'Kiro', 'Kilo Code', 'Cline', 'Antigravity', 'Pi', 'Command Code'];
 
 const BUILDS = [
   { os: 'Windows', rows: [['x64', 'Setup .exe or .msi', 'xdev.exe'], ['ARM64', 'Setup .exe', 'xdev.exe']] },
@@ -32,12 +27,12 @@ export default function Home() {
       <header className="nav wrap">
         <a className="brand" href="#top">
           <img src="/assets/logo.png" alt="" width={28} height={28} />
-          xDev
+          xDev IDE
         </a>
         <nav aria-label="Main">
-          <a className="link" href="#outputs">Outputs</a>
+          <a className="link" href="#agents">Agents</a>
+          <a className="link" href="#how">Review</a>
           <a className="link" href="#features">Features</a>
-          <a className="link" href="#how">How it works</a>
           <a className="link" href="#download">Download</a>
           <a className="link" href={REPO}>GitHub</a>
         </nav>
@@ -47,100 +42,150 @@ export default function Home() {
         <section className="hero" aria-labelledby="hero-title">
           <div className="hero-copy wrap">
             <h1 id="hero-title" className="lines">
-              <span className="line"><span data-line style={i(0)}>Your agents,</span></span>
-              <span className="line"><span data-line style={i(1)}>side by side.</span></span>
+              <span className="line"><span data-line style={i(0)}>Many agents.</span></span>
+              <span className="line"><span data-line style={i(1)}>One window.</span></span>
             </h1>
             <p className="hero-sub" data-rise style={i(2)}>
-              xDev is a local-first agentic IDE. Run Claude Code, Codex and other coding agents in real terminals, each in its own git worktree. Review every diff before it lands, and give agents your docs over MCP.
+              xDev IDE runs Claude Code, Codex and other coding agents side by side, each in its own git worktree. See who is working, who needs you, and what each one changed.
             </p>
             <p data-rise style={i(3)}>
-              <a className="button" href="#get">Download xDev</a>
+              <a className="button" href="#get">Download xDev IDE</a>
             </p>
           </div>
           <HeroDemo />
         </section>
 
-        <section className="showcase wrap" id="outputs" aria-labelledby="outputs-title">
+        <section className="showcase wrap" id="agents" aria-labelledby="agents-title">
           <Showcase />
         </section>
 
+        <section className="how wrap" id="how" aria-labelledby="how-title">
+          <HowSteps />
+        </section>
+
         <section className="features wrap" id="features" aria-labelledby="features-title">
-          <h2 id="features-title" className="sec-head" data-reveal>What works today</h2>
+          <h2 id="features-title" className="sec-head" data-reveal>The IDE around the agents</h2>
           <div className="cells">
             <div className="cell text-top" data-reveal style={i(0)}>
               <div className="cell-text">
-                <h3>Stale docs, named</h3>
-                <p>Each doc lists the code it covers. When a commit touches that code, the doc says so, with the commit.</p>
-              </div>
-              <Crop src="/assets/app-stale.png" alt="xDev warning that billing.md may be out of date after commit 69ce67c" h={236} x={-340} y={-60} edge="bottom" />
-            </div>
-            <div className="cell frag-top" data-reveal style={i(1)}>
-              <Crop src="/assets/app-search.png" alt="Search for invoice finding runbook.md and billing.md" h={286} x={-44} y={-4} edge="top" />
-              <div className="cell-text">
-                <h3>Search every doc</h3>
-                <p>Full-text search across the folder, with the match shown in place. Ctrl+K from anywhere in the app.</p>
-              </div>
-            </div>
-            <div className="cell text-top" data-reveal style={i(2)}>
-              <div className="cell-text">
-                <h3>Links both ways</h3>
-                <p>Write [[runbook]] and the link works. Every doc shows which other docs point to it.</p>
-              </div>
-              <Crop src="/assets/app-stale.png" alt="Billing doc listing the two docs that link to it" h={176} x={-340} y={-604} edge="bottom" />
-            </div>
-            <div className="cell frag-top" data-reveal style={i(0)}>
-              <Crop src="/assets/app-changes.png" alt="Pending change to onboarding.md with Approve and Reject" h={256} x={-56} y={-56} edge="top" />
-              <div className="cell-text">
-                <h3>Review, then commit</h3>
-                <p>Edits from you or an agent wait as pending changes against git HEAD until you approve them.</p>
-              </div>
-            </div>
-            <div className="cell text-top" data-reveal style={i(1)}>
-              <div className="cell-text">
-                <h3>Served over MCP</h3>
-                <p>Point Claude Code or any MCP client at the folder. Agents read the docs live instead of a stale copy.</p>
+                <h3>Split editor</h3>
+                <p>Open one file in two panes, side by side or stacked. Quick open with Mod+P, search in files, jump with Ctrl+J.</p>
               </div>
               <div className="frag frag-bottom">
+                <div className="split" data-ui aria-hidden="true">
+                  <div className="split-pane">
+                    <span className="split-tab">tax.ts</span>
+                    <code><b>12</b> export function taxFor(line) {'{'}</code>
+                    <code className="hl"><b>13</b>   const rate = RATES[c]</code>
+                    <code><b>14</b>   return line.total * rate</code>
+                    <code><b>15</b> {'}'}</code>
+                  </div>
+                  <div className="split-pane">
+                    <span className="split-tab">tax.ts</span>
+                    <code><b>40</b> export const RATES = {'{'}</code>
+                    <code className="hl"><b>41</b>   VN: 0.1,</code>
+                    <code><b>42</b>   SG: 0.09,</code>
+                    <code><b>43</b> {'}'}</code>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="cell frag-top" data-reveal style={i(1)}>
+              <div className="frag frag-top-dock">
+                <div className="attr" data-ui>
+                  <p className="attr-head">Changes in this worktree</p>
+                  <ul>
+                    <li><code>src/billing/refund.ts</code><span className="chip a1">Codex</span><span className="num">+22 −4</span></li>
+                    <li><code>src/billing/tax.ts</code><span className="chip a2">Claude Code</span><span className="num">+4 −1</span></li>
+                    <li><code>docs/billing.md</code><span className="chip a3">You</span><span className="num">+2 −1</span></li>
+                  </ul>
+                  <p className="attr-foot"><span>3 versions of refund.ts</span><span className="ui-btn">Restore</span></p>
+                </div>
+              </div>
+              <div className="cell-text">
+                <h3>Who wrote which line</h3>
+                <p>Each change is tagged with the agent tab that made it, and earlier versions can be restored.</p>
+              </div>
+            </div>
+
+            <div className="cell text-top" data-reveal style={i(2)}>
+              <div className="cell-text">
+                <h3>Review with AI</h3>
+                <p>Ask a second agent to review the diff. Its notes sit on the lines, next to yours. Image diffs too.</p>
+              </div>
+              <div className="frag frag-bottom">
+                <div className="notes" data-ui>
+                  <p className="note-row"><span className="chip a1">AI review</span> refund.ts:58 — a refund over the paid amount is not rejected.</p>
+                  <p className="note-row"><span className="chip a3">You</span> tax.ts:13 — use the shipping country.</p>
+                  <p className="note-foot"><span className="ui-btn primary">Send 2 notes to Codex</span></p>
+                </div>
+              </div>
+            </div>
+
+            <div className="cell frag-top" data-reveal style={i(0)}>
+              <div className="frag frag-top-dock">
+                <div className="convo" data-ui>
+                  <p className="me">Why did the refund test fail?</p>
+                  <p className="tool">Read tests/refund.test.ts</p>
+                  <p className="tool">Run pnpm test refund · 1 failed</p>
+                  <p className="bot">The test expects the card, the code now sends store credit. I updated the test to match.</p>
+                  <p className="tool sub">Sub-agent: check other callers · 2 found</p>
+                </div>
+              </div>
+              <div className="cell-text">
+                <h3>Read the whole conversation</h3>
+                <p>A chat view of any agent tab, with tool steps and sub-agent runs. Answer its questions from there.</p>
+              </div>
+            </div>
+
+            <div className="cell text-top" data-reveal style={i(1)}>
+              <div className="cell-text">
+                <h3>Know what each tab costs</h3>
+                <p>CPU and memory for every tab&apos;s process tree, token use per session, and a confirmed Stop.</p>
+              </div>
+              <div className="frag frag-bottom">
+                <table className="res" data-ui>
+                  <caption className="sr-only">Processes per tab</caption>
+                  <thead><tr><th scope="col">Tab</th><th scope="col">CPU</th><th scope="col">Memory</th><th scope="col"><span className="sr-only">Action</span></th></tr></thead>
+                  <tbody>
+                    <tr><td>retry-charges</td><td>38%</td><td>612 MB</td><td><span className="ui-btn">Stop</span></td></tr>
+                    <tr><td>tax-rate-vn</td><td>4%</td><td>288 MB</td><td><span className="ui-btn">Stop</span></td></tr>
+                    <tr><td>pnpm dev</td><td>11%</td><td>540 MB</td><td><span className="ui-btn">Stop</span></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="cell frag-top" data-reveal style={i(2)}>
+              <div className="frag frag-top-dock">
                 <div className="connect" data-ui>
                   <div className="connect-head">
                     <span>Claude Code</span>
                     <CopyButton text={MCP_CMD} />
                   </div>
                   <pre><code>{MCP_CMD}</code></pre>
-                  <div className="connect-head"><span>Any MCP client</span></div>
-                  <pre><code>{'{ "mcpServers": { "xdev": {\n    "command": "xdev",\n    "args": ["mcp", "./docs"] } } }'}</code></pre>
-                </div>
-              </div>
-            </div>
-            <div className="cell frag-top" data-reveal style={i(2)}>
-              <div className="frag frag-top-dock">
-                <div className="task" data-ui>
-                  <div className="task-row">
-                    <strong>Note the VN tax rate in billing.md</strong>
-                    <span className="pill ok">Ready for review</span>
-                  </div>
-                  <p className="task-meta">Claude Code · own git worktree · 2 files</p>
-                  <pre><code>
-                    <span className="del">- Tax is added per line, at the rate for the shipping country.</span>
-                    {'\n'}
-                    <span className="add">+ Tax is added per line: 10% for VN, 8% elsewhere.</span>
-                  </code></pre>
-                  <div className="task-actions">
-                    <button className="ui-btn" type="button">Discard</button>
-                    <button className="ui-btn primary" type="button">Approve</button>
-                  </div>
+                  <p className="connect-note"><span className="pill warn">Stale</span> billing.md · src/billing changed in 69ce67c</p>
                 </div>
               </div>
               <div className="cell-text">
-                <h3>Agents work aside</h3>
-                <p>A task runs in its own git worktree. You read the diff and the evidence, then approve or discard it.</p>
+                <h3>Docs your agents can trust</h3>
+                <p>xdev mcp serves your Markdown docs to any MCP client, and xdev check flags a doc when the code it covers changed.</p>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="how wrap" id="how" aria-labelledby="how-title">
-          <HowSteps />
+        <section className="crew wrap" aria-labelledby="crew-title">
+          <h2 id="crew-title" className="block-head" data-reveal>Works with the agent CLIs you already use</h2>
+          <p className="crew-list" data-reveal>
+            {AGENTS.map((a) => (
+              <span key={a}>{a}</span>
+            ))}
+          </p>
+          <p className="crew-note" data-reveal>
+            They run in real terminals with your own accounts. xDev IDE keeps nothing in the cloud: your code, docs and git stay on your machine.
+          </p>
         </section>
 
         <section className="lineup" id="download" aria-labelledby="download-title">
@@ -173,7 +218,7 @@ export default function Home() {
             <div className="cta-copy">
               <h2 id="cta-title" className="closing" data-reveal>Start with one repo.</h2>
               <p data-reveal style={i(1)}>
-                Free and open source under Apache-2.0. The installers are not code-signed yet, so Windows or macOS may ask once before the first launch.
+                Free and open source under Apache-2.0. The installers are not code-signed yet, so Windows or macOS may ask once before the first launch. Updates are signed.
               </p>
             </div>
             <GetDialog />
@@ -182,12 +227,12 @@ export default function Home() {
       </main>
 
       <footer className="foot wrap">
-        <p className="muted">Local-first agentic IDE</p>
+        <p className="muted">xDev IDE · local-first agentic IDE</p>
         <p className="foot-links">
           <a className="link" href={REPO}>GitHub</a>
           <a className="link" href={`${REPO}/releases`}>Releases</a>
           <a className="link" href={`${REPO}/blob/main/docs/architecture.md`}>Architecture</a>
-          <a className="link" href={`${REPO}/tree/main/docs/adr`}>Decisions</a>
+          <a className="link" href={`${REPO}/tree/main/docs/guide`}>Guides</a>
         </p>
         <p className="muted foot-end">
           © 2026 xDev · <a className="link" href={`${REPO}/blob/main/LICENSE`}>Apache-2.0</a>

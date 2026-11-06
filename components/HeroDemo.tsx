@@ -1,105 +1,162 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState, type KeyboardEvent } from 'react';
 
-// Only the first commit comes from the sample repo in the screenshots; the rest keep the demo looping.
-const COMMITS = [
-  { hash: '69ce67c', msg: 'Tax rate per country' },
-  { hash: 'a1d93e0', msg: 'Retry failed charges 4 times' },
-  { hash: '5b27f4c', msg: 'Refunds to store credit' },
+type Status = 'needs' | 'working' | 'done';
+
+const LABEL: Record<Status, string> = { needs: 'Needs you', working: 'Working', done: 'Done' };
+
+type Task = { slug: string; agent: string; prompt: string; lines: string[] };
+
+// A sample repo; the steps mirror what the agent tabs show, cut short to fit.
+const TASKS: Task[] = [
+  {
+    slug: 'tax-rate-vn',
+    agent: 'Claude Code',
+    prompt: 'Add the 10% VN tax rate to billing',
+    lines: ['Read src/billing/tax.ts', 'Read docs/billing.md', 'Edit src/billing/tax.ts  +4 −1'],
+  },
+  {
+    slug: 'retry-charges',
+    agent: 'Codex',
+    prompt: 'Retry failed charges 4 times, not 3',
+    lines: ['Search "retry" in src/billing', 'Edit src/billing/retry.ts  +6 −2', 'Run pnpm test retry'],
+  },
+  {
+    slug: 'refund-credit',
+    agent: 'Gemini',
+    prompt: 'Send refunds to store credit',
+    lines: ['Edit src/billing/refund.ts  +22 −4', 'Edit docs/billing.md  +2 −1', 'Run pnpm test refund', '41 passed'],
+  },
 ];
 
-export default function HeroDemo() {
-  const [verified, setVerified] = useState('3115c64');
-  const [next, setNext] = useState(0);
-  const [stale, setStale] = useState(false);
-  const commit = COMMITS[next % COMMITS.length];
+const AFTER_ALLOW = ['Edit applied', 'Run pnpm test billing', '18 passed'];
 
-  const verify = () => {
-    setVerified(commit.hash);
-    setStale(false);
-    setNext((n) => n + 1);
+export default function HeroDemo() {
+  const [status, setStatus] = useState<Status[]>(['needs', 'working', 'done']);
+  const [sel, setSel] = useState(0);
+  const [allowed, setAllowed] = useState(false);
+  const rows = useRef<(HTMLButtonElement | null)[]>([]);
+  const task = TASKS[sel];
+  const st = status[sel];
+
+  useEffect(() => {
+    if (!allowed) return;
+    // The agent finishes its run a moment after you allow the edit.
+    const t = window.setTimeout(() => setStatus((s) => ['done', s[1], s[2]]), 2400);
+    return () => window.clearTimeout(t);
+  }, [allowed]);
+
+  const allow = () => {
+    setAllowed(true);
+    setStatus((s) => ['working', s[1], s[2]]);
   };
+  const reset = () => {
+    setAllowed(false);
+    setStatus(['needs', 'working', 'done']);
+  };
+
+  const onKey = (e: KeyboardEvent, i: number) => {
+    const step = e.key === 'ArrowDown' ? 1 : e.key === 'ArrowUp' ? -1 : 0;
+    if (!step) return;
+    e.preventDefault();
+    const n = (i + step + TASKS.length) % TASKS.length;
+    rows.current[n]?.focus();
+    setSel(n);
+  };
+
+  const lines = sel === 0 && allowed ? [...task.lines, ...AFTER_ALLOW.slice(0, st === 'done' ? 3 : 1)] : task.lines;
 
   return (
     <div className="hero-stage">
       <div className="shutter" data-reveal>
-        <div className="doc" data-ui aria-label="xDev showing billing.md">
-          <div className="doc-head">
-            <div>
-              <strong>Billing</strong>
-              <code>billing.md</code>
-            </div>
-            <div className="doc-tools">
-              <span className="seg">
-                <span className="on">Edit</span>
-                <span>Preview</span>
-              </span>
-              <label className="chk">
-                <input type="checkbox" checked readOnly tabIndex={-1} /> For agents
-              </label>
-              <span className={stale ? 'pill warn' : 'pill ok'}>{stale ? 'Stale' : `Verified ${verified}`}</span>
+        <div className="ws" data-ui aria-label="xDev IDE with three agent tasks">
+          <div className="ws-side">
+            <p className="ws-cap">Worktrees</p>
+            <div role="tablist" aria-orientation="vertical" aria-label="Tasks">
+              {TASKS.map((t, i) => (
+                <button
+                  key={t.slug}
+                  ref={(el) => {
+                    rows.current[i] = el;
+                  }}
+                  role="tab"
+                  id={`wt-${t.slug}`}
+                  aria-selected={i === sel}
+                  aria-controls="ws-pane"
+                  tabIndex={i === sel ? 0 : -1}
+                  className="ws-row"
+                  onClick={() => setSel(i)}
+                  onKeyDown={(e) => onKey(e, i)}
+                >
+                  <span className={`dot ${status[i]}`} aria-hidden="true" />
+                  <span className="ws-row-text">
+                    <strong>{t.slug}</strong>
+                    <span>
+                      {t.agent} · {LABEL[status[i]]}
+                    </span>
+                  </span>
+                </button>
+              ))}
             </div>
           </div>
-          {stale && (
-            <div className="banner is-new">
-              <div>
-                <strong>This doc may be out of date.</strong>
-                <p>1 new commit touched src/billing since it was verified at {verified}.</p>
-                <p className="commit">
-                  <code>{commit.hash}</code> {commit.msg} <span className="when">now</span>
-                </p>
-              </div>
-              <button className="ui-btn primary" onClick={verify}>
-                Still correct, mark verified
-              </button>
-            </div>
-          )}
-          <ol className="code-lines">
-            <li>---</li>
-            <li>title: Billing</li>
-            <li>
-              agents: <span className="tok">[agents, claude, cursor]</span>
-            </li>
-            <li>covers:</li>
-            <li>&nbsp;&nbsp;- src/billing</li>
-            <li>verified: {verified}</li>
-            <li>---</li>
-            <li className="h"># Billing</li>
-            <li></li>
-            <li>Invoices are issued on the 1st of each month, in the customer&apos;s currency.</li>
-            <li></li>
-            <li>- Tax is added per line, at the rate for the shipping country.</li>
-            <li>- A failed charge is retried 3 times over 5 days, then the account is paused.</li>
-            <li>- Refunds go back to the original card; see [[runbook]] for manual ones.</li>
-          </ol>
-        </div>
-      </div>
 
-      <div className="term" data-ui aria-label="Terminal">
-        <code>
-          <span className="ps">~/shop-api $</span> git commit -am &quot;{commit.msg}&quot;
-        </code>
-        <div id="term-out" aria-live="polite">
-          {stale && (
-            <>
-              <code>
-                [main {commit.hash}] {commit.msg}
-              </code>
-              <code>&nbsp;1 file changed, 1 insertion(+), 1 deletion(-)</code>
-              <code>
-                <span className="ps">~/shop-api $</span> xdev check docs
-              </code>
-              <code className="hit">stale&nbsp;&nbsp;billing.md&nbsp;&nbsp;1</code>
-            </>
-          )}
+          <div className="ws-main" id="ws-pane" role="tabpanel" aria-labelledby={`wt-${task.slug}`}>
+            <div className="ws-tabs">
+              <span className="ws-tab on">
+                <span className={`dot ${st}`} aria-hidden="true" />
+                {task.agent}
+              </span>
+              <span className="ws-tab">Shell</span>
+              <span className={`pill ${st === 'needs' ? 'warn' : st === 'done' ? 'ok' : ''}`}>{LABEL[st]}</span>
+            </div>
+            <div className="ws-term" aria-live="polite">
+              <code className="ws-prompt">&gt; {task.prompt}</code>
+              {lines.map((l) => (
+                <code key={l} className={/passed$/.test(l) ? 'ok' : undefined}>
+                  {l}
+                </code>
+              ))}
+              {st === 'needs' && (
+                <div className="ask">
+                  <p>
+                    <strong>Allow this edit?</strong> src/billing/tax.ts
+                  </p>
+                  <div className="ask-actions">
+                    <button className="ui-btn" type="button" onClick={() => setSel(1)}>
+                      Later
+                    </button>
+                    <button className="ui-btn primary" type="button" onClick={allow}>
+                      Allow
+                    </button>
+                  </div>
+                </div>
+              )}
+              {st === 'working' && <span className="cursor" aria-hidden="true" />}
+              {st === 'done' && (
+                <div className="ask done">
+                  <p>
+                    <strong>Ready for review.</strong> {sel === 2 ? '2 files' : '1 file'} changed in its own worktree.
+                  </p>
+                  <div className="ask-actions">
+                    {sel === 0 && (
+                      <button className="ui-btn" type="button" onClick={reset}>
+                        Replay
+                      </button>
+                    )}
+                    <a className="ui-btn primary" href="#how">
+                      Review changes
+                    </a>
+                  </div>
+                </div>
+              )}
+            </div>
+            <p className="ws-foot">
+              <code>xdev/{task.slug}</code>
+              <span>../shop-api-{task.slug}</span>
+            </p>
+          </div>
         </div>
-        <p className="term-run">
-          <button className="ui-btn" disabled={stale} onClick={() => setStale(true)}>
-            Run commit
-          </button>
-          <span className="cursor" aria-hidden="true"></span>
-        </p>
       </div>
     </div>
   );

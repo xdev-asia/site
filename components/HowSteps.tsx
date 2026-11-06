@@ -3,9 +3,9 @@
 import { useEffect, useRef, useState } from 'react';
 
 const STEPS = [
-  { statement: 'First, say what a doc covers.', support: 'List code paths in its front matter. xDev pins the commit you last checked it against.' },
-  { statement: 'Then commit code as you always do.', support: 'When a commit touches those paths, the doc turns stale in the app and in xdev check.' },
-  { statement: 'Last, read the doc and re-verify.', support: 'Fix it, or mark it still correct. The pin moves to the newest commit.' },
+  { statement: 'Start a task from a branch or an issue.', support: 'Type #142 or a branch name. xDev IDE makes a git worktree in the background and runs your setup script there.' },
+  { statement: 'Let agents work. Step in when one asks.', support: 'Each tab shows working, needs you or done. A question raises a notification, so you can leave the window.' },
+  { statement: 'Read the diff, then commit or open a PR.', support: 'Leave a note on a line and it goes to the agent tab. The work stays on the task’s own branch until you merge it.' },
 ];
 
 export default function HowSteps() {
@@ -28,7 +28,7 @@ export default function HowSteps() {
     <div className="grid">
       <div className="how-steps">
         <h2 id="how-title" className="block-head">
-          How it stays true
+          From task to pull request
         </h2>
         {STEPS.map((s, i) => (
           <div
@@ -48,49 +48,68 @@ export default function HowSteps() {
         <div className="state-card" data-ui data-state={active} aria-live="polite">
           <div className="state s0" aria-hidden={active !== 0}>
             <div className="state-head">
-              <strong>billing.md</strong>
-              <span className="pill">Front matter</span>
+              <strong>New task</strong>
+              <span className="pill">shop-api</span>
             </div>
-            <ol className="code-lines">
-              <li>---</li>
-              <li>title: Billing</li>
-              <li className="mark">covers:</li>
-              <li className="mark">&nbsp;&nbsp;- src/billing</li>
-              <li className="mark">verified: 3115c64</li>
-              <li>---</li>
-              <li className="h"># Billing</li>
-            </ol>
+            <div className="form">
+              <span className="flabel">From</span>
+              <span className="field">#142 Tax rate per country</span>
+              <span className="flabel">Branch</span>
+              <span className="field mono">xdev/tax-rate-vn</span>
+              <span className="flabel">Agent</span>
+              <span className="field">Claude Code · work</span>
+              <span className="form-foot">
+                <span className="ui-btn primary">Create worktree</span>
+              </span>
+            </div>
           </div>
           <div className="state s1" aria-hidden={active !== 1}>
             <div className="state-head">
-              <strong>Terminal</strong>
-              <span className="pill warn">exit 1</span>
+              <strong>Agents</strong>
+              <span className="pill warn">1 needs you</span>
             </div>
-            <pre>
-              <code>
-                <span className="ps">$</span> git commit -am &quot;Tax rate per country&quot;
-                {'\n'}[main 69ce67c] Tax rate per country
-                {'\n'} 1 file changed, 1 insertion(+), 1 deletion(-)
-                {'\n'}
-                <span className="ps">$</span> xdev check docs
-                {'\n'}stale{'\t'}billing.md{'\t'}1
-              </code>
-            </pre>
+            <ul className="tabs-list">
+              <li>
+                <span className="dot needs" /> tax-rate-vn <span className="muted">Claude Code</span>
+              </li>
+              <li>
+                <span className="dot working" /> retry-charges <span className="muted">Codex</span>
+              </li>
+              <li>
+                <span className="dot done" /> refund-credit <span className="muted">Gemini</span>
+              </li>
+            </ul>
+            <div className="notice">
+              <strong>tax-rate-vn needs you</strong>
+              <span>Allow this edit? src/billing/tax.ts</span>
+            </div>
           </div>
           <div className="state s2" aria-hidden={active !== 2}>
             <div className="state-head">
-              <strong>billing.md</strong>
-              <span className="pill ok">Verified 69ce67c</span>
+              <strong>Review · tax.ts</strong>
+              <span className="pill ok">+4 −1</span>
             </div>
-            <ol className="code-lines">
-              <li>---</li>
-              <li>title: Billing</li>
-              <li>covers:</li>
-              <li>&nbsp;&nbsp;- src/billing</li>
-              <li className="mark">verified: 69ce67c</li>
-              <li>---</li>
-              <li className="h"># Billing</li>
-            </ol>
+            <pre className="diff">
+              <code>
+                <span className="ln">12</span> export function taxFor(line: Line) {'{'}
+                {'\n'}
+                <span className="ln">13</span>
+                <span className="del">-  return line.total * RATE</span>
+                {'\n'}
+                <span className="ln">13</span>
+                <span className="add">+  const rate = RATES[line.country] ?? 0.08</span>
+                {'\n'}
+                <span className="ln">14</span>
+                <span className="add">+  return line.total * rate</span>
+              </code>
+            </pre>
+            <p className="line-note">
+              <span className="who">You, line 13</span> Use the shipping country, not the billing one.
+            </p>
+            <div className="review-actions">
+              <span className="ui-btn">Send note to agent</span>
+              <span className="ui-btn primary">Commit</span>
+            </div>
           </div>
         </div>
       </div>

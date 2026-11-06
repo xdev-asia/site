@@ -15,34 +15,39 @@ const mono = JetBrains_Mono({ // taste-skill-ignore: mono for code only
   display: 'swap',
 });
 
-const title = 'xDev — local-first agentic IDE';
+const title = 'xDev IDE — many coding agents, one window';
 const description =
-  'xDev is a local-first agentic IDE. Run Claude Code, Codex and other coding agents side by side, each in its own git worktree, review every diff, and hand them your docs over MCP.';
+  'xDev IDE is a local-first agentic IDE. Run Claude Code, Codex and other coding agents side by side, each in its own git worktree. See who needs you, review each diff, and commit from one window.';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://xdev.asia'),
   title,
   description,
-  applicationName: 'xDev',
+  applicationName: 'xDev IDE',
   alternates: { canonical: '/' },
   icons: { icon: '/assets/logo.png', apple: '/assets/logo.png' },
   openGraph: {
     type: 'website',
     url: '/',
-    siteName: 'xDev',
+    siteName: 'xDev IDE',
     title,
     description,
-    images: [{ url: '/assets/app-stale.png', width: 2560, height: 1600, alt: 'xDev flagging billing.md as out of date after a commit' }],
+    images: [{ url: '/assets/og.png', width: 1200, height: 630, alt: 'xDev IDE with three agent tasks, one waiting for approval' }],
   },
-  twitter: { card: 'summary_large_image', title, description, images: ['/assets/app-stale.png'] },
+  twitter: { card: 'summary_large_image', title, description, images: ['/assets/og.png'] },
 };
 
-export const viewport: Viewport = { themeColor: '#1a4fd6' };
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#f4f4f6' },
+    { media: '(prefers-color-scheme: dark)', color: '#0b0b0d' },
+  ],
+};
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
-  name: 'xDev',
+  name: 'xDev IDE',
   url: 'https://xdev.asia',
   applicationCategory: 'DeveloperApplication',
   operatingSystem: 'Windows, macOS, Linux',
