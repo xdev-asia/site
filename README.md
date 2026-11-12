@@ -5,6 +5,7 @@ The public website of xDev: who we are, the apps, and the pages that apply to al
 | Page | English | Tiếng Việt |
 |---|---|---|
 | Home | `/` | `/vi/` |
+| Brand | `/brand/` | `/vi/brand/` |
 | Terms of Use | `/terms/` | `/vi/terms/` |
 | Privacy Policy | `/privacy/` | `/vi/privacy/` |
 | Support | `/support/` | `/vi/support/` |

@@ -1,8 +1,8 @@
 export type Lang = "en" | "vi";
-export type PageName = "home" | "terms" | "privacy" | "support";
+export type PageName = "home" | "brand" | "terms" | "privacy" | "support";
 
 export const LANGS: Lang[] = ["en", "vi"];
-export const PAGES: PageName[] = ["home", "terms", "privacy", "support"];
+export const PAGES: PageName[] = ["home", "brand", "terms", "privacy", "support"];
 
 /** English lives at the root ("/terms/"), Vietnamese under "/vi/" ("/vi/terms/"). */
 export function hrefFor(page: PageName, lang: Lang): string {

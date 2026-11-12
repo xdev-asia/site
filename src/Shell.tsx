@@ -1,5 +1,5 @@
 import { useEffect, type ReactNode } from "react";
-import { BrandMark, Select, SiteShell, applyTheme, resolveTheme, systemPrefersDark, watchSystemTheme } from "@xdev-asia/ui";
+import { Select, SiteShell, applyTheme, resolveTheme, systemPrefersDark, watchSystemTheme } from "@xdev-asia/ui";
 import type { Content } from "./content/types";
 import { hrefFor, type Lang, type PageName } from "./routes";
 
@@ -31,17 +31,19 @@ interface ShellProps {
 /** Frame of every page: brand, section links, language switch and the legal footer. */
 export function Shell({ c, lang, page, children }: ShellProps) {
   useSystemTheme();
-  const links: { page: PageName; label: string }[] = [
+  const legal: { page: PageName; label: string }[] = [
     { page: "terms", label: c.nav.terms },
     { page: "privacy", label: c.nav.privacy },
     { page: "support", label: c.nav.support },
   ];
+  const links: { page: PageName; label: string }[] = [{ page: "brand", label: c.nav.brand }, ...legal];
   return (
     <SiteShell
       size="lg"
       brand={
         <a href={hrefFor("home", lang)}>
-          <BrandMark variant="mark" size={24} />
+          {/* Logo v12 from the static files; the BrandMark of the pinned @xdev-asia/ui still draws v9. */}
+          <img src="/assets/brand/xdev-mark-tile.svg" alt="" width={24} height={24} />
           <span>xDev</span>
         </a>
       }
@@ -66,7 +68,7 @@ export function Shell({ c, lang, page, children }: ShellProps) {
           />
         </>
       }
-      links={links.map((l) => ({ href: hrefFor(l.page, lang), label: l.label }))}
+      links={legal.map((l) => ({ href: hrefFor(l.page, lang), label: l.label }))}
       linksLabel={c.nav.legal}
       footer={<span>{c.footer}</span>}
     >

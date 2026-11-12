@@ -41,6 +41,28 @@ html { scroll-behavior: smooth; scroll-padding-top: var(--x-space-8); }
 .principles dt { font: var(--type-heading); }
 .principles dd { margin: var(--x-space-1) 0 0; font: var(--type-body); color: var(--x-color-muted); }
 
+/* Brand. The stage grounds and the swatches are fixed brand colours: they do not follow the theme. */
+.brand-hero { display: flex; flex-wrap: wrap; align-items: center; gap: var(--x-space-8); }
+.brand-hero-icon { flex: none; inline-size: clamp(112px, 18vw, 168px); block-size: auto; }
+.brand-figure { display: grid; align-content: start; gap: var(--x-space-3); margin: 0; }
+.brand-stage { display: grid; place-items: center; block-size: 168px; border: 1px solid var(--x-color-line); border-radius: var(--x-radius-lg); }
+.brand-stage[data-ground="dark"] { background: #0b0b0d; }
+.brand-stage[data-ground="light"] { background: #f4f4f6; }
+.brand-figure figcaption { display: grid; gap: var(--x-space-1); font: var(--type-body); color: var(--x-color-muted); }
+.brand-figure strong { font: var(--type-heading); color: var(--x-color-ink); }
+.brand-figure a { font: var(--type-status); overflow-wrap: anywhere; }
+.brand-intro { margin: 0 0 var(--x-space-4); max-inline-size: 64ch; font-size: 15px; line-height: 1.7; }
+.brand-system .app-head img { inline-size: 64px; block-size: 64px; border-radius: 0; }
+.brand-system .app-body { margin-block-end: var(--x-space-1); }
+.brand-shape { margin: 0 0 var(--x-space-3); font: var(--type-body); }
+.brand-swatches { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--x-space-6) var(--x-space-4); margin: 0; padding: 0; list-style: none; }
+.brand-swatch { display: grid; align-content: start; gap: var(--x-space-1); }
+.brand-chip { block-size: 72px; margin-block-end: var(--x-space-2); border: 1px solid var(--x-color-line); border-radius: var(--x-radius-md); }
+.brand-swatch strong { font: var(--type-heading); }
+.brand-swatch code { font: var(--type-mono); color: var(--x-color-muted); }
+.brand-swatch span { font: var(--type-body); color: var(--x-color-muted); }
+.band-body ul { margin: 0; padding-inline-start: var(--x-space-6); max-inline-size: 64ch; font-size: 15px; line-height: 1.7; }
+
 /* Terms, privacy, support */
 .doc { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: var(--x-space-8); padding-block: var(--x-space-8); }
 .doc-toc { position: sticky; inset-block-start: var(--x-space-6); align-self: start; }
