@@ -24,9 +24,32 @@ export interface AppEntry {
   links: { label: string; href: string }[];
 }
 
+/** The brand page: the logo, the marks of the sub-systems, colours and rules. File paths and colour values live in pages/Brand.tsx. */
+export interface BrandContent {
+  eyebrow: string;
+  title: string;
+  lede: string;
+  logoTitle: string;
+  versions: Record<"icon" | "blue" | "lit" | "flat" | "tile", { name: string; body: string }>;
+  /** Label of a download link. */
+  download: string;
+  systemsTitle: string;
+  systemsIntro: string;
+  /** `body`: what the system is. `shape`: what stands on the agent side of its mark. */
+  systems: Record<"xdev" | "cleaner" | "ui", { body: string; shape: string }>;
+  colourTitle: string;
+  colours: Record<"blue" | "orange" | "you" | "agent" | "ground" | "core", { name: string; use: string }>;
+  typeTitle: string;
+  type: string[];
+  rulesTitle: string;
+  rules: string[];
+  filesTitle: string;
+  files: string[];
+}
+
 export interface Content {
-  meta: Record<"home" | "terms" | "privacy" | "support" | "notFound", { title: string; description: string }>;
-  nav: { terms: string; privacy: string; support: string; legal: string; lang: string; contents: string };
+  meta: Record<"home" | "brand" | "terms" | "privacy" | "support" | "notFound", { title: string; description: string }>;
+  nav: { brand: string; terms: string; privacy: string; support: string; legal: string; lang: string; contents: string };
   home: {
     eyebrow: string;
     headline: string;
@@ -40,6 +63,7 @@ export interface Content {
     contactTitle: string;
     contact: string[];
   };
+  brand: BrandContent;
   terms: Doc;
   privacy: Doc;
   support: Doc;
