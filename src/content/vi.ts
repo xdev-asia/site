@@ -1,10 +1,10 @@
 import type { Content } from "./types";
 
-const UPDATED = "Có hiệu lực từ 12/11/2026";
+const UPDATED = "Có hiệu lực từ 20/11/2026";
 
 export const vi: Content = {
   meta: {
-    home: { title: "xDev", description: "xDev làm không gian làm việc cho các AI coding agent và những công cụ lập trình đi kèm." },
+    home: { title: "xDev", description: "xDev làm công cụ cho lập trình viên làm việc cùng AI coding agent." },
     terms: { title: "Điều khoản sử dụng · xDev", description: "Điều khoản áp dụng cho mọi ứng dụng, trang web và dịch vụ của xDev." },
     privacy: { title: "Chính sách quyền riêng tư · xDev", description: "Mỗi ứng dụng, trang web và dịch vụ của xDev làm gì với dữ liệu của bạn." },
     support: { title: "Hỗ trợ · xDev", description: "Cách nhận trợ giúp cho ứng dụng của xDev." },
@@ -15,31 +15,14 @@ export const vi: Content = {
   home: {
     eyebrow: "xdev.asia",
     headline: "Công cụ cho người làm việc cùng coding agent",
-    lede: "xDev làm một không gian để chạy và điều khiển các AI coding agent, cùng những công cụ nhỏ cho lập trình viên. Mã nguồn và dữ liệu của bạn nằm trên máy của bạn.",
+    lede: "xDev làm công cụ cho lập trình viên làm việc cùng AI coding agent. Mã nguồn và dữ liệu của bạn nằm trên máy của bạn.",
     aboutTitle: "Giới thiệu",
     about: [
-      "xDev là tên chung của các ứng dụng trên trang này. Phần nào mở được thì chúng tôi làm mở: lõi của xDev, bộ giao diện và Cleaner for xDev đều là mã nguồn mở trên GitHub.",
+      "xDev là tên chung của các ứng dụng trên trang này. Phần nào mở được thì chúng tôi làm mở: bộ giao diện là mã nguồn mở trên GitHub.",
       "Trang này là nơi đặt những thứ áp dụng chung cho tất cả: [Điều khoản sử dụng](/vi/terms/), [Chính sách quyền riêng tư](/vi/privacy/) và [Hỗ trợ](/vi/support/).",
     ],
     appsTitle: "Ứng dụng",
     apps: [
-      {
-        name: "xDev",
-        icon: "/assets/xdev.png",
-        platform: "macOS · bản xem trước",
-        body: "Không gian để chạy và điều khiển các AI coding agent từ máy tính và điện thoại. Dự án và terminal nằm trên máy tính của bạn.",
-        links: [{ label: "Mã nguồn", href: "https://github.com/xdev-asia/xdev" }],
-      },
-      {
-        name: "Cleaner for xDev",
-        icon: "/assets/cleaner.png",
-        platform: "macOS",
-        body: "Cho bạn thấy dung lượng ổ đĩa đang nằm ở đâu và dọn cache của công cụ lập trình một cách an toàn. Mọi thứ chỉ được chuyển vào Thùng rác, sau khi bạn xác nhận.",
-        links: [
-          { label: "Hỗ trợ", href: "/vi/support/#cleaner" },
-          { label: "Mã nguồn", href: "https://github.com/xdev-asia/cleaner-for-xdev" },
-        ],
-      },
       {
         name: "Tài khoản xDev",
         glyph: "id",
@@ -82,7 +65,7 @@ export const vi: Content = {
         id: "scope",
         title: "Phạm vi của điều khoản",
         blocks: [
-          "Điều khoản này là thoả thuận giữa bạn và xDev (\"chúng tôi\"). Nó áp dụng cho mọi ứng dụng, trang web và dịch vụ trực tuyến do chúng tôi phát hành và có dẫn tới trang này: xDev, Cleaner for xDev, tài khoản xDev tại id.xdev.asia và trang web này. Dưới đây gọi chung là \"ứng dụng\".",
+          "Điều khoản này là thoả thuận giữa bạn và xDev (\"chúng tôi\"). Nó áp dụng cho mọi ứng dụng, trang web và dịch vụ trực tuyến do chúng tôi phát hành và có dẫn tới trang này: tài khoản xDev tại id.xdev.asia và trang web này. Dưới đây gọi chung là \"ứng dụng\".",
           "Khi cài đặt hoặc sử dụng ứng dụng, bạn chấp nhận điều khoản này. Nếu không chấp nhận, bạn đừng sử dụng ứng dụng.",
           "Một ứng dụng có thể có thêm điều khoản riêng, hiển thị trong ứng dụng hoặc trên trang cửa hàng của nó. Chỗ nào khác với trang này thì điều khoản riêng được áp dụng cho ứng dụng đó.",
         ],
@@ -99,23 +82,8 @@ export const vi: Content = {
         id: "open-source",
         title: "Phần mềm mã nguồn mở",
         blocks: [
-          "Một phần của các ứng dụng là mã nguồn mở. Mã nguồn nằm tại [github.com/xdev-asia](https://github.com/xdev-asia), và mỗi kho ghi rõ giấy phép của nó (ví dụ Apache-2.0 cho xDev và xDev UI, MIT cho Cleaner for xDev).",
+          "Một phần của các ứng dụng là mã nguồn mở. Mã nguồn nằm tại [github.com/xdev-asia](https://github.com/xdev-asia), và mỗi kho ghi rõ giấy phép của nó (ví dụ Apache-2.0 cho xDev UI).",
           "Với phần mã nguồn đó, giấy phép mã nguồn mở được áp dụng và được ưu tiên hơn điều khoản này. Điều khoản này vẫn áp dụng cho bản ứng dụng đã đóng gói do chúng tôi phân phối và cho các dịch vụ trực tuyến của chúng tôi.",
-        ],
-      },
-      {
-        id: "app-stores",
-        title: "Ứng dụng tải từ App Store",
-        blocks: [
-          "Nếu bạn tải ứng dụng từ App Store của Apple, Thoả thuận cấp phép người dùng cuối tiêu chuẩn của Apple (Licensed Application End User License Agreement) cũng áp dụng cho ứng dụng đó. Bạn có thể đọc tại [apple.com/legal/internet-services/itunes/dev/stdeula](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/).",
-          {
-            list: [
-              "Điều khoản này là giữa bạn và xDev, không phải Apple. xDev, không phải Apple, chịu trách nhiệm về ứng dụng và nội dung của nó.",
-              "Apple không có nghĩa vụ bảo trì hay hỗ trợ ứng dụng.",
-              "Apple xử lý thanh toán và hoàn tiền cho các giao dịch qua App Store, theo điều khoản của Apple.",
-              "Apple và các công ty con của Apple là bên thụ hưởng thứ ba của điều khoản này đối với bản App Store và có quyền thực thi điều khoản.",
-            ],
-          },
         ],
       },
       {
@@ -145,7 +113,7 @@ export const vi: Content = {
         id: "files",
         title: "Ứng dụng thay đổi hoặc xoá tệp",
         blocks: [
-          "Một số ứng dụng tác động lên tệp của bạn hoặc chạy lệnh thay bạn. Cleaner for xDev chuyển các mục vào Thùng rác; xDev chạy các agent và lệnh mà bạn khởi động.",
+          "Một số ứng dụng có thể tác động lên tệp của bạn hoặc chạy lệnh thay bạn.",
           "Bạn là người quyết định ứng dụng làm gì: hãy xem kỹ những gì ứng dụng hiển thị trước khi xác nhận. Hãy sao lưu những thứ bạn không thể để mất. Chúng tôi không chịu trách nhiệm về dữ liệu bị mất do thao tác mà bạn đã xác nhận.",
         ],
       },
@@ -240,26 +208,6 @@ export const vi: Content = {
         ],
       },
       {
-        id: "cleaner",
-        title: "Cleaner for xDev",
-        blocks: [
-          "Cleaner for xDev không thu thập, lưu trữ hay chia sẻ dữ liệu cá nhân nào. Điều này áp dụng cho bản trên Mac App Store và bản tải từ GitHub.",
-          "**Ứng dụng đọc những gì.** Tên, kích thước và ngày của các tệp trong thư mục bạn quét, để cho thấy dung lượng ổ đĩa nằm ở đâu. Để tìm tệp trùng lặp, ứng dụng đọc nội dung tệp và so sánh mã kiểm tra ngay trên máy Mac của bạn. Với Disk Health, ứng dụng đọc dữ liệu sức khoẻ của ổ đĩa. Không có gì trong số này rời khỏi máy Mac, và ứng dụng không giữ lại gì sau khi bạn thoát.",
-          "**Mạng.** Ứng dụng không tạo kết nối mạng nào. Ứng dụng không có tài khoản và không tự gửi báo cáo lỗi.",
-          "**Apple Intelligence.** Khi bạn yêu cầu ứng dụng giải thích một mục hoặc tóm tắt một lần quét, ứng dụng gửi tên, đường dẫn và kích thước, không bao giờ gửi nội dung tệp, cho mô hình ngôn ngữ chạy trên thiết bị của Apple. Mô hình chạy trên máy Mac của bạn và ứng dụng không gửi gì cho Apple hay cho chúng tôi.",
-          "**Báo cáo lỗi từ Apple.** Nếu bạn bật chia sẻ phân tích với nhà phát triển ứng dụng trong Cài đặt hệ thống, Apple có thể gửi cho chúng tôi báo cáo lỗi ẩn danh. Chính sách quyền riêng tư của Apple áp dụng cho dữ liệu đó.",
-        ],
-      },
-      {
-        id: "xdev",
-        title: "xDev",
-        blocks: [
-          "xDev lưu dự án, phiên terminal và cài đặt của bạn trên máy tính của bạn. Chúng tôi không nhận được chúng.",
-          "Khi bạn ghép nối điện thoại với máy tính, hai thiết bị trao đổi với nhau qua kết nối được mã hoá.",
-          "Các coding agent và công cụ dòng lệnh bạn chạy trong xDev do công ty khác làm ra và có thể gửi dữ liệu về cho bên làm ra chúng. Chính sách quyền riêng tư của các bên đó áp dụng cho việc này.",
-        ],
-      },
-      {
         id: "account",
         title: "Tài khoản xDev (id.xdev.asia)",
         blocks: [
@@ -324,24 +272,11 @@ export const vi: Content = {
         blocks: [
           {
             list: [
-              "Cleaner for xDev: [mở issue](https://github.com/xdev-asia/cleaner-for-xdev/issues)",
-              "xDev: [mở issue](https://github.com/xdev-asia/xdev/issues)",
               "xDev UI: [mở issue](https://github.com/xdev-asia/xdev-ui/issues)",
               "Tài khoản hoặc dữ liệu của bạn: [privacy@xdev.asia](mailto:privacy@xdev.asia)",
             ],
           },
           "Vui lòng ghi kèm phiên bản hệ điều hành và phiên bản ứng dụng (trong cửa sổ About của ứng dụng).",
-        ],
-      },
-      {
-        id: "cleaner",
-        title: "Cleaner for xDev: câu hỏi thường gặp",
-        blocks: [
-          "**Vì sao bản App Store yêu cầu tôi chọn thư mục?** Bản này chạy trong App Sandbox nên chỉ đọc được thư mục bạn chọn. Hãy chọn thư mục Home để quét mọi thứ trong đó.",
-          "**Có gì bị xoá không?** Không. Khi dọn, các mục được chuyển vào Thùng rác. Bạn có thể khôi phục cho tới khi dọn sạch Thùng rác.",
-          "**Safe và Review nghĩa là gì?** Mục Safe là cache và sản phẩm build mà công cụ tự tạo lại được. Mục Review có thể chứa công việc của bạn, nên ứng dụng không bao giờ tự chọn chúng.",
-          "**AI chạy ở đâu?** Phần giải thích và tóm tắt dùng Apple Intelligence trên máy Mac của bạn. Không có gì được gửi đi đâu. Ứng dụng vẫn hoạt động khi không có nó.",
-          "**Bản đầy đủ tính năng ở đâu?** [Bản tải trực tiếp](https://github.com/xdev-asia/cleaner-for-xdev/releases) trên GitHub đã được ký và notarize, và có thể chạy thêm lệnh dọn dẹp của từng công cụ.",
         ],
       },
       {
@@ -369,8 +304,7 @@ export const vi: Content = {
     systemsTitle: "Hệ thống",
     systemsIntro: "Mọi hệ thống của xDev giữ lưỡi của bạn ở cùng một chỗ. Chỉ phía agent thay đổi. Không hệ thống nào có màu riêng.",
     systems: {
-      xdev: { body: "Không gian để chạy và điều khiển các AI coding agent từ máy tính và điện thoại.", shape: "Lưỡi cam: agent cắt ngang đường của bạn." },
-      cleaner: { body: "Ứng dụng macOS cho thấy dung lượng đĩa đi đâu và dọn nó một cách an toàn.", shape: "Một chiếc đĩa có một lát được lấy ra." },
+      xdev: { body: "Logo cha: xDev nói chung, và mọi ứng dụng chưa có logo riêng.", shape: "Lưỡi cam: agent cắt ngang đường của bạn." },
       ui: { body: "Design token và component React dùng chung cho mọi giao diện xDev.", shape: "Bốn ô với bốn sắc độ, như một hàng token." },
     },
     colourTitle: "Màu",
@@ -385,7 +319,6 @@ export const vi: Content = {
     typeTitle: "Chữ",
     type: [
       "Tên được đặt bằng **Be Vietnam Pro 800**. Tên của một hệ thống đi sau, độ đậm 500 và nhạt hơn một bậc: **xDev** UI.",
-      "Cleaner for xDev giữ thứ tự riêng: **Cleaner** đứng trước, “for xDev” đi sau.",
     ],
     rulesTitle: "Quy tắc",
     rules: [
