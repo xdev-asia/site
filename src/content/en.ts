@@ -1,10 +1,10 @@
 import type { Content } from "./types";
 
-const UPDATED = "Effective 12 November 2026";
+const UPDATED = "Effective 20 November 2026";
 
 export const en: Content = {
   meta: {
-    home: { title: "xDev", description: "xDev builds a workspace for AI coding agents and the developer tools around it." },
+    home: { title: "xDev", description: "xDev builds tools for developers who work with AI coding agents." },
     terms: { title: "Terms of Use · xDev", description: "The terms that apply to every xDev app, website and service." },
     privacy: { title: "Privacy Policy · xDev", description: "What each xDev app, website and service does with your data." },
     support: { title: "Support · xDev", description: "How to get help with an xDev app." },
@@ -15,31 +15,14 @@ export const en: Content = {
   home: {
     eyebrow: "xdev.asia",
     headline: "Tools for people who work with coding agents",
-    lede: "xDev builds a workspace for running and steering AI coding agents, and the small developer tools around it. Your code and your data stay on your machine.",
+    lede: "xDev builds tools for developers who work with AI coding agents. Your code and your data stay on your machine.",
     aboutTitle: "About",
     about: [
-      "xDev is the name behind the apps on this page. We build them in the open where we can: the core of xDev, the design system and Cleaner for xDev are open source on GitHub.",
+      "xDev is the name behind the apps on this page. We build them in the open where we can: the design system is open source on GitHub.",
       "This site is the one place for what applies to all of them: the [Terms of Use](/terms/), the [Privacy Policy](/privacy/) and [Support](/support/).",
     ],
     appsTitle: "Apps",
     apps: [
-      {
-        name: "xDev",
-        icon: "/assets/xdev.png",
-        platform: "macOS · early preview",
-        body: "A workspace for running and steering AI coding agents from a computer and a phone. Projects and terminals live on your computer.",
-        links: [{ label: "Source", href: "https://github.com/xdev-asia/xdev" }],
-      },
-      {
-        name: "Cleaner for xDev",
-        icon: "/assets/cleaner.png",
-        platform: "macOS",
-        body: "Shows where your disk space goes and cleans up developer caches safely. Items go to the Trash, after you confirm.",
-        links: [
-          { label: "Support", href: "/support/#cleaner" },
-          { label: "Source", href: "https://github.com/xdev-asia/cleaner-for-xdev" },
-        ],
-      },
       {
         name: "xDev account",
         glyph: "id",
@@ -82,7 +65,7 @@ export const en: Content = {
         id: "scope",
         title: "What these terms cover",
         blocks: [
-          "These terms are an agreement between you and xDev (\"we\"). They cover every app, website and online service that we publish and that links to this page: xDev, Cleaner for xDev, the xDev account at id.xdev.asia, and this website. Together we call them \"the apps\".",
+          "These terms are an agreement between you and xDev (\"we\"). They cover every app, website and online service that we publish and that links to this page: the xDev account at id.xdev.asia and this website. Together we call them \"the apps\".",
           "By installing or using an app you accept these terms. If you do not accept them, do not use the apps.",
           "An app may add terms of its own, shown in the app or on its store page. Where those differ from this page, the app's own terms apply to that app.",
         ],
@@ -99,23 +82,8 @@ export const en: Content = {
         id: "open-source",
         title: "Open-source software",
         blocks: [
-          "Parts of the apps are open source. Their source code is at [github.com/xdev-asia](https://github.com/xdev-asia), and each repository names its licence (for example Apache-2.0 for xDev and xDev UI, MIT for Cleaner for xDev).",
+          "Parts of the apps are open source. Their source code is at [github.com/xdev-asia](https://github.com/xdev-asia), and each repository names its licence (for example Apache-2.0 for xDev UI).",
           "For that source code, the open-source licence applies and wins over these terms. These terms still cover the built apps we distribute and our online services.",
-        ],
-      },
-      {
-        id: "app-stores",
-        title: "Apps from the App Store",
-        blocks: [
-          "If you get an app from Apple's App Store, Apple's Licensed Application End User License Agreement (the standard EULA) also applies to that app. You can read it at [apple.com/legal/internet-services/itunes/dev/stdeula](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/).",
-          {
-            list: [
-              "These terms are between you and xDev, not Apple. xDev, not Apple, is responsible for the app and its content.",
-              "Apple has no duty to provide maintenance or support for the app.",
-              "Apple handles payments and refunds for purchases made through the App Store, under its own terms.",
-              "Apple and its subsidiaries are third-party beneficiaries of these terms for the App Store edition and may enforce them.",
-            ],
-          },
         ],
       },
       {
@@ -145,7 +113,7 @@ export const en: Content = {
         id: "files",
         title: "Apps that change or remove files",
         blocks: [
-          "Some apps act on your files or run commands for you. Cleaner for xDev moves items to the Trash; xDev runs the agents and commands you start.",
+          "Some apps may act on your files or run commands for you.",
           "You decide what an app does: review what it shows you before you confirm. Keep backups of anything you cannot afford to lose. We are not responsible for data that is lost because of an action you confirmed.",
         ],
       },
@@ -240,26 +208,6 @@ export const en: Content = {
         ],
       },
       {
-        id: "cleaner",
-        title: "Cleaner for xDev",
-        blocks: [
-          "Cleaner for xDev does not collect, store or share any personal data. This applies to the Mac App Store edition and to the edition downloaded from GitHub.",
-          "**What the app reads.** The names, sizes and dates of files in the folders you scan, to show where your disk space goes. To find duplicate files it reads file contents and compares their checksums on your Mac. For Disk Health it reads the drive's health data. None of this leaves your Mac, and the app keeps no record of it after you quit.",
-          "**Network.** The app makes no network connections. It has no accounts and no crash reporting of its own.",
-          "**Apple Intelligence.** When you ask the app to explain an item or summarise a scan, it sends names, paths and sizes, never file contents, to Apple's on-device language model. The model runs on your Mac and the app sends nothing to Apple or to us.",
-          "**Crash reports from Apple.** If you share analytics with app developers in System Settings, Apple may send us anonymous crash reports. Apple's privacy policy covers that data.",
-        ],
-      },
-      {
-        id: "xdev",
-        title: "xDev",
-        blocks: [
-          "xDev keeps your projects, terminal sessions and settings on your computer. We do not receive them.",
-          "When you pair a phone with your computer, the two devices talk to each other over an encrypted link.",
-          "The coding agents and command-line tools you run inside xDev are made by other companies and may send data to their makers. Their own privacy policies cover that.",
-        ],
-      },
-      {
         id: "account",
         title: "xDev account (id.xdev.asia)",
         blocks: [
@@ -324,24 +272,11 @@ export const en: Content = {
         blocks: [
           {
             list: [
-              "Cleaner for xDev: [open an issue](https://github.com/xdev-asia/cleaner-for-xdev/issues)",
-              "xDev: [open an issue](https://github.com/xdev-asia/xdev/issues)",
               "xDev UI: [open an issue](https://github.com/xdev-asia/xdev-ui/issues)",
               "Your account or your data: [privacy@xdev.asia](mailto:privacy@xdev.asia)",
             ],
           },
           "Please include your operating system version and the app version (in the app's About window).",
-        ],
-      },
-      {
-        id: "cleaner",
-        title: "Cleaner for xDev: frequent questions",
-        blocks: [
-          "**Why does the App Store edition ask me to choose a folder?** It runs in the App Sandbox, so it can only read folders you pick. Choose your Home folder to scan everything in it.",
-          "**Is anything deleted?** No. Cleaning moves items to the Trash. You can put them back until you empty the Trash.",
-          "**What do Safe and Review mean?** Safe items are caches and build outputs that tools rebuild on their own. Review items may hold work, so the app never selects them for you.",
-          "**Where does the AI run?** Explanations and summaries use Apple Intelligence on your Mac. Nothing is sent anywhere. The app works without it.",
-          "**Where is the edition with every feature?** The [direct download](https://github.com/xdev-asia/cleaner-for-xdev/releases) on GitHub is signed and notarized, and can also run each tool's own clean-up command.",
         ],
       },
       {
@@ -369,8 +304,7 @@ export const en: Content = {
     systemsTitle: "Systems",
     systemsIntro: "Every xDev system keeps your blade in the same place. Only the agent side changes. No system has a colour of its own.",
     systems: {
-      xdev: { body: "The workspace for running and steering AI coding agents from a computer and a phone.", shape: "The orange blade: the agent crosses your line." },
-      cleaner: { body: "The macOS app that shows where your disk space goes and cleans it up safely.", shape: "A disk with one slice lifted out." },
+      xdev: { body: "The parent mark: xDev as a whole, and every app that has no mark of its own.", shape: "The orange blade: the agent crosses your line." },
       ui: { body: "Design tokens and React components shared by every xDev interface.", shape: "Four squares in four tones, like a row of tokens." },
     },
     colourTitle: "Colour",
@@ -385,7 +319,6 @@ export const en: Content = {
     typeTitle: "Type",
     type: [
       "The name is set in **Be Vietnam Pro 800**. The name of a system follows in weight 500, one step lighter in colour: **xDev** UI.",
-      "Cleaner for xDev keeps its own order: **Cleaner** leads, “for xDev” follows.",
     ],
     rulesTitle: "Rules",
     rules: [

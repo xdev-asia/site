@@ -36,7 +36,7 @@ export interface BrandContent {
   systemsTitle: string;
   systemsIntro: string;
   /** `body`: what the system is. `shape`: what stands on the agent side of its mark. */
-  systems: Record<"xdev" | "cleaner" | "ui", { body: string; shape: string }>;
+  systems: Record<"xdev" | "ui", { body: string; shape: string }>;
   colourTitle: string;
   colours: Record<"blue" | "orange" | "you" | "agent" | "ground" | "core", { name: string; use: string }>;
   typeTitle: string;

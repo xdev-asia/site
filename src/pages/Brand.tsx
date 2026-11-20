@@ -16,7 +16,6 @@ const VERSIONS: { key: keyof BrandContent["versions"]; file: string; ground: "da
 /** Product names are the same in every language. Only systems that are public are listed here. */
 const SYSTEMS: { key: keyof BrandContent["systems"]; name: string; file: string }[] = [
   { key: "xdev", name: "xDev", file: "xdev-icon.svg" },
-  { key: "cleaner", name: "Cleaner for xDev", file: "systems/xdev-cleaner-icon.svg" },
   { key: "ui", name: "xDev UI", file: "systems/xdev-ui-icon.svg" },
 ];
 
