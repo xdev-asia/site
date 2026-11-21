@@ -123,8 +123,8 @@
 /* ---------------------------------------------------------------- text pages (terms, privacy, support, delete account, 404)
    A legal text is as long as it is: these pages flow, with the kit's padding, and keep a 62-character column. */
 html[data-page="doc"], html[data-page="brand"] { scroll-padding-top: calc(var(--nav) + var(--s-5)); }
-html:is([data-page="doc"], [data-page="brand"]) main > section { height: auto; min-height: 0; padding: var(--padt) 0 var(--padb); }
-html:is([data-page="doc"], [data-page="brand"]) main > section > .wrap { height: auto; }
+html:is([data-page="doc"], [data-page="brand"]) main > section.section:not(.hero) { height: auto; min-height: 0; padding: var(--padt) 0 var(--padb); }
+html:is([data-page="doc"], [data-page="brand"]) main > section.section:not(.hero) > .wrap { height: auto; }
 .doc--short { min-height: 60vh !important; }
 .doc__grid { align-items: start; }
 .doc__toc ol { list-style: none; margin: var(--s-3) 0 0; padding: 0; display: grid; gap: var(--s-1); counter-reset: toc; }
