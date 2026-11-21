@@ -9,6 +9,7 @@ The public website of xDev: who we are, the apps, and the pages that apply to al
 | Terms of Use | `/terms/` | `/vi/terms/` |
 | Privacy Policy | `/privacy/` | `/vi/privacy/` |
 | Support | `/support/` | `/vi/support/` |
+| Delete Say It OK account | `/delete-account/` | `/vi/delete-account/` |
 
 English is the default. Each language has its own URL, so a store listing can link to one language.
 

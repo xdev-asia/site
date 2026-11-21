@@ -48,7 +48,7 @@ export interface BrandContent {
 }
 
 export interface Content {
-  meta: Record<"home" | "brand" | "terms" | "privacy" | "support" | "notFound", { title: string; description: string }>;
+  meta: Record<"home" | "brand" | "terms" | "privacy" | "support" | "delete-account" | "notFound", { title: string; description: string }>;
   nav: { brand: string; terms: string; privacy: string; support: string; legal: string; lang: string; contents: string };
   home: {
     eyebrow: string;
@@ -67,6 +67,8 @@ export interface Content {
   terms: Doc;
   privacy: Doc;
   support: Doc;
+  /** Say It OK (and any app with an account): how to delete the account and its data, with or without the app. */
+  "delete-account": Doc;
   notFound: { title: string; body: string; home: string };
   footer: string;
 }
