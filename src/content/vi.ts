@@ -47,12 +47,12 @@ export const vi: Content = {
         },
         ui: {
           label: "xDev UI",
-          title: "xDev UI giữ hệ thống thiết kế",
+          title: "xDev UI làm nên giao diện xDev",
           body: "Design token và component React cho các ứng dụng xDev. Tài liệu ở [ui.xdev.asia](https://ui.xdev.asia), mã nguồn trên [GitHub](https://github.com/xdev-asia/xdev-ui).",
         },
         ml: {
           label: "ML nhìn là hiểu",
-          title: "ML nhìn là hiểu dạy máy học",
+          title: "ML nhìn là hiểu dạy AI",
           body: "Học máy học qua các thuật toán viết tay bằng Python, không dùng thư viện. Mã nguồn trên [GitHub](https://github.com/tdduydev/ml-nhin-la-hieu).",
         },
       },

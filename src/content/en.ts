@@ -47,12 +47,12 @@ export const en: Content = {
         },
         ui: {
           label: "xDev UI",
-          title: "xDev UI holds the design system",
+          title: "xDev UI styles xDev apps",
           body: "Design tokens and React components for xDev apps. Docs at [ui.xdev.asia](https://ui.xdev.asia), source on [GitHub](https://github.com/xdev-asia/xdev-ui).",
         },
         ml: {
           label: "ML nhìn là hiểu",
-          title: "ML nhìn là hiểu teaches ML",
+          title: "ML nhìn là hiểu teaches AI",
           body: "Machine learning through algorithms written from scratch in Python. The code is on [GitHub](https://github.com/tdduydev/ml-nhin-la-hieu).",
         },
       },

@@ -104,7 +104,7 @@
 .work__figures .t-small { margin-top: var(--s-2); color: var(--ink); }
 #work .frame__img, #writing .frame__img { object-position: 50% 18%; }
 /* the portrait beside the work text is as tall as the text, so the figures follow with no hole */
-#work .frame--split { --ratio: 62%; }
+@media (min-width: 640px) { #work .frame--split { --ratio: 62%; } }
 .writing { margin: var(--s-3) 0 0; padding: 0; list-style: none; }
 .writing__link { display: contents; }
 .writing__link:hover .rows__name { text-decoration: underline; text-underline-offset: 4px; }
