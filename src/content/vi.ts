@@ -4,7 +4,7 @@ const UPDATED = "Có hiệu lực từ 21/11/2026";
 
 export const vi: Content = {
   meta: {
-    home: { title: "Trần Đức Duy · xDev", description: "Trần Đức Duy (Học cùng Duy): Solution Architect, làm công cụ AI và ứng dụng Say It OK qua xDev." },
+    home: { title: "Trần Đức Duy · xDev", description: "Trần Đức Duy: Solution Architect với hơn 10 năm làm sản phẩm phần mềm, làm công cụ AI và ứng dụng Say It OK qua xDev." },
     terms: { title: "Điều khoản sử dụng · xDev", description: "Điều khoản áp dụng cho mọi ứng dụng, trang web và dịch vụ của xDev." },
     privacy: { title: "Chính sách quyền riêng tư · xDev", description: "Mỗi ứng dụng, trang web và dịch vụ của xDev làm gì với dữ liệu của bạn." },
     support: { title: "Hỗ trợ · xDev", description: "Cách nhận trợ giúp cho ứng dụng của xDev." },
@@ -14,10 +14,10 @@ export const vi: Content = {
   },
   nav: { brand: "Thương hiệu", terms: "Điều khoản", privacy: "Quyền riêng tư", support: "Hỗ trợ", legal: "Pháp lý", lang: "Ngôn ngữ", contents: "Trong trang này" },
   home: {
-    eyebrow: "xdev.asia · Học cùng Duy",
+    eyebrow: "xdev.asia",
     name: "Trần Đức Duy",
     alias: "Duy Tran · Joiny",
-    role: "Solution Architect · FPT IS",
+    role: "Solution Architect · Người làm sản phẩm",
     lede: "Mình thiết kế các nền tảng y tế và bảo hiểm: kiến trúc, tích hợp và hạ tầng phía sau. Qua **xDev**, mình làm công cụ AI và chia sẻ kinh nghiệm làm phần mềm thực tế cho người Việt.",
     portrait: { src: "/assets/duy/portrait.jpg", alt: "Chân dung Trần Đức Duy" },
     ctas: [
@@ -26,9 +26,9 @@ export const vi: Content = {
       { label: "GitHub", href: "https://github.com/tdduydev" },
     ],
     facts: [
-      { value: "6+ năm", label: "ở FPT" },
-      { value: "4.2K", label: "người theo dõi Học cùng Duy" },
-      { value: "UIT", label: "Kỹ thuật phần mềm, ĐHQG TP.HCM" },
+      { value: "10+ năm", label: "làm sản phẩm phần mềm" },
+      { value: "Y tế · Bảo hiểm", label: "lĩnh vực chính" },
+      { value: "AI ứng dụng", label: "đang tập trung" },
     ],
     personasTitle: "Bốn vai, một người",
     personasIntro: "Tuỳ ngày, mình là người định hướng sản phẩm, người vẽ kiến trúc, người làm AI hay người chăm chút giao diện.",
@@ -84,8 +84,7 @@ export const vi: Content = {
     ],
     writingTitle: "Bài viết",
     writing: [
-      { title: "Trăn trở của kỹ sư FPT: đặt AI vào bước nào thì 'ăn', bước nào thì 'hại'", source: "Chúng ta · FPT", href: "https://chungta.vn/goc-nhin/tran-tro-cua-ky-su-fpt-dat-ai-vao-buoc-nao-thi-an-buoc-nao-thi-hai-1141717.html" },
-      { title: "Ai sẽ chịu trách nhiệm cho kết quả từ AI?", source: "Chúng ta · FPT", href: "https://chungta.vn/goc-nhin/ai-se-chiu-trach-nhiem-cho-ket-qua-tu-ai-1141602.html" },
+      { title: "Ai sẽ chịu trách nhiệm cho kết quả từ AI?", source: "chungta.vn", href: "https://chungta.vn/goc-nhin/ai-se-chiu-trach-nhiem-cho-ket-qua-tu-ai-1141602.html" },
       { title: "Học cùng Duy: ghi chú lập trình, AI và kiến trúc", source: "Facebook", href: "https://www.facebook.com/duydev/" },
     ],
     contactTitle: "Liên hệ",
