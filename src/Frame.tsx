@@ -39,9 +39,9 @@ export function Frame({ c, lang, page, children }: FrameProps) {
     { id: "personas", label: c.nav.personas },
     { id: "writing", label: c.nav.writing },
   ];
-  const logo = (
+  const logo = (lazy: boolean) => (
     <a className="nav__logo" href={onHome ? "#top" : home}>
-      <img src={LOGO} alt="" width={24} height={24} />
+      <img src={LOGO} alt="" width={24} height={24} loading={lazy ? "lazy" : undefined} />
       xDev
     </a>
   );
@@ -52,7 +52,7 @@ export function Frame({ c, lang, page, children }: FrameProps) {
           <a className="skip-link" href="#top">
             {c.nav.skip}
           </a>
-          {logo}
+          {logo(false)}
           <nav className="nav__links" aria-label={c.nav.main}>
             {words.map((w) => (
               <div key={w.id} className="nav__item">
@@ -100,7 +100,7 @@ export function Frame({ c, lang, page, children }: FrameProps) {
           <div className="closing__links">
             <div className="grid">
               <div className="span-4 stack-4">
-                {logo}
+                {logo(true)}
                 <p className="footer__lede">{c.footer.lede}</p>
               </div>
               <div className="span-2 start-7 footer__col">

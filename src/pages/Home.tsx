@@ -14,7 +14,7 @@ import { Inline } from "../Rich";
 
 /** Real tool icons, in their own colours (icons.mjs). */
 function Icon({ id, name, ink }: { id: string; name: string; ink?: boolean }) {
-  return <img className={`ic ic-24${ink ? " ic-ink" : ""}`} src={`/assets/icons/${id}.svg`} alt={name} width={24} height={24} />;
+  return <img className={`ic ic-24${ink ? " ic-ink" : ""}`} src={`/assets/icons/${id}.svg`} alt={name} width={24} height={24} loading="lazy" />;
 }
 
 export function Home({ c }: { c: Content }) {
@@ -359,7 +359,7 @@ function Tokens() {
   return (
     <div className="ui ui-panel tok">
       <div className="tok__head">
-        <img src="/assets/brand/systems/xdev-ui-icon.svg" alt="" width={20} height={20} />
+        <img src="/assets/brand/systems/xdev-ui-icon.svg" alt="" width={20} height={20} loading="lazy" />
         <span className="tok__title">tokens.css</span>
         <span className="ui-spacer" />
         <span className="tok__chip">@xdev-asia/ui</span>
