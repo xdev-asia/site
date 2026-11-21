@@ -58,13 +58,6 @@ export const vi: Content = {
         ],
       },
       {
-        name: "Tài khoản xDev",
-        glyph: "id",
-        platform: "Web",
-        body: "Một lần đăng nhập cho các ứng dụng và dịch vụ của xDev, có trang để xem và kết thúc các phiên đăng nhập.",
-        links: [{ label: "id.xdev.asia", href: "https://id.xdev.asia" }],
-      },
-      {
         name: "xDev UI",
         glyph: "ui",
         platform: "React",
