@@ -58,13 +58,6 @@ export const en: Content = {
         ],
       },
       {
-        name: "xDev account",
-        glyph: "id",
-        platform: "Web",
-        body: "One sign-in for xDev apps and services, with a page to see and end your sessions.",
-        links: [{ label: "id.xdev.asia", href: "https://id.xdev.asia" }],
-      },
-      {
         name: "xDev UI",
         glyph: "ui",
         platform: "React",
