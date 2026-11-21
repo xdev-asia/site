@@ -4,7 +4,7 @@ const UPDATED = "Effective 21 November 2026";
 
 export const en: Content = {
   meta: {
-    home: { title: "Duy Tran · xDev", description: "Duy Tran (Trần Đức Duy): Solution Architect, building AI tools and the Say It OK app through xDev." },
+    home: { title: "Duy Tran · xDev", description: "Duy Tran (Trần Đức Duy): Solution Architect with 10+ years building software products, making AI tools and the Say It OK app through xDev." },
     terms: { title: "Terms of Use · xDev", description: "The terms that apply to every xDev app, website and service." },
     privacy: { title: "Privacy Policy · xDev", description: "What each xDev app, website and service does with your data." },
     support: { title: "Support · xDev", description: "How to get help with an xDev app." },
@@ -14,10 +14,10 @@ export const en: Content = {
   },
   nav: { brand: "Brand", terms: "Terms", privacy: "Privacy", support: "Support", legal: "Legal", lang: "Language", contents: "On this page" },
   home: {
-    eyebrow: "xdev.asia · Learn with Duy",
+    eyebrow: "xdev.asia",
     name: "Duy Tran",
     alias: "Trần Đức Duy · Joiny",
-    role: "Solution Architect · FPT IS",
+    role: "Solution Architect · Product builder",
     lede: "I design healthcare and insurance platforms: the architecture, integrations and infrastructure behind them. Through **xDev**, I build AI tools and share practical notes on software engineering.",
     portrait: { src: "/assets/duy/portrait.jpg", alt: "Portrait of Duy Tran" },
     ctas: [
@@ -26,9 +26,9 @@ export const en: Content = {
       { label: "GitHub", href: "https://github.com/tdduydev" },
     ],
     facts: [
-      { value: "6+ years", label: "at FPT" },
-      { value: "4.2K", label: "followers of Học cùng Duy" },
-      { value: "UIT", label: "Software Engineering, VNU-HCM" },
+      { value: "10+ years", label: "building software products" },
+      { value: "Healthcare · Insurance", label: "main domains" },
+      { value: "Applied AI", label: "current focus" },
     ],
     personasTitle: "Four roles, one person",
     personasIntro: "Depending on the day, I am the one setting direction, drawing the architecture, building the AI or polishing the interface.",
@@ -84,8 +84,7 @@ export const en: Content = {
     ],
     writingTitle: "Writing",
     writing: [
-      { title: "An FPT engineer on where AI helps a process and where it hurts (Vietnamese)", source: "Chúng ta · FPT", href: "https://chungta.vn/goc-nhin/tran-tro-cua-ky-su-fpt-dat-ai-vao-buoc-nao-thi-an-buoc-nao-thi-hai-1141717.html" },
-      { title: "Who is responsible for what AI produces? (Vietnamese)", source: "Chúng ta · FPT", href: "https://chungta.vn/goc-nhin/ai-se-chiu-trach-nhiem-cho-ket-qua-tu-ai-1141602.html" },
+      { title: "Who is responsible for what AI produces? (Vietnamese)", source: "chungta.vn", href: "https://chungta.vn/goc-nhin/ai-se-chiu-trach-nhiem-cho-ket-qua-tu-ai-1141602.html" },
       { title: "Học cùng Duy: notes on programming, AI and architecture", source: "Facebook", href: "https://www.facebook.com/duydev/" },
     ],
     contactTitle: "Contact",
