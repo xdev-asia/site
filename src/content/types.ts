@@ -52,16 +52,26 @@ export interface Content {
   nav: { brand: string; terms: string; privacy: string; support: string; legal: string; lang: string; contents: string };
   home: {
     eyebrow: string;
-    headline: string;
+    name: string;
+    /** Second line under the name: alias, channel. */
+    alias: string;
+    role: string;
     lede: string;
-    aboutTitle: string;
-    about: string[];
+    portrait: { src: string; alt: string };
+    ctas: { label: string; href: string; primary?: boolean }[];
+    facts: { value: string; label: string }[];
+    personasTitle: string;
+    personasIntro: string;
+    personas: { name: string; role: string; body: string; img: string; tone: "cyan" | "teal" | "violet" | "pink" }[];
+    workTitle: string;
+    work: { title: string; body: string }[];
     appsTitle: string;
     apps: AppEntry[];
-    principlesTitle: string;
-    principles: { title: string; body: string }[];
+    writingTitle: string;
+    writing: { title: string; source: string; href: string }[];
     contactTitle: string;
-    contact: string[];
+    contactIntro: string;
+    contact: { label: string; value: string; href: string }[];
   };
   brand: BrandContent;
   terms: Doc;

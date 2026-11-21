@@ -4,7 +4,7 @@ const UPDATED = "Effective 21 November 2026";
 
 export const en: Content = {
   meta: {
-    home: { title: "xDev", description: "xDev builds tools for developers who work with AI coding agents." },
+    home: { title: "Duy Tran · xDev", description: "Duy Tran (Trần Đức Duy): Solution Architect, building AI tools and the Say It OK app through xDev." },
     terms: { title: "Terms of Use · xDev", description: "The terms that apply to every xDev app, website and service." },
     privacy: { title: "Privacy Policy · xDev", description: "What each xDev app, website and service does with your data." },
     support: { title: "Support · xDev", description: "How to get help with an xDev app." },
@@ -14,23 +14,39 @@ export const en: Content = {
   },
   nav: { brand: "Brand", terms: "Terms", privacy: "Privacy", support: "Support", legal: "Legal", lang: "Language", contents: "On this page" },
   home: {
-    eyebrow: "xdev.asia",
-    headline: "Tools for people who work with coding agents",
-    lede: "xDev builds tools for developers who work with AI coding agents. Your code and your data stay on your machine.",
-    aboutTitle: "About",
-    about: [
-      "xDev is the name behind the apps on this page. We build them in the open where we can: the design system is open source on GitHub.",
-      "This site is the one place for what applies to all of them: the [Terms of Use](/terms/), the [Privacy Policy](/privacy/) and [Support](/support/).",
+    eyebrow: "xdev.asia · Learn with Duy",
+    name: "Duy Tran",
+    alias: "Trần Đức Duy · Joiny",
+    role: "Solution Architect · FPT IS",
+    lede: "I design healthcare and insurance platforms: the architecture, integrations and infrastructure behind them. Through **xDev**, I build AI tools and share practical notes on software engineering.",
+    portrait: { src: "/assets/duy/portrait.jpg", alt: "Portrait of Duy Tran" },
+    ctas: [
+      { label: "See the apps", href: "#apps", primary: true },
+      { label: "Contact", href: "#contact" },
+      { label: "GitHub", href: "https://github.com/tdduydev" },
+    ],
+    facts: [
+      { value: "6+ years", label: "at FPT" },
+      { value: "4.2K", label: "followers of Học cùng Duy" },
+      { value: "UIT", label: "Software Engineering, VNU-HCM" },
+    ],
+    personasTitle: "Four roles, one person",
+    personasIntro: "Depending on the day, I am the one setting direction, drawing the architecture, building the AI or polishing the interface.",
+    personas: [
+      { name: "Duy Tran", role: "Cyber CEO", body: "Leading the vision and strategy to build simple, powerful solutions for everyone.", img: "/assets/duy/persona-1.jpg", tone: "cyan" },
+      { name: "Code Duy", role: "System Architect", body: "Architecting robust systems and turning ideas into reliable technology.", img: "/assets/duy/persona-2.jpg", tone: "teal" },
+      { name: "Neo Tran", role: "AI Engineer", body: "Building intelligent, efficient and delightful features users love.", img: "/assets/duy/persona-3.jpg", tone: "violet" },
+      { name: "Pixel Duy", role: "Cyber Designer", body: "Crafting intuitive experiences and beautiful designs that connect.", img: "/assets/duy/persona-4.jpg", tone: "pink" },
+    ],
+    workTitle: "What I work on",
+    work: [
+      { title: "System architecture", body: "Service boundaries, APIs, data flows and integration across business systems, especially in healthcare and insurance." },
+      { title: "Applied AI", body: "Applications that connect language models with an organisation's knowledge and workflows, with AI placed where it helps." },
+      { title: "Platform engineering", body: "Containerised infrastructure, delivery pipelines, observability and identity (Keycloak)." },
+      { title: "Teaching", body: "Học cùng Duy and ML nhìn là hiểu: programming, AI and DevOps explained simply, with code that runs." },
     ],
     appsTitle: "Apps",
     apps: [
-      {
-        name: "xDev account",
-        glyph: "id",
-        platform: "Web",
-        body: "One sign-in for xDev apps and services, with a page to see and end your sessions.",
-        links: [{ label: "id.xdev.asia", href: "https://id.xdev.asia" }],
-      },
       {
         name: "Say It OK",
         icon: "/assets/sayitok/icon.png",
@@ -42,27 +58,43 @@ export const en: Content = {
         ],
       },
       {
+        name: "xDev account",
+        glyph: "id",
+        platform: "Web",
+        body: "One sign-in for xDev apps and services, with a page to see and end your sessions.",
+        links: [{ label: "id.xdev.asia", href: "https://id.xdev.asia" }],
+      },
+      {
         name: "xDev UI",
         glyph: "ui",
         platform: "React",
-        body: "The design tokens and React components that xDev apps are built with. This site uses them too.",
+        body: "The design tokens and React components behind xDev apps. This site uses them too.",
         links: [
           { label: "ui.xdev.asia", href: "https://ui.xdev.asia" },
           { label: "Source", href: "https://github.com/xdev-asia/xdev-ui" },
         ],
       },
+      {
+        name: "ML nhìn là hiểu",
+        glyph: "ml",
+        platform: "Python",
+        body: "Thirteen machine-learning algorithms written from scratch in plain Python, with scikit-learn comparisons. Runnable code for the video series.",
+        links: [{ label: "Source", href: "https://github.com/tdduydev/ml-nhin-la-hieu" }],
+      },
     ],
-    principlesTitle: "How we build",
-    principles: [
-      { title: "Local first", body: "Your code, documents and sessions stay on your machine unless you choose to send them somewhere." },
-      { title: "You confirm", body: "An app shows what it is about to do before it changes or removes anything." },
-      { title: "We do not sell data", body: "We never sell your data. Any app with ads or analytics says so in the Privacy Policy, with how to turn it off." },
+    writingTitle: "Writing",
+    writing: [
+      { title: "An FPT engineer on where AI helps a process and where it hurts (Vietnamese)", source: "Chúng ta · FPT", href: "https://chungta.vn/goc-nhin/tran-tro-cua-ky-su-fpt-dat-ai-vao-buoc-nao-thi-an-buoc-nao-thi-hai-1141717.html" },
+      { title: "Who is responsible for what AI produces? (Vietnamese)", source: "Chúng ta · FPT", href: "https://chungta.vn/goc-nhin/ai-se-chiu-trach-nhiem-cho-ket-qua-tu-ai-1141602.html" },
+      { title: "Học cùng Duy: notes on programming, AI and architecture", source: "Facebook", href: "https://www.facebook.com/duydev/" },
     ],
     contactTitle: "Contact",
+    contactIntro: "Partnerships, architecture advice or feedback on the apps: send me a note.",
     contact: [
-      "Help with an app: see [Support](/support/).",
-      "Questions about your data: [duy@xdev.asia](mailto:duy@xdev.asia).",
-      "Code and issues: [github.com/xdev-asia](https://github.com/xdev-asia).",
+      { label: "Email", value: "duy@xdev.asia", href: "mailto:duy@xdev.asia" },
+      { label: "GitHub", value: "tdduydev", href: "https://github.com/tdduydev" },
+      { label: "LinkedIn", value: "duydev", href: "https://www.linkedin.com/in/duydev" },
+      { label: "Facebook", value: "Học cùng Duy", href: "https://www.facebook.com/duydev/" },
     ],
   },
 
