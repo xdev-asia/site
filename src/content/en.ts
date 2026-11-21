@@ -100,7 +100,7 @@ export const en: Content = {
         id: "scope",
         title: "What these terms cover",
         blocks: [
-          "These terms are an agreement between you and xDev (\"we\"). They cover every app, website and online service that we publish and that links to this page: the xDev account at id.xdev.asia, the Say It OK app and this website. Together we call them \"the apps\".",
+          "These terms are an agreement between you and xDev (\"we\"). They cover every app, website and online service that we publish and that links to this page: the xDev account, the Say It OK app and this website. Together we call them \"the apps\".",
           "By installing or using an app you accept these terms. If you do not accept them, do not use the apps.",
           "An app may add terms of its own, shown in the app or on its store page. Where those differ from this page, the app's own terms apply to that app.",
         ],
@@ -126,7 +126,7 @@ export const en: Content = {
         title: "Accounts",
         blocks: [
           "Most apps work without an account. Some services need an xDev account, which you create by signing in with GitHub, Google or an email link.",
-          "Keep your sign-in safe and tell us if you think someone else is using your account. You can delete your account at any time from id.xdev.asia.",
+          "Keep your sign-in safe and tell us if you think someone else is using your account. You can delete your account at any time in the app or by writing to us.",
         ],
       },
       {
@@ -260,7 +260,7 @@ export const en: Content = {
       },
       {
         id: "account",
-        title: "xDev account (id.xdev.asia)",
+        title: "xDev account",
         blocks: [
           "If you create an xDev account, we store:",
           {
@@ -312,7 +312,7 @@ export const en: Content = {
         id: "rights",
         title: "Your choices and rights",
         blocks: [
-          "You can see, change or delete your xDev account at id.xdev.asia. You can also ask us for a copy of the data we hold about you, or ask us to correct or delete it, by writing to [duy@xdev.asia](mailto:duy@xdev.asia).",
+          "You can see, change or delete your xDev account in the app. You can also ask us for a copy of the data we hold about you, or ask us to correct or delete it, by writing to [duy@xdev.asia](mailto:duy@xdev.asia).",
         ],
       },
       {
