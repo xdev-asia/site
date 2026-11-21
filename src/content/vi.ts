@@ -100,7 +100,7 @@ export const vi: Content = {
         id: "scope",
         title: "Phạm vi của điều khoản",
         blocks: [
-          "Điều khoản này là thoả thuận giữa bạn và xDev (\"chúng tôi\"). Nó áp dụng cho mọi ứng dụng, trang web và dịch vụ trực tuyến do chúng tôi phát hành và có dẫn tới trang này: tài khoản xDev tại id.xdev.asia, ứng dụng Say It OK và trang web này. Dưới đây gọi chung là \"ứng dụng\".",
+          "Điều khoản này là thoả thuận giữa bạn và xDev (\"chúng tôi\"). Nó áp dụng cho mọi ứng dụng, trang web và dịch vụ trực tuyến do chúng tôi phát hành và có dẫn tới trang này: tài khoản xDev, ứng dụng Say It OK và trang web này. Dưới đây gọi chung là \"ứng dụng\".",
           "Khi cài đặt hoặc sử dụng ứng dụng, bạn chấp nhận điều khoản này. Nếu không chấp nhận, bạn đừng sử dụng ứng dụng.",
           "Một ứng dụng có thể có thêm điều khoản riêng, hiển thị trong ứng dụng hoặc trên trang cửa hàng của nó. Chỗ nào khác với trang này thì điều khoản riêng được áp dụng cho ứng dụng đó.",
         ],
@@ -126,7 +126,7 @@ export const vi: Content = {
         title: "Tài khoản",
         blocks: [
           "Phần lớn ứng dụng chạy được mà không cần tài khoản. Một số dịch vụ cần tài khoản xDev, bạn tạo bằng cách đăng nhập với GitHub, Google hoặc đường dẫn gửi qua email.",
-          "Hãy giữ an toàn thông tin đăng nhập và báo cho chúng tôi nếu bạn nghĩ có người khác đang dùng tài khoản của bạn. Bạn có thể xoá tài khoản bất cứ lúc nào tại id.xdev.asia.",
+          "Hãy giữ an toàn thông tin đăng nhập và báo cho chúng tôi nếu bạn nghĩ có người khác đang dùng tài khoản của bạn. Bạn có thể xoá tài khoản bất cứ lúc nào trong ứng dụng hoặc bằng cách viết cho chúng tôi.",
         ],
       },
       {
@@ -260,7 +260,7 @@ export const vi: Content = {
       },
       {
         id: "account",
-        title: "Tài khoản xDev (id.xdev.asia)",
+        title: "Tài khoản xDev",
         blocks: [
           "Nếu bạn tạo tài khoản xDev, chúng tôi lưu:",
           {
@@ -312,7 +312,7 @@ export const vi: Content = {
         id: "rights",
         title: "Lựa chọn và quyền của bạn",
         blocks: [
-          "Bạn có thể xem, sửa hoặc xoá tài khoản xDev tại id.xdev.asia. Bạn cũng có thể yêu cầu chúng tôi cung cấp bản sao dữ liệu chúng tôi có về bạn, hoặc yêu cầu sửa hay xoá, bằng cách viết tới [duy@xdev.asia](mailto:duy@xdev.asia).",
+          "Bạn có thể xem, sửa hoặc xoá tài khoản xDev trong ứng dụng. Bạn cũng có thể yêu cầu chúng tôi cung cấp bản sao dữ liệu chúng tôi có về bạn, hoặc yêu cầu sửa hay xoá, bằng cách viết tới [duy@xdev.asia](mailto:duy@xdev.asia).",
         ],
       },
       {
