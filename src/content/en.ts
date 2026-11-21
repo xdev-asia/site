@@ -4,7 +4,7 @@ const UPDATED = "Effective 21 November 2026";
 
 export const en: Content = {
   meta: {
-    home: { title: "Duy Tran · xDev", description: "Duy Tran (Trần Đức Duy): Solution Architect with 10+ years building software products, making AI tools and the Say It OK app through xDev." },
+    home: { title: "Duy Tran: solution architect and app builder", description: "Duy Tran designs healthcare and insurance platforms and, through xDev, builds AI tools such as the Say It OK English app." },
     terms: { title: "Terms of Use · xDev", description: "The terms that apply to every xDev app, website and service." },
     privacy: { title: "Privacy Policy · xDev", description: "What each xDev app, website and service does with your data." },
     support: { title: "Support · xDev", description: "How to get help with an xDev app." },
@@ -12,82 +12,85 @@ export const en: Content = {
     brand: { title: "Brand · xDev", description: "The xDev logo, the marks of its systems, colours and rules, with files to download." },
     notFound: { title: "Page not found · xDev", description: "This page does not exist." },
   },
-  nav: { brand: "Brand", terms: "Terms", privacy: "Privacy", support: "Support", legal: "Legal", lang: "Language", contents: "On this page" },
+  nav: {
+    skip: "Skip to content",
+    menu: "Menu",
+    main: "Main",
+    apps: "Apps",
+    work: "Platforms",
+    personas: "Personas",
+    writing: "Writing",
+    brand: "Brand",
+    terms: "Terms",
+    privacy: "Privacy",
+    support: "Support",
+    deleteAccount: "Delete account",
+    legal: "Legal",
+    contents: "On this page",
+    otherLang: "Tiếng Việt",
+    email: "Email Duy",
+    seeApps: "See the apps",
+  },
   home: {
-    eyebrow: "xdev.asia",
-    name: "Duy Tran",
-    alias: "Trần Đức Duy · Joiny",
-    role: "Solution Architect · Product builder",
-    lede: "I design healthcare and insurance platforms: the architecture, integrations and infrastructure behind them. Through **xDev**, I build AI tools and share practical notes on software engineering.",
-    portrait: { src: "/assets/duy/portrait.jpg", alt: "Portrait of Duy Tran" },
-    ctas: [
-      { label: "See the apps", href: "#apps", primary: true },
-      { label: "Contact", href: "#contact" },
-      { label: "GitHub", href: "https://github.com/tdduydev" },
-    ],
-    facts: [
-      { value: "10+ years", label: "building software products" },
-      { value: "Healthcare · Insurance", label: "main domains" },
-      { value: "Applied AI", label: "current focus" },
-    ],
-    personasTitle: "Four roles, one person",
-    personasIntro: "Depending on the day, I am the one setting direction, drawing the architecture, building the AI or polishing the interface.",
-    personas: [
-      { name: "Duy Tran", role: "Cyber CEO", body: "Leading the vision and strategy to build simple, powerful solutions for everyone.", img: "/assets/duy/persona-1.jpg", tone: "cyan" },
-      { name: "Code Duy", role: "System Architect", body: "Architecting robust systems and turning ideas into reliable technology.", img: "/assets/duy/persona-2.jpg", tone: "teal" },
-      { name: "Neo Tran", role: "AI Engineer", body: "Building intelligent, efficient and delightful features users love.", img: "/assets/duy/persona-3.jpg", tone: "violet" },
-      { name: "Pixel Duy", role: "Cyber Designer", body: "Crafting intuitive experiences and beautiful designs that connect.", img: "/assets/duy/persona-4.jpg", tone: "pink" },
-    ],
-    workTitle: "What I work on",
-    work: [
-      { title: "System architecture", body: "Service boundaries, APIs, data flows and integration across business systems, especially in healthcare and insurance." },
-      { title: "Applied AI", body: "Applications that connect language models with an organisation's knowledge and workflows, with AI placed where it helps." },
-      { title: "Platform engineering", body: "Containerised infrastructure, delivery pipelines, observability and identity (Keycloak)." },
-      { title: "Teaching", body: "Học cùng Duy and ML nhìn là hiểu: programming, AI and DevOps explained simply, with code that runs." },
-    ],
-    appsTitle: "Apps",
-    apps: [
-      {
-        name: "Say It OK",
-        icon: "/assets/sayitok/icon.png",
-        platform: "iOS · Android",
-        body: "English speaking practice for Vietnamese learners, from zero to C2: repeat-after-me lessons, an AI tutor, topic packs, memory tips and a daily reminder.",
-        links: [
-          { label: "Privacy", href: "/privacy/#sayitok" },
-          { label: "Delete account", href: "/delete-account/" },
-        ],
+    title: "Duy Tran, solution architect and app builder",
+    lead: "10+ years building software products. I design healthcare and insurance platforms, and through xDev I build AI tools and apps and teach.",
+    proof: "Building Say It OK, an English speaking app for iOS and Android.",
+    artLabel: "Say It OK on a phone: a sentence to repeat, scored word by word, and a proficiency test result of 455 out of 600, level B2.",
+    apps: {
+      title: "Apps from xDev.",
+      more: "For learners and for developers.",
+      items: {
+        sayitok: {
+          label: "Say It OK",
+          title: "Say It OK coaches spoken English",
+          body: "Speaking practice for Vietnamese learners, from zero to C2, with an AI tutor and topic packs. Not in the stores yet.",
+        },
+        ui: {
+          label: "xDev UI",
+          title: "xDev UI styles xDev apps",
+          body: "Design tokens and React components for xDev apps. Docs at [ui.xdev.asia](https://ui.xdev.asia), source on [GitHub](https://github.com/xdev-asia/xdev-ui).",
+        },
+        ml: {
+          label: "ML nhìn là hiểu",
+          title: "ML nhìn là hiểu teaches AI",
+          body: "Machine learning through algorithms written from scratch in Python. The code is on [GitHub](https://github.com/tdduydev/ml-nhin-la-hieu).",
+        },
       },
-      {
-        name: "xDev UI",
-        glyph: "ui",
-        platform: "React",
-        body: "The design tokens and React components behind xDev apps. This site uses them too.",
-        links: [
-          { label: "ui.xdev.asia", href: "https://ui.xdev.asia" },
-          { label: "Source", href: "https://github.com/xdev-asia/xdev-ui" },
-        ],
-      },
-      {
-        name: "ML nhìn là hiểu",
-        glyph: "ml",
-        platform: "Python",
-        body: "Thirteen machine-learning algorithms written from scratch in plain Python, with scikit-learn comparisons. Runnable code for the video series.",
-        links: [{ label: "Source", href: "https://github.com/tdduydev/ml-nhin-la-hieu" }],
-      },
-    ],
-    writingTitle: "Writing",
-    writing: [
-      { title: "Who is responsible for what AI produces? (Vietnamese)", source: "chungta.vn", href: "https://chungta.vn/goc-nhin/ai-se-chiu-trach-nhiem-cho-ket-qua-tu-ai-1141602.html" },
-      { title: "Học cùng Duy: notes on programming, AI and architecture", source: "Facebook", href: "https://www.facebook.com/duydev/" },
-    ],
-    contactTitle: "Contact",
-    contactIntro: "Partnerships, architecture advice or feedback on the apps: send me a note.",
-    contact: [
-      { label: "Email", value: "duy@xdev.asia", href: "mailto:duy@xdev.asia" },
-      { label: "GitHub", value: "tdduydev", href: "https://github.com/tdduydev" },
-      { label: "LinkedIn", value: "duydev", href: "https://www.linkedin.com/in/duydev" },
-      { label: "Facebook", value: "Học cùng Duy", href: "https://www.facebook.com/duydev/" },
-    ],
+    },
+    work: {
+      title: "Healthcare and insurance platforms",
+      body: "As a solution architect I design these platforms end to end: the architecture, the integrations between systems and the infrastructure they run on.",
+      link: { label: "Read my profile on LinkedIn", href: "https://www.linkedin.com/in/duydev" },
+      portraitAlt: "Duy Tran in a dark blazer, arms crossed, smiling",
+      figures: [
+        { value: "10+", label: "years building software products" },
+        { value: "13", label: "machine-learning algorithms written from scratch" },
+        { value: "600", label: "points at the top of the Say It OK test, on CEFR" },
+      ],
+    },
+    personas: {
+      title: "Four personas from my own art.",
+      more: "The roles I switch between: leading, architecture, AI and design.",
+      items: [
+        { name: "Duy Tran", role: "Cyber CEO", alt: "Duy Tran as the Cyber CEO, in round sunglasses before a neon city" },
+        { name: "Code Duy", role: "System Architect", alt: "Code Duy, the System Architect, in a hoodie before green code" },
+        { name: "Neo Tran", role: "AI Engineer", alt: "Neo Tran, the AI Engineer, in clear glasses before a network diagram" },
+        { name: "Pixel Duy", role: "Cyber Designer", alt: "Pixel Duy, the Cyber Designer, in a beanie and headphones" },
+      ],
+    },
+    writing: {
+      title: "Writing on software and AI",
+      body: "My articles are in Vietnamese. I also teach as Học cùng Duy on Facebook.",
+      items: [
+        { title: "Who is responsible for what AI produces?", source: "chungta.vn, in Vietnamese", href: "https://chungta.vn/goc-nhin/ai-se-chiu-trach-nhiem-cho-ket-qua-tu-ai-1141602.html" },
+        { title: "Học cùng Duy", source: "Facebook", href: "https://www.facebook.com/duydev/" },
+      ],
+      photoAlt: "Duy Tran in a dark hoodie, arms crossed, smiling",
+    },
+    close: {
+      title: "Partnerships, architecture advice and app feedback",
+      line: "Write in English or Vietnamese to duy@xdev.asia.",
+    },
   },
 
   terms: {
@@ -150,7 +153,20 @@ export const en: Content = {
               "Apple's standard licence ([EULA](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)) also applies to the iPhone version.",
             ],
           },
-          "Answers from the AI tutor and advisor can be wrong. Say It OK is a practice tool, not a replacement for a teacher or an official certificate.",
+          "**Content made with AI.** Some content in Say It OK is written or graded with AI: example sentences, dictionary entries outside the app's own word list, the replies of the AI tutor and advisor, and the scoring of your speaking and writing. It can be wrong or incomplete. Say It OK is a practice aid, not professional advice, and it does not replace a teacher.",
+          "**Level results are estimates.** The CEFR level from the entry test and the 0–600 score from the proficiency test (\"Kiểm tra trình độ\") are estimates to guide your practice. They are not an official certificate and do not replace an exam such as IELTS, TOEIC or Cambridge.",
+          {
+            id: "sayitok-sources",
+            text: "**Dictionary checks.** Dictionary entries written by AI are checked automatically against open data sources:",
+          },
+          {
+            list: [
+              "parts of speech against [Open English WordNet](https://github.com/globalwordnet/english-wordnet), licensed CC BY 4.0;",
+              "US pronunciation against the [CMU Pronouncing Dictionary](https://github.com/cmusphinx/cmudict), under a BSD-style licence.",
+            ],
+          },
+          "An entry that fails the check can still be shown, and it is queued for a person to review. Vietnamese meanings are reviewed by people over time.",
+          "**Accepting these terms.** You accept these terms and the [Privacy Policy](/privacy/) when you tick the box while creating your account in the app. If you keep using the app after these terms change, you accept the new version from the effective date shown at the top of this page.",
         ],
       },
       {
@@ -287,6 +303,7 @@ export const en: Content = {
               "**Subscription (iPhone):** the Apple transaction ID, plan and expiry date. We never receive card numbers or payment details.",
             ],
           },
+          "The app stores when you accepted the terms and which version.",
           "**Voice.** On iPhone, speech is recognised on the device by Apple's engine. On Android, the app uses the phone's built-in speech recognition service (usually Google's), which handles the audio under its provider's policy. The app never sends voice recordings to our server, only the recognised text when it needs scoring or an AI reply.",
           "**Camera, photos and translation.** \"Chụp chữ để học\" reads text in a photo on the phone itself (Apple Vision or Google ML Kit). Photos are not stored and never sent to our server; the app asks for the camera only when you tap to take a picture. Translation uses the phone's own translator (Apple Translation or ML Kit) and works offline; the text you translate is not sent to our server.",
           "**AI.** When it can, the AI runs on your device. When a stronger model is needed, the text of your question goes through xDev's AI server to a language model provider to write the reply.",
@@ -446,5 +463,11 @@ export const en: Content = {
       "The full set, with the app icons for iOS and Android, is in the design system: [xdev-ui/assets/brand](https://github.com/xdev-asia/xdev-ui/tree/main/assets/brand).",
     ],
   },
-  footer: "© 2026 xDev",
+  footer: {
+    lede: "AI tools, apps and teaching by Duy Tran.",
+    appsTitle: "Apps",
+    xdevTitle: "xDev",
+    contactTitle: "Contact",
+    trademarks: "Product names and logos are trademarks of their owners.",
+  },
 };

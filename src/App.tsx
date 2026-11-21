@@ -1,45 +1,29 @@
-import { useEffect } from "react";
-import { Button, EmptyState } from "@xdev-asia/ui";
 import { en } from "./content/en";
 import { vi } from "./content/vi";
 import type { Content } from "./content/types";
+import { Frame } from "./Frame";
 import { Brand } from "./pages/Brand";
 import { DocPage } from "./pages/DocPage";
 import { Home } from "./pages/Home";
-import { hrefFor, matchRoute, type Lang } from "./routes";
-import { Shell } from "./Shell";
+import { NotFound } from "./pages/NotFound";
+import type { Lang, PageName } from "./routes";
 
-const CONTENT: Record<Lang, Content> = { en, vi };
+export const CONTENT: Record<Lang, Content> = { en, vi };
 
-export function App() {
-  const { lang, page } = matchRoute(window.location.pathname);
+/** One route's markup: the bar, main and footer.closing. scripts/routes.mjs renders it to HTML at build time. */
+export function App({ lang, page }: { lang: Lang; page: PageName | null }) {
   const c = CONTENT[lang];
-
-  useEffect(() => {
-    document.documentElement.lang = lang;
-    document.title = c.meta[page ?? "notFound"].title;
-    // The page renders after the browser's first jump to the hash; jump again.
-    const id = window.location.hash.slice(1);
-    if (!id) return;
-    const frame = requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ behavior: "instant" }));
-    return () => cancelAnimationFrame(frame);
-  }, [lang, page, c]);
-
   return (
-    <Shell c={c} lang={lang} page={page}>
+    <Frame c={c} lang={lang} page={page}>
       {page === "home" ? (
         <Home c={c} />
       ) : page === "brand" ? (
         <Brand c={c} />
       ) : page === null ? (
-        <EmptyState
-          title={c.notFound.title}
-          hint={c.notFound.body}
-          actions={<Button href={hrefFor("home", lang)}>{c.notFound.home}</Button>}
-        />
+        <NotFound c={c} lang={lang} />
       ) : (
         <DocPage doc={c[page]} contentsLabel={c.nav.contents} />
       )}
-    </Shell>
+    </Frame>
   );
 }

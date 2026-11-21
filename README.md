@@ -15,14 +15,19 @@ English is the default. Each language has its own URL, so a store listing can li
 
 ## Stack
 
-React 19, Vite and [`@xdev-asia/ui`](https://github.com/xdev-asia/xdev-ui) (SiteShell, Prose, Card, Grid, Select).
-`npm run build` runs `vite build`, then `scripts/routes.mjs` writes one `index.html` per route and language, so
-every URL answers 200 on a static host. No cookies, no analytics, no web fonts from other hosts.
+React 19 and Vite, in the design system of the tasteskill kit (2.5.1, MIT): its plain CSS and JS are copied
+unchanged into `public/assets` (`system.css`, `system.js`, `ui/`, `motion/`, `layout/`, `moments/`, `effects/`,
+`backgrounds/`, `icons/`) and loaded as files. Never edit those copies; page CSS lives in `src/site.css`.
+
+`npm run build` runs `vite build`, then `scripts/routes.mjs` renders every route and language with React
+(`src/ssr.tsx`) into its own `index.html`, so each URL answers 200 on a static host with the whole page in the
+HTML, and adds the kit's scripts after the markup. `npm run dev` renders the route in the browser instead.
+No cookies, no analytics; the fonts (Mona Sans, Geist Mono) are served from this site (`public/assets/fonts`).
 
 ## Edit
 
 - Text: `src/content/en.ts` and `src/content/vi.ts`. Both follow `src/content/types.ts`; keep them in step.
-- A new app: add it to `home.apps`, to the Privacy Policy (its own section) and to Support, in both languages.
+- A new app: add it to `home.apps` (and its card in `src/pages/Home.tsx`), to the Privacy Policy (its own section) and to Support, in both languages.
 - Change the terms or the policy: also change the effective date (`UPDATED`) in both files.
 
 ## Run
