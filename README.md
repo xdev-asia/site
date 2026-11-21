@@ -1,6 +1,6 @@
 # xdev.asia
 
-The public website of xDev: who we are, the apps, and the pages that apply to all of them.
+The personal site of Trần Đức Duy (Duy Tran) and xDev: who he is, his personas, the apps, writing, and the pages that apply to every app.
 
 | Page | English | Tiếng Việt |
 |---|---|---|

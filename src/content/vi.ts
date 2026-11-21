@@ -4,7 +4,7 @@ const UPDATED = "Có hiệu lực từ 21/11/2026";
 
 export const vi: Content = {
   meta: {
-    home: { title: "xDev", description: "xDev làm công cụ cho lập trình viên làm việc cùng AI coding agent." },
+    home: { title: "Trần Đức Duy · xDev", description: "Trần Đức Duy (Học cùng Duy): Solution Architect, làm công cụ AI và ứng dụng Say It OK qua xDev." },
     terms: { title: "Điều khoản sử dụng · xDev", description: "Điều khoản áp dụng cho mọi ứng dụng, trang web và dịch vụ của xDev." },
     privacy: { title: "Chính sách quyền riêng tư · xDev", description: "Mỗi ứng dụng, trang web và dịch vụ của xDev làm gì với dữ liệu của bạn." },
     support: { title: "Hỗ trợ · xDev", description: "Cách nhận trợ giúp cho ứng dụng của xDev." },
@@ -14,23 +14,39 @@ export const vi: Content = {
   },
   nav: { brand: "Thương hiệu", terms: "Điều khoản", privacy: "Quyền riêng tư", support: "Hỗ trợ", legal: "Pháp lý", lang: "Ngôn ngữ", contents: "Trong trang này" },
   home: {
-    eyebrow: "xdev.asia",
-    headline: "Công cụ cho người làm việc cùng coding agent",
-    lede: "xDev làm công cụ cho lập trình viên làm việc cùng AI coding agent. Mã nguồn và dữ liệu của bạn nằm trên máy của bạn.",
-    aboutTitle: "Giới thiệu",
-    about: [
-      "xDev là tên chung của các ứng dụng trên trang này. Phần nào mở được thì chúng tôi làm mở: bộ giao diện là mã nguồn mở trên GitHub.",
-      "Trang này là nơi đặt những thứ áp dụng chung cho tất cả: [Điều khoản sử dụng](/vi/terms/), [Chính sách quyền riêng tư](/vi/privacy/) và [Hỗ trợ](/vi/support/).",
+    eyebrow: "xdev.asia · Học cùng Duy",
+    name: "Trần Đức Duy",
+    alias: "Duy Tran · Joiny",
+    role: "Solution Architect · FPT IS",
+    lede: "Mình thiết kế các nền tảng y tế và bảo hiểm: kiến trúc, tích hợp và hạ tầng phía sau. Qua **xDev**, mình làm công cụ AI và chia sẻ kinh nghiệm làm phần mềm thực tế cho người Việt.",
+    portrait: { src: "/assets/duy/portrait.jpg", alt: "Chân dung Trần Đức Duy" },
+    ctas: [
+      { label: "Xem sản phẩm", href: "#apps", primary: true },
+      { label: "Liên hệ", href: "#contact" },
+      { label: "GitHub", href: "https://github.com/tdduydev" },
     ],
-    appsTitle: "Ứng dụng",
+    facts: [
+      { value: "6+ năm", label: "ở FPT" },
+      { value: "4.2K", label: "người theo dõi Học cùng Duy" },
+      { value: "UIT", label: "Kỹ thuật phần mềm, ĐHQG TP.HCM" },
+    ],
+    personasTitle: "Bốn vai, một người",
+    personasIntro: "Tuỳ ngày, mình là người định hướng sản phẩm, người vẽ kiến trúc, người làm AI hay người chăm chút giao diện.",
+    personas: [
+      { name: "Duy Tran", role: "Cyber CEO", body: "Định hướng và chiến lược, để làm ra giải pháp đơn giản mà mạnh cho mọi người.", img: "/assets/duy/persona-1.jpg", tone: "cyan" },
+      { name: "Code Duy", role: "System Architect", body: "Thiết kế hệ thống vững chắc, biến ý tưởng thành công nghệ chạy ổn định.", img: "/assets/duy/persona-2.jpg", tone: "teal" },
+      { name: "Neo Tran", role: "AI Engineer", body: "Làm tính năng AI thông minh, hiệu quả và dễ chịu cho người dùng.", img: "/assets/duy/persona-3.jpg", tone: "violet" },
+      { name: "Pixel Duy", role: "Cyber Designer", body: "Chăm chút trải nghiệm trực quan và giao diện đẹp, dễ gần.", img: "/assets/duy/persona-4.jpg", tone: "pink" },
+    ],
+    workTitle: "Mình làm gì",
+    work: [
+      { title: "Kiến trúc hệ thống", body: "Ranh giới dịch vụ, API, luồng dữ liệu và tích hợp giữa các hệ thống nghiệp vụ, nhất là y tế và bảo hiểm." },
+      { title: "AI ứng dụng", body: "Ứng dụng nối mô hình ngôn ngữ với tri thức của tổ chức và quy trình làm việc, đặt AI đúng bước để nó giúp chứ không hại." },
+      { title: "Platform engineering", body: "Hạ tầng container, pipeline phát hành, quan sát hệ thống và quản lý danh tính (Keycloak)." },
+      { title: "Chia sẻ kiến thức", body: "Series Học cùng Duy và ML nhìn là hiểu: kiến thức lập trình, AI, DevOps viết dễ hiểu, có code chạy được." },
+    ],
+    appsTitle: "Sản phẩm",
     apps: [
-      {
-        name: "Tài khoản xDev",
-        glyph: "id",
-        platform: "Web",
-        body: "Một lần đăng nhập cho các ứng dụng và dịch vụ của xDev, có trang để xem và kết thúc các phiên đăng nhập.",
-        links: [{ label: "id.xdev.asia", href: "https://id.xdev.asia" }],
-      },
       {
         name: "Say It OK",
         icon: "/assets/sayitok/icon.png",
@@ -42,6 +58,13 @@ export const vi: Content = {
         ],
       },
       {
+        name: "Tài khoản xDev",
+        glyph: "id",
+        platform: "Web",
+        body: "Một lần đăng nhập cho các ứng dụng và dịch vụ của xDev, có trang để xem và kết thúc các phiên đăng nhập.",
+        links: [{ label: "id.xdev.asia", href: "https://id.xdev.asia" }],
+      },
+      {
         name: "xDev UI",
         glyph: "ui",
         platform: "React",
@@ -51,18 +74,27 @@ export const vi: Content = {
           { label: "Mã nguồn", href: "https://github.com/xdev-asia/xdev-ui" },
         ],
       },
+      {
+        name: "ML nhìn là hiểu",
+        glyph: "ml",
+        platform: "Python",
+        body: "13 thuật toán học máy viết tay bằng Python thuần, kèm bản scikit-learn đối chiếu. Code chạy được cho series video.",
+        links: [{ label: "Mã nguồn", href: "https://github.com/tdduydev/ml-nhin-la-hieu" }],
+      },
     ],
-    principlesTitle: "Cách chúng tôi làm",
-    principles: [
-      { title: "Ưu tiên máy của bạn", body: "Mã nguồn, tài liệu và phiên làm việc nằm trên máy của bạn, trừ khi bạn chọn gửi đi nơi khác." },
-      { title: "Bạn xác nhận", body: "Ứng dụng cho bạn xem nó sắp làm gì trước khi thay đổi hay xoá bất cứ thứ gì." },
-      { title: "Không bán dữ liệu", body: "Chúng tôi không bán dữ liệu của bạn. Ứng dụng nào có quảng cáo hay thống kê thì Chính sách quyền riêng tư ghi rõ, kèm cách tắt." },
+    writingTitle: "Bài viết",
+    writing: [
+      { title: "Trăn trở của kỹ sư FPT: đặt AI vào bước nào thì 'ăn', bước nào thì 'hại'", source: "Chúng ta · FPT", href: "https://chungta.vn/goc-nhin/tran-tro-cua-ky-su-fpt-dat-ai-vao-buoc-nao-thi-an-buoc-nao-thi-hai-1141717.html" },
+      { title: "Ai sẽ chịu trách nhiệm cho kết quả từ AI?", source: "Chúng ta · FPT", href: "https://chungta.vn/goc-nhin/ai-se-chiu-trach-nhiem-cho-ket-qua-tu-ai-1141602.html" },
+      { title: "Học cùng Duy: ghi chú lập trình, AI và kiến trúc", source: "Facebook", href: "https://www.facebook.com/duydev/" },
     ],
     contactTitle: "Liên hệ",
+    contactIntro: "Hợp tác, tư vấn kiến trúc hay góp ý cho sản phẩm: cứ nhắn mình.",
     contact: [
-      "Cần trợ giúp với ứng dụng: xem trang [Hỗ trợ](/vi/support/).",
-      "Câu hỏi về dữ liệu của bạn: [duy@xdev.asia](mailto:duy@xdev.asia).",
-      "Mã nguồn và báo lỗi: [github.com/xdev-asia](https://github.com/xdev-asia).",
+      { label: "Email", value: "duy@xdev.asia", href: "mailto:duy@xdev.asia" },
+      { label: "GitHub", value: "tdduydev", href: "https://github.com/tdduydev" },
+      { label: "LinkedIn", value: "duydev", href: "https://www.linkedin.com/in/duydev" },
+      { label: "Facebook", value: "Học cùng Duy", href: "https://www.facebook.com/duydev/" },
     ],
   },
 
