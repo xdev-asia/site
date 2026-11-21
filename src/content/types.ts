@@ -18,15 +18,6 @@ export interface Doc {
   sections: Section[];
 }
 
-export interface AppEntry {
-  name: string;
-  icon?: string;
-  glyph?: string;
-  platform: string;
-  body: string;
-  links: { label: string; href: string }[];
-}
-
 /** The brand page: the logo, the marks of the sub-systems, colours and rules. File paths and colour values live in pages/Brand.tsx. */
 export interface BrandContent {
   eyebrow: string;
@@ -50,32 +41,76 @@ export interface BrandContent {
   files: string[];
 }
 
+/** A link with its words. */
+export interface Link {
+  label: string;
+  href: string;
+}
+
+/** The personal home page, in the tasteskill plan: hero, apps, work, personas, writing, close. */
+export interface HomeContent {
+  /** The h1: who, and what he does. */
+  title: string;
+  /** The line under the h1: the hard fact and what xDev does. */
+  lead: string;
+  /** The quiet line under the buttons. */
+  proof: string;
+  /** What the hero's app picture shows, for screen readers. */
+  artLabel: string;
+  apps: {
+    title: string;
+    /** The grey second sentence of the heading. */
+    more: string;
+    /** One card per app: its name, a verb-and-object title and one or two sentences (links allowed). */
+    items: Record<"sayitok" | "ui" | "ml", { title: string; body: string; label: string }>;
+  };
+  work: {
+    title: string;
+    body: string;
+    link: Link;
+    portraitAlt: string;
+    /** Proof figures from the brief, each with its line (the counter-rolls moment). */
+    figures: { value: string; label: string }[];
+  };
+  personas: {
+    title: string;
+    more: string;
+    items: { name: string; role: string; alt: string }[];
+  };
+  writing: {
+    title: string;
+    body: string;
+    items: { title: string; source: string; href: string }[];
+    photoAlt: string;
+  };
+  close: { title: string; line: string };
+}
+
 export interface Content {
   meta: Record<"home" | "brand" | "terms" | "privacy" | "support" | "delete-account" | "notFound", { title: string; description: string }>;
-  nav: { brand: string; terms: string; privacy: string; support: string; legal: string; lang: string; contents: string };
-  home: {
-    eyebrow: string;
-    name: string;
-    /** Second line under the name: alias, channel. */
-    alias: string;
-    role: string;
-    lede: string;
-    portrait: { src: string; alt: string };
-    ctas: { label: string; href: string; primary?: boolean }[];
-    facts: { value: string; label: string }[];
-    personasTitle: string;
-    personasIntro: string;
-    personas: { name: string; role: string; body: string; img: string; tone: "cyan" | "teal" | "violet" | "pink" }[];
-    workTitle: string;
-    work: { title: string; body: string }[];
-    appsTitle: string;
-    apps: AppEntry[];
-    writingTitle: string;
-    writing: { title: string; source: string; href: string }[];
-    contactTitle: string;
-    contactIntro: string;
-    contact: { label: string; value: string; href: string }[];
+  nav: {
+    skip: string;
+    menu: string;
+    main: string;
+    apps: string;
+    work: string;
+    personas: string;
+    writing: string;
+    brand: string;
+    terms: string;
+    privacy: string;
+    support: string;
+    deleteAccount: string;
+    legal: string;
+    contents: string;
+    /** The link to the other language, written in that language. */
+    otherLang: string;
+    /** The main action, word for word in the nav, the hero and the close. */
+    email: string;
+    /** The hero's second action. */
+    seeApps: string;
   };
+  home: HomeContent;
   brand: BrandContent;
   terms: Doc;
   privacy: Doc;
@@ -83,5 +118,13 @@ export interface Content {
   /** Say It OK (and any app with an account): how to delete the account and its data, with or without the app. */
   "delete-account": Doc;
   notFound: { title: string; body: string; home: string };
-  footer: string;
+  footer: {
+    /** One plain line beside the logo. */
+    lede: string;
+    appsTitle: string;
+    xdevTitle: string;
+    contactTitle: string;
+    /** Product names are trademarks of their owners (the real icons). */
+    trademarks: string;
+  };
 }

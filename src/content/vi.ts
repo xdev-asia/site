@@ -4,7 +4,7 @@ const UPDATED = "Có hiệu lực từ 21/11/2026";
 
 export const vi: Content = {
   meta: {
-    home: { title: "Trần Đức Duy · xDev", description: "Trần Đức Duy: Solution Architect với hơn 10 năm làm sản phẩm phần mềm, làm công cụ AI và ứng dụng Say It OK qua xDev." },
+    home: { title: "Trần Đức Duy: Solution Architect làm ứng dụng", description: "Trần Đức Duy thiết kế nền tảng y tế và bảo hiểm, và qua xDev làm công cụ AI như ứng dụng luyện nói tiếng Anh Say It OK." },
     terms: { title: "Điều khoản sử dụng · xDev", description: "Điều khoản áp dụng cho mọi ứng dụng, trang web và dịch vụ của xDev." },
     privacy: { title: "Chính sách quyền riêng tư · xDev", description: "Mỗi ứng dụng, trang web và dịch vụ của xDev làm gì với dữ liệu của bạn." },
     support: { title: "Hỗ trợ · xDev", description: "Cách nhận trợ giúp cho ứng dụng của xDev." },
@@ -12,82 +12,85 @@ export const vi: Content = {
     brand: { title: "Thương hiệu · xDev", description: "Logo xDev, logo của các hệ thống con, màu và quy tắc dùng, kèm file tải về." },
     notFound: { title: "Không tìm thấy trang · xDev", description: "Trang này không tồn tại." },
   },
-  nav: { brand: "Thương hiệu", terms: "Điều khoản", privacy: "Quyền riêng tư", support: "Hỗ trợ", legal: "Pháp lý", lang: "Ngôn ngữ", contents: "Trong trang này" },
+  nav: {
+    skip: "Tới nội dung",
+    menu: "Menu",
+    main: "Chính",
+    apps: "Sản phẩm",
+    work: "Nền tảng",
+    personas: "Persona",
+    writing: "Bài viết",
+    brand: "Thương hiệu",
+    terms: "Điều khoản",
+    privacy: "Quyền riêng tư",
+    support: "Hỗ trợ",
+    deleteAccount: "Xoá tài khoản",
+    legal: "Pháp lý",
+    contents: "Trong trang này",
+    otherLang: "English",
+    email: "Email cho Duy",
+    seeApps: "Xem sản phẩm",
+  },
   home: {
-    eyebrow: "xdev.asia",
-    name: "Trần Đức Duy",
-    alias: "Duy Tran · Joiny",
-    role: "Solution Architect · Người làm sản phẩm",
-    lede: "Mình thiết kế các nền tảng y tế và bảo hiểm: kiến trúc, tích hợp và hạ tầng phía sau. Qua **xDev**, mình làm công cụ AI và chia sẻ kinh nghiệm làm phần mềm thực tế cho người Việt.",
-    portrait: { src: "/assets/duy/portrait.jpg", alt: "Chân dung Trần Đức Duy" },
-    ctas: [
-      { label: "Xem sản phẩm", href: "#apps", primary: true },
-      { label: "Liên hệ", href: "#contact" },
-      { label: "GitHub", href: "https://github.com/tdduydev" },
-    ],
-    facts: [
-      { value: "10+ năm", label: "làm sản phẩm phần mềm" },
-      { value: "Y tế · Bảo hiểm", label: "lĩnh vực chính" },
-      { value: "AI ứng dụng", label: "đang tập trung" },
-    ],
-    personasTitle: "Bốn vai, một người",
-    personasIntro: "Tuỳ ngày, mình là người định hướng sản phẩm, người vẽ kiến trúc, người làm AI hay người chăm chút giao diện.",
-    personas: [
-      { name: "Duy Tran", role: "Cyber CEO", body: "Định hướng và chiến lược, để làm ra giải pháp đơn giản mà mạnh cho mọi người.", img: "/assets/duy/persona-1.jpg", tone: "cyan" },
-      { name: "Code Duy", role: "System Architect", body: "Thiết kế hệ thống vững chắc, biến ý tưởng thành công nghệ chạy ổn định.", img: "/assets/duy/persona-2.jpg", tone: "teal" },
-      { name: "Neo Tran", role: "AI Engineer", body: "Làm tính năng AI thông minh, hiệu quả và dễ chịu cho người dùng.", img: "/assets/duy/persona-3.jpg", tone: "violet" },
-      { name: "Pixel Duy", role: "Cyber Designer", body: "Chăm chút trải nghiệm trực quan và giao diện đẹp, dễ gần.", img: "/assets/duy/persona-4.jpg", tone: "pink" },
-    ],
-    workTitle: "Mình làm gì",
-    work: [
-      { title: "Kiến trúc hệ thống", body: "Ranh giới dịch vụ, API, luồng dữ liệu và tích hợp giữa các hệ thống nghiệp vụ, nhất là y tế và bảo hiểm." },
-      { title: "AI ứng dụng", body: "Ứng dụng nối mô hình ngôn ngữ với tri thức của tổ chức và quy trình làm việc, đặt AI đúng bước để nó giúp chứ không hại." },
-      { title: "Platform engineering", body: "Hạ tầng container, pipeline phát hành, quan sát hệ thống và quản lý danh tính (Keycloak)." },
-      { title: "Chia sẻ kiến thức", body: "Series Học cùng Duy và ML nhìn là hiểu: kiến thức lập trình, AI, DevOps viết dễ hiểu, có code chạy được." },
-    ],
-    appsTitle: "Sản phẩm",
-    apps: [
-      {
-        name: "Say It OK",
-        icon: "/assets/sayitok/icon.png",
-        platform: "iOS · Android",
-        body: "Luyện nói tiếng Anh cho người Việt, từ mất gốc đến C2: nói theo câu mẫu, gia sư AI, gói học theo chủ đề, mẹo nhớ và nhắc học mỗi ngày.",
-        links: [
-          { label: "Quyền riêng tư", href: "/vi/privacy/#sayitok" },
-          { label: "Xoá tài khoản", href: "/vi/delete-account/" },
-        ],
+    title: "Trần Đức Duy, Solution Architect làm ứng dụng",
+    lead: "Hơn 10 năm làm sản phẩm phần mềm. Mình thiết kế các nền tảng y tế và bảo hiểm, và qua xDev mình làm công cụ AI, ứng dụng và dạy học.",
+    proof: "Đang làm Say It OK, ứng dụng luyện nói tiếng Anh cho iOS và Android.",
+    artLabel: "Say It OK trên điện thoại: một câu để nói theo, được chấm từng từ, và kết quả kiểm tra trình độ 455 trên 600, mức B2.",
+    apps: {
+      title: "Sản phẩm của xDev.",
+      more: "Cho người học và cho lập trình viên.",
+      items: {
+        sayitok: {
+          label: "Say It OK",
+          title: "Say It OK luyện nói tiếng Anh",
+          body: "Luyện nói cho người Việt, từ con số 0 tới C2, có gia sư AI và các gói chủ đề. Chưa có trên kho ứng dụng.",
+        },
+        ui: {
+          label: "xDev UI",
+          title: "xDev UI giữ hệ thống thiết kế",
+          body: "Design token và component React cho các ứng dụng xDev. Tài liệu ở [ui.xdev.asia](https://ui.xdev.asia), mã nguồn trên [GitHub](https://github.com/xdev-asia/xdev-ui).",
+        },
+        ml: {
+          label: "ML nhìn là hiểu",
+          title: "ML nhìn là hiểu dạy máy học",
+          body: "Học máy học qua các thuật toán viết tay bằng Python, không dùng thư viện. Mã nguồn trên [GitHub](https://github.com/tdduydev/ml-nhin-la-hieu).",
+        },
       },
-      {
-        name: "xDev UI",
-        glyph: "ui",
-        platform: "React",
-        body: "Bộ design token và component React dùng để làm các ứng dụng xDev. Trang này cũng dùng bộ đó.",
-        links: [
-          { label: "ui.xdev.asia", href: "https://ui.xdev.asia" },
-          { label: "Mã nguồn", href: "https://github.com/xdev-asia/xdev-ui" },
-        ],
-      },
-      {
-        name: "ML nhìn là hiểu",
-        glyph: "ml",
-        platform: "Python",
-        body: "13 thuật toán học máy viết tay bằng Python thuần, kèm bản scikit-learn đối chiếu. Code chạy được cho series video.",
-        links: [{ label: "Mã nguồn", href: "https://github.com/tdduydev/ml-nhin-la-hieu" }],
-      },
-    ],
-    writingTitle: "Bài viết",
-    writing: [
-      { title: "Ai sẽ chịu trách nhiệm cho kết quả từ AI?", source: "chungta.vn", href: "https://chungta.vn/goc-nhin/ai-se-chiu-trach-nhiem-cho-ket-qua-tu-ai-1141602.html" },
-      { title: "Học cùng Duy: ghi chú lập trình, AI và kiến trúc", source: "Facebook", href: "https://www.facebook.com/duydev/" },
-    ],
-    contactTitle: "Liên hệ",
-    contactIntro: "Hợp tác, tư vấn kiến trúc hay góp ý cho sản phẩm: cứ nhắn mình.",
-    contact: [
-      { label: "Email", value: "duy@xdev.asia", href: "mailto:duy@xdev.asia" },
-      { label: "GitHub", value: "tdduydev", href: "https://github.com/tdduydev" },
-      { label: "LinkedIn", value: "duydev", href: "https://www.linkedin.com/in/duydev" },
-      { label: "Facebook", value: "Học cùng Duy", href: "https://www.facebook.com/duydev/" },
-    ],
+    },
+    work: {
+      title: "Nền tảng y tế và bảo hiểm",
+      body: "Là Solution Architect, mình thiết kế các nền tảng này từ đầu tới cuối: kiến trúc, tích hợp giữa các hệ thống và hạ tầng mà chúng chạy trên đó.",
+      link: { label: "Xem hồ sơ trên LinkedIn", href: "https://www.linkedin.com/in/duydev" },
+      portraitAlt: "Trần Đức Duy mặc áo vest tối, khoanh tay, mỉm cười",
+      figures: [
+        { value: "10+", label: "năm làm sản phẩm phần mềm" },
+        { value: "13", label: "thuật toán máy học viết tay bằng Python" },
+        { value: "600", label: "điểm tối đa của bài kiểm tra Say It OK, theo CEFR" },
+      ],
+    },
+    personas: {
+      title: "Bốn persona từ tranh của chính mình.",
+      more: "Những vai mình đổi qua lại: dẫn dắt, kiến trúc, AI và thiết kế.",
+      items: [
+        { name: "Duy Tran", role: "Cyber CEO", alt: "Duy Tran trong vai Cyber CEO, đeo kính râm tròn, phía sau là thành phố neon" },
+        { name: "Code Duy", role: "System Architect", alt: "Code Duy trong vai System Architect, mặc hoodie, phía sau là mã nguồn màu xanh" },
+        { name: "Neo Tran", role: "AI Engineer", alt: "Neo Tran trong vai AI Engineer, đeo kính trong, phía sau là sơ đồ mạng" },
+        { name: "Pixel Duy", role: "Cyber Designer", alt: "Pixel Duy trong vai Cyber Designer, đội mũ len, đeo tai nghe" },
+      ],
+    },
+    writing: {
+      title: "Bài viết về phần mềm và AI",
+      body: "Bài viết của mình bằng tiếng Việt. Mình cũng dạy học với tên Học cùng Duy trên Facebook.",
+      items: [
+        { title: "Ai sẽ chịu trách nhiệm cho kết quả từ AI?", source: "chungta.vn", href: "https://chungta.vn/goc-nhin/ai-se-chiu-trach-nhiem-cho-ket-qua-tu-ai-1141602.html" },
+        { title: "Học cùng Duy", source: "Facebook", href: "https://www.facebook.com/duydev/" },
+      ],
+      photoAlt: "Trần Đức Duy mặc áo hoodie tối, khoanh tay, mỉm cười",
+    },
+    close: {
+      title: "Hợp tác, tư vấn kiến trúc và góp ý ứng dụng",
+      line: "Viết bằng tiếng Việt hoặc tiếng Anh tới duy@xdev.asia.",
+    },
   },
 
   terms: {
@@ -460,5 +463,11 @@ export const vi: Content = {
       "Bộ đầy đủ, gồm cả icon ứng dụng cho iOS và Android, nằm trong design system: [xdev-ui/assets/brand](https://github.com/xdev-asia/xdev-ui/tree/main/assets/brand).",
     ],
   },
-  footer: "© 2026 xDev",
+  footer: {
+    lede: "Công cụ AI, ứng dụng và dạy học của Trần Đức Duy.",
+    appsTitle: "Sản phẩm",
+    xdevTitle: "xDev",
+    contactTitle: "Liên hệ",
+    trademarks: "Tên sản phẩm và logo thuộc về chủ sở hữu của chúng.",
+  },
 };
