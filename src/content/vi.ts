@@ -1,6 +1,6 @@
 import type { Content } from "./types";
 
-const UPDATED = "Có hiệu lực từ 20/11/2026";
+const UPDATED = "Có hiệu lực từ 21/11/2026";
 
 export const vi: Content = {
   meta: {
@@ -8,6 +8,7 @@ export const vi: Content = {
     terms: { title: "Điều khoản sử dụng · xDev", description: "Điều khoản áp dụng cho mọi ứng dụng, trang web và dịch vụ của xDev." },
     privacy: { title: "Chính sách quyền riêng tư · xDev", description: "Mỗi ứng dụng, trang web và dịch vụ của xDev làm gì với dữ liệu của bạn." },
     support: { title: "Hỗ trợ · xDev", description: "Cách nhận trợ giúp cho ứng dụng của xDev." },
+    "delete-account": { title: "Xoá tài khoản Say It OK · xDev", description: "Cách xoá tài khoản Say It OK và dữ liệu học tập, có hoặc không cần ứng dụng." },
     brand: { title: "Thương hiệu · xDev", description: "Logo xDev, logo của các hệ thống con, màu và quy tắc dùng, kèm file tải về." },
     notFound: { title: "Không tìm thấy trang · xDev", description: "Trang này không tồn tại." },
   },
@@ -31,6 +32,16 @@ export const vi: Content = {
         links: [{ label: "id.xdev.asia", href: "https://id.xdev.asia" }],
       },
       {
+        name: "Say It OK",
+        icon: "/assets/sayitok/icon.png",
+        platform: "iOS · Android",
+        body: "Luyện nói tiếng Anh cho người Việt, từ mất gốc đến C2: nói theo câu mẫu, gia sư AI, gói học theo chủ đề, mẹo nhớ và nhắc học mỗi ngày.",
+        links: [
+          { label: "Quyền riêng tư", href: "/vi/privacy/#sayitok" },
+          { label: "Xoá tài khoản", href: "/vi/delete-account/" },
+        ],
+      },
+      {
         name: "xDev UI",
         glyph: "ui",
         platform: "React",
@@ -45,12 +56,12 @@ export const vi: Content = {
     principles: [
       { title: "Ưu tiên máy của bạn", body: "Mã nguồn, tài liệu và phiên làm việc nằm trên máy của bạn, trừ khi bạn chọn gửi đi nơi khác." },
       { title: "Bạn xác nhận", body: "Ứng dụng cho bạn xem nó sắp làm gì trước khi thay đổi hay xoá bất cứ thứ gì." },
-      { title: "Không theo dõi", body: "Không quảng cáo, không analytics. Chính sách quyền riêng tư ghi rõ từng ứng dụng dùng dữ liệu gì." },
+      { title: "Không bán dữ liệu", body: "Chúng tôi không bán dữ liệu của bạn. Ứng dụng nào có quảng cáo hay thống kê thì Chính sách quyền riêng tư ghi rõ, kèm cách tắt." },
     ],
     contactTitle: "Liên hệ",
     contact: [
       "Cần trợ giúp với ứng dụng: xem trang [Hỗ trợ](/vi/support/).",
-      "Câu hỏi về dữ liệu của bạn: [privacy@xdev.asia](mailto:privacy@xdev.asia).",
+      "Câu hỏi về dữ liệu của bạn: [duy@xdev.asia](mailto:duy@xdev.asia).",
       "Mã nguồn và báo lỗi: [github.com/xdev-asia](https://github.com/xdev-asia).",
     ],
   },
@@ -65,7 +76,7 @@ export const vi: Content = {
         id: "scope",
         title: "Phạm vi của điều khoản",
         blocks: [
-          "Điều khoản này là thoả thuận giữa bạn và xDev (\"chúng tôi\"). Nó áp dụng cho mọi ứng dụng, trang web và dịch vụ trực tuyến do chúng tôi phát hành và có dẫn tới trang này: tài khoản xDev tại id.xdev.asia và trang web này. Dưới đây gọi chung là \"ứng dụng\".",
+          "Điều khoản này là thoả thuận giữa bạn và xDev (\"chúng tôi\"). Nó áp dụng cho mọi ứng dụng, trang web và dịch vụ trực tuyến do chúng tôi phát hành và có dẫn tới trang này: tài khoản xDev tại id.xdev.asia, ứng dụng Say It OK và trang web này. Dưới đây gọi chung là \"ứng dụng\".",
           "Khi cài đặt hoặc sử dụng ứng dụng, bạn chấp nhận điều khoản này. Nếu không chấp nhận, bạn đừng sử dụng ứng dụng.",
           "Một ứng dụng có thể có thêm điều khoản riêng, hiển thị trong ứng dụng hoặc trên trang cửa hàng của nó. Chỗ nào khác với trang này thì điều khoản riêng được áp dụng cho ứng dụng đó.",
         ],
@@ -98,7 +109,24 @@ export const vi: Content = {
         id: "paid",
         title: "Tính năng trả phí",
         blocks: [
-          "Các ứng dụng liệt kê trên trang này hiện miễn phí. Nếu chúng tôi có gói hoặc giao dịch trả phí, bạn sẽ thấy giá và nội dung trước khi thanh toán, và điều khoản hiển thị tại thời điểm đó áp dụng cho giao dịch.",
+          "Các ứng dụng liệt kê trên trang này miễn phí, trừ gói Say It OK Plus mô tả ở mục dưới. Nếu chúng tôi có gói hoặc giao dịch trả phí khác, bạn sẽ thấy giá và nội dung trước khi thanh toán, và điều khoản hiển thị tại thời điểm đó áp dụng cho giao dịch.",
+        ],
+      },
+      {
+        id: "sayitok",
+        title: "Say It OK",
+        blocks: [
+          "Toàn bộ khoá học, từ điển, ôn tập và bài kiểm tra đầu vào của Say It OK là miễn phí. Bản miễn phí trên iPhone có quảng cáo và giới hạn số lượt dùng gia sư AI và cố vấn AI mỗi ngày.",
+          "**Say It OK Plus** là gói đăng ký tự động gia hạn: theo tháng, theo năm, hoặc gói Gia đình theo năm (chia sẻ qua Chia sẻ trong gia đình của Apple).",
+          {
+            list: [
+              "Tiền được trừ vào tài khoản Apple ID khi bạn xác nhận mua. Gói tự gia hạn trừ khi bạn tắt tự động gia hạn ít nhất 24 giờ trước khi kỳ hiện tại kết thúc; tài khoản bị trừ tiền cho kỳ tiếp theo trong vòng 24 giờ trước khi kỳ hiện tại kết thúc.",
+              "Gói năm có thể kèm 7 ngày dùng thử miễn phí cho lần đăng ký đầu tiên. Nếu không huỷ trước khi hết dùng thử, gói chuyển sang trả phí. Phần dùng thử còn lại mất khi bạn mua gói khác.",
+              "Quản lý và huỷ gói trong Cài đặt iPhone → tên của bạn → Đăng ký, hoặc trong ứng dụng tại Hồ sơ → Gói học. Hoàn tiền do Apple xử lý theo chính sách của App Store.",
+              "Điều khoản sử dụng chuẩn của Apple ([EULA](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)) cũng áp dụng cho bản iPhone.",
+            ],
+          },
+          "Câu trả lời của gia sư và cố vấn AI có thể chưa chính xác. Đây là công cụ luyện tập, không thay thế giáo viên hay chứng chỉ chính thức.",
         ],
       },
       {
@@ -172,7 +200,7 @@ export const vi: Content = {
         id: "contact",
         title: "Liên hệ",
         blocks: [
-          "Câu hỏi về điều khoản này: [privacy@xdev.asia](mailto:privacy@xdev.asia), hoặc mở issue tại [github.com/xdev-asia](https://github.com/xdev-asia).",
+          "Câu hỏi về điều khoản này: [duy@xdev.asia](mailto:duy@xdev.asia), hoặc mở issue tại [github.com/xdev-asia](https://github.com/xdev-asia).",
           "Điều khoản này có bản tiếng Anh và tiếng Việt. Nếu hai bản khác nhau, bản tiếng Anh được áp dụng.",
         ],
       },
@@ -183,7 +211,7 @@ export const vi: Content = {
     title: "Chính sách quyền riêng tư",
     stamp: `Mọi ứng dụng, trang web và dịch vụ của xDev · ${UPDATED}`,
     summary:
-      "Ứng dụng của chúng tôi chạy trên thiết bị của bạn và chúng tôi không nhìn thấy tệp của bạn. Chúng tôi không quảng cáo, không analytics và không bán dữ liệu. Dữ liệu cá nhân duy nhất chúng tôi lưu là những gì tài khoản xDev cần để bạn đăng nhập.",
+      "Chúng tôi không bán dữ liệu. Các công cụ cho lập trình viên chạy trên thiết bị của bạn, không quảng cáo, không analytics. Say It OK lưu tài khoản và tiến độ học trên máy chủ của chúng tôi, và bản iPhone có quảng cáo cùng thống kê Firebase; mục Say It OK bên dưới ghi rõ từng thứ.",
     sections: [
       {
         id: "scope",
@@ -199,9 +227,8 @@ export const vi: Content = {
         blocks: [
           {
             list: [
-              "Không quảng cáo và không dùng mã định danh quảng cáo.",
-              "Không có mã analytics hay theo dõi, của chúng tôi hay của bên nào khác.",
               "Chúng tôi không bán hay cho thuê dữ liệu cá nhân.",
+              "Không quảng cáo, không mã định danh quảng cáo và không analytics, trừ Say It OK bản iPhone (xem mục Say It OK).",
               "Tệp và mã nguồn của bạn được xử lý trên thiết bị của bạn. Chúng tôi không nhận được chúng.",
             ],
           },
@@ -224,6 +251,26 @@ export const vi: Content = {
         ],
       },
       {
+        id: "sayitok",
+        title: "Say It OK (iOS, Android)",
+        blocks: [
+          "Say It OK lưu trên máy chủ của chúng tôi:",
+          {
+            list: [
+              "**Tài khoản:** mã người dùng xDev, email và tên hiển thị do Apple hoặc Google cung cấp khi bạn đăng nhập.",
+              "**Học tập:** cách xưng hô, mục tiêu, kết quả bài kiểm tra, tiến độ bài học, từ vựng, điểm và huy hiệu.",
+              "**Hội thoại với AI:** chữ của câu bạn nói (sau khi được nhận dạng) và câu trả lời, để gia sư và cố vấn hiểu ngữ cảnh.",
+              "**Gói đăng ký (iPhone):** mã giao dịch Apple, loại gói và ngày hết hạn. Chúng tôi không nhận số thẻ hay thông tin thanh toán.",
+            ],
+          },
+          "**Giọng nói.** Trên iPhone, giọng nói được nhận dạng ngay trên máy bằng công cụ của Apple. Trên Android, ứng dụng dùng dịch vụ nhận dạng giọng nói có sẵn của điện thoại (thường do Google cung cấp), dịch vụ đó xử lý âm thanh theo chính sách của nhà cung cấp. Ứng dụng không gửi bản ghi âm lên máy chủ của chúng tôi, chỉ gửi phần chữ khi cần chấm điểm hoặc trò chuyện với AI.",
+          "**AI.** Khi có thể, AI chạy ngay trên máy. Khi cần AI mạnh hơn, phần chữ của câu hỏi được gửi qua máy chủ AI của xDev tới nhà cung cấp mô hình ngôn ngữ để tạo câu trả lời.",
+          "**Thống kê và quảng cáo (chỉ bản iPhone).** Firebase (Google) thu thống kê sử dụng ẩn danh và báo lỗi; chúng tôi chỉ gửi mã người dùng nội bộ, không gửi email hay tên. Google AdMob hiển thị quảng cáo ở bản miễn phí; quảng cáo cá nhân hoá chỉ dùng khi bạn cho phép theo dõi trong hộp thoại của iOS, tắt được trong Cài đặt → Quyền riêng tư & Bảo mật → Theo dõi. Người dùng Plus không thấy quảng cáo. Bản Android hiện không có quảng cáo và không gửi thống kê.",
+          "Máy chủ của Say It OK chạy trên máy chủ của chúng tôi, truy cập qua Cloudflare. Dữ liệu chỉ được chia sẻ với các nhà cung cấp dịch vụ nêu trên, trong phạm vi cần để vận hành ứng dụng.",
+          "**Xoá dữ liệu.** Trong ứng dụng: Hồ sơ → Xoá tài khoản. Không cần ứng dụng: xem trang [Xoá tài khoản Say It OK](/vi/delete-account/). Mọi dữ liệu trên đều bị xoá khỏi máy chủ khi tài khoản bị xoá.",
+        ],
+      },
+      {
         id: "websites",
         title: "Trang web này",
         blocks: [
@@ -241,20 +288,20 @@ export const vi: Content = {
         id: "rights",
         title: "Lựa chọn và quyền của bạn",
         blocks: [
-          "Bạn có thể xem, sửa hoặc xoá tài khoản xDev tại id.xdev.asia. Bạn cũng có thể yêu cầu chúng tôi cung cấp bản sao dữ liệu chúng tôi có về bạn, hoặc yêu cầu sửa hay xoá, bằng cách viết tới [privacy@xdev.asia](mailto:privacy@xdev.asia).",
+          "Bạn có thể xem, sửa hoặc xoá tài khoản xDev tại id.xdev.asia. Bạn cũng có thể yêu cầu chúng tôi cung cấp bản sao dữ liệu chúng tôi có về bạn, hoặc yêu cầu sửa hay xoá, bằng cách viết tới [duy@xdev.asia](mailto:duy@xdev.asia).",
         ],
       },
       {
         id: "children",
         title: "Trẻ em",
-        blocks: ["Các ứng dụng là công cụ cho lập trình viên. Chúng không hướng tới trẻ em, và chúng tôi không cố ý thu thập dữ liệu của trẻ em."],
+        blocks: ["Các ứng dụng của chúng tôi dành cho người lớn: công cụ cho lập trình viên và Say It OK. Chúng không hướng tới trẻ em, và chúng tôi không cố ý thu thập dữ liệu của trẻ em dưới 13 tuổi."],
       },
       {
         id: "changes",
         title: "Thay đổi và liên hệ",
         blocks: [
           "Mọi thay đổi của chính sách này được đăng trên trang này kèm ngày hiệu lực mới.",
-          "Câu hỏi về dữ liệu của bạn: [privacy@xdev.asia](mailto:privacy@xdev.asia).",
+          "Câu hỏi về dữ liệu của bạn: [duy@xdev.asia](mailto:duy@xdev.asia).",
           "Chính sách này có bản tiếng Anh và tiếng Việt. Nếu hai bản khác nhau, bản tiếng Anh được áp dụng.",
         ],
       },
@@ -272,8 +319,9 @@ export const vi: Content = {
         blocks: [
           {
             list: [
+              "Say It OK: [duy@xdev.asia](mailto:duy@xdev.asia). Xoá tài khoản: xem [Xoá tài khoản Say It OK](/vi/delete-account/).",
               "xDev UI: [mở issue](https://github.com/xdev-asia/xdev-ui/issues)",
-              "Tài khoản hoặc dữ liệu của bạn: [privacy@xdev.asia](mailto:privacy@xdev.asia)",
+              "Tài khoản hoặc dữ liệu của bạn: [duy@xdev.asia](mailto:duy@xdev.asia)",
             ],
           },
           "Vui lòng ghi kèm phiên bản hệ điều hành và phiên bản ứng dụng (trong cửa sổ About của ứng dụng).",
@@ -283,6 +331,45 @@ export const vi: Content = {
         id: "legal",
         title: "Điều khoản và quyền riêng tư",
         blocks: ["[Điều khoản sử dụng](/vi/terms/) và [Chính sách quyền riêng tư](/vi/privacy/) áp dụng cho mọi ứng dụng xDev."],
+      },
+    ],
+  },
+
+  "delete-account": {
+    title: "Xoá tài khoản Say It OK",
+    stamp: `Say It OK của xDev · ${UPDATED}`,
+    summary: "Bạn có thể xoá tài khoản Say It OK và toàn bộ dữ liệu học tập bất cứ lúc nào, trong ứng dụng hoặc qua email.",
+    sections: [
+      {
+        id: "in-app",
+        title: "Cách 1: trong ứng dụng",
+        blocks: [{ list: ["Mở Say It OK và đăng nhập.", "Vào **Hồ sơ → Xoá tài khoản** và xác nhận. Tài khoản và dữ liệu bị xoá ngay."] }],
+      },
+      {
+        id: "by-email",
+        title: "Cách 2: không cần ứng dụng",
+        blocks: [
+          "Gửi email tới [duy@xdev.asia](mailto:duy@xdev.asia?subject=Xo%C3%A1%20t%C3%A0i%20kho%E1%BA%A3n%20Say%20It%20OK) với tiêu đề \"Xoá tài khoản Say It OK\", từ địa chỉ email bạn dùng để đăng nhập (Apple hoặc Google). Chúng tôi xác nhận và xoá trong vòng 30 ngày.",
+        ],
+      },
+      {
+        id: "what",
+        title: "Dữ liệu bị xoá",
+        blocks: [
+          {
+            list: [
+              "Tài khoản: mã người dùng, email, tên hiển thị.",
+              "Học tập: xưng hô, mục tiêu, kết quả kiểm tra, tiến độ, từ vựng, điểm, huy hiệu, hội thoại với AI.",
+              "Gói đăng ký: mã giao dịch, loại gói, ngày hết hạn.",
+            ],
+          },
+          "Chúng tôi không giữ lại bản sao nào sau khi xoá, trừ bản sao lưu tự động của máy chủ: bản sao lưu bị ghi đè sau tối đa 14 ngày.",
+        ],
+      },
+      {
+        id: "subscription",
+        title: "Gói đăng ký",
+        blocks: ["Gói Say It OK Plus trên App Store không tự huỷ khi xoá tài khoản. Hãy huỷ trong Cài đặt iPhone → tên của bạn → Đăng ký."],
       },
     ],
   },

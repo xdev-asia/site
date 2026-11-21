@@ -1,6 +1,6 @@
 import type { Content } from "./types";
 
-const UPDATED = "Effective 20 November 2026";
+const UPDATED = "Effective 21 November 2026";
 
 export const en: Content = {
   meta: {
@@ -8,6 +8,7 @@ export const en: Content = {
     terms: { title: "Terms of Use · xDev", description: "The terms that apply to every xDev app, website and service." },
     privacy: { title: "Privacy Policy · xDev", description: "What each xDev app, website and service does with your data." },
     support: { title: "Support · xDev", description: "How to get help with an xDev app." },
+    "delete-account": { title: "Delete your Say It OK account · xDev", description: "How to delete your Say It OK account and learning data, with or without the app." },
     brand: { title: "Brand · xDev", description: "The xDev logo, the marks of its systems, colours and rules, with files to download." },
     notFound: { title: "Page not found · xDev", description: "This page does not exist." },
   },
@@ -31,6 +32,16 @@ export const en: Content = {
         links: [{ label: "id.xdev.asia", href: "https://id.xdev.asia" }],
       },
       {
+        name: "Say It OK",
+        icon: "/assets/sayitok/icon.png",
+        platform: "iOS · Android",
+        body: "English speaking practice for Vietnamese learners, from zero to C2: repeat-after-me lessons, an AI tutor, topic packs, memory tips and a daily reminder.",
+        links: [
+          { label: "Privacy", href: "/privacy/#sayitok" },
+          { label: "Delete account", href: "/delete-account/" },
+        ],
+      },
+      {
         name: "xDev UI",
         glyph: "ui",
         platform: "React",
@@ -45,12 +56,12 @@ export const en: Content = {
     principles: [
       { title: "Local first", body: "Your code, documents and sessions stay on your machine unless you choose to send them somewhere." },
       { title: "You confirm", body: "An app shows what it is about to do before it changes or removes anything." },
-      { title: "No tracking", body: "No advertising and no analytics. Each app's data use is written down in the Privacy Policy." },
+      { title: "We do not sell data", body: "We never sell your data. Any app with ads or analytics says so in the Privacy Policy, with how to turn it off." },
     ],
     contactTitle: "Contact",
     contact: [
       "Help with an app: see [Support](/support/).",
-      "Questions about your data: [privacy@xdev.asia](mailto:privacy@xdev.asia).",
+      "Questions about your data: [duy@xdev.asia](mailto:duy@xdev.asia).",
       "Code and issues: [github.com/xdev-asia](https://github.com/xdev-asia).",
     ],
   },
@@ -65,7 +76,7 @@ export const en: Content = {
         id: "scope",
         title: "What these terms cover",
         blocks: [
-          "These terms are an agreement between you and xDev (\"we\"). They cover every app, website and online service that we publish and that links to this page: the xDev account at id.xdev.asia and this website. Together we call them \"the apps\".",
+          "These terms are an agreement between you and xDev (\"we\"). They cover every app, website and online service that we publish and that links to this page: the xDev account at id.xdev.asia, the Say It OK app and this website. Together we call them \"the apps\".",
           "By installing or using an app you accept these terms. If you do not accept them, do not use the apps.",
           "An app may add terms of its own, shown in the app or on its store page. Where those differ from this page, the app's own terms apply to that app.",
         ],
@@ -98,7 +109,24 @@ export const en: Content = {
         id: "paid",
         title: "Paid features",
         blocks: [
-          "The apps listed on this site are free today. If we offer a paid plan or purchase, you will see the price and what it includes before you pay, and the terms shown at that point apply to the purchase.",
+          "The apps listed on this site are free, except the Say It OK Plus plan described below. If we offer another paid plan or purchase, you will see the price and what it includes before you pay, and the terms shown at that point apply to the purchase.",
+        ],
+      },
+      {
+        id: "sayitok",
+        title: "Say It OK",
+        blocks: [
+          "All Say It OK lessons, the dictionary, reviews and the placement test are free. The free iPhone version shows ads and limits AI tutor and AI advisor use per day.",
+          "**Say It OK Plus** is an auto-renewing subscription: monthly, yearly, or a yearly Family plan (shared through Apple Family Sharing).",
+          {
+            list: [
+              "Payment is charged to your Apple ID when you confirm the purchase. The plan renews unless auto-renew is turned off at least 24 hours before the end of the current period; your account is charged for the next period within the 24 hours before the current one ends.",
+              "The yearly plan may include a 7-day free trial for your first subscription. If you do not cancel before the trial ends, the plan becomes paid. Any unused trial ends when you buy another plan.",
+              "Manage or cancel in iPhone Settings → your name → Subscriptions, or in the app under Profile → Plan. Refunds are handled by Apple under App Store policy.",
+              "Apple's standard licence ([EULA](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)) also applies to the iPhone version.",
+            ],
+          },
+          "Answers from the AI tutor and advisor can be wrong. Say It OK is a practice tool, not a replacement for a teacher or an official certificate.",
         ],
       },
       {
@@ -172,7 +200,7 @@ export const en: Content = {
         id: "contact",
         title: "Contact",
         blocks: [
-          "Questions about these terms: [privacy@xdev.asia](mailto:privacy@xdev.asia), or open an issue at [github.com/xdev-asia](https://github.com/xdev-asia).",
+          "Questions about these terms: [duy@xdev.asia](mailto:duy@xdev.asia), or open an issue at [github.com/xdev-asia](https://github.com/xdev-asia).",
           "These terms are written in English and Vietnamese. If the two versions differ, the English version applies.",
         ],
       },
@@ -183,7 +211,7 @@ export const en: Content = {
     title: "Privacy Policy",
     stamp: `All xDev apps, websites and services · ${UPDATED}`,
     summary:
-      "Our apps work on your device and we do not see your files. We have no advertising and no analytics, and we do not sell data. The only personal data we store is what an xDev account needs to sign you in.",
+      "We do not sell data. Our developer tools work on your device, with no advertising and no analytics. Say It OK stores your account and learning progress on our server, and its iPhone version has ads and Firebase analytics; the Say It OK section below lists each one.",
     sections: [
       {
         id: "scope",
@@ -199,9 +227,8 @@ export const en: Content = {
         blocks: [
           {
             list: [
-              "No advertising and no advertising identifiers.",
-              "No analytics or tracking code, ours or anyone else's.",
               "We do not sell or rent personal data.",
+              "No advertising, advertising identifiers or analytics, except in the iPhone version of Say It OK (see its section).",
               "Your files and code are processed on your device. We do not receive them.",
             ],
           },
@@ -224,6 +251,26 @@ export const en: Content = {
         ],
       },
       {
+        id: "sayitok",
+        title: "Say It OK (iOS, Android)",
+        blocks: [
+          "Say It OK stores on our server:",
+          {
+            list: [
+              "**Account:** your xDev user ID, and the email and display name that Apple or Google give us when you sign in.",
+              "**Learning:** how you want to be addressed, your goal, test results, lesson progress, vocabulary, points and badges.",
+              "**AI conversations:** the text of what you said (after speech recognition) and the replies, so the tutor and advisor keep the context.",
+              "**Subscription (iPhone):** the Apple transaction ID, plan and expiry date. We never receive card numbers or payment details.",
+            ],
+          },
+          "**Voice.** On iPhone, speech is recognised on the device by Apple's engine. On Android, the app uses the phone's built-in speech recognition service (usually Google's), which handles the audio under its provider's policy. The app never sends voice recordings to our server, only the recognised text when it needs scoring or an AI reply.",
+          "**AI.** When it can, the AI runs on your device. When a stronger model is needed, the text of your question goes through xDev's AI server to a language model provider to write the reply.",
+          "**Analytics and ads (iPhone only).** Firebase (Google) collects anonymous usage statistics and crash reports; we send only an internal user ID, never your email or name. Google AdMob shows ads in the free version; personalised ads are used only if you allow tracking in the iOS prompt, which you can turn off in Settings → Privacy & Security → Tracking. Plus members see no ads. The Android version has no ads and sends no analytics today.",
+          "The Say It OK service runs on our own server, reached through Cloudflare. Data is shared only with the providers named here, as far as needed to run the app.",
+          "**Deleting your data.** In the app: Profile → Delete account. Without the app: see [Delete your Say It OK account](/delete-account/). All the data above is removed from our server when the account is deleted.",
+        ],
+      },
+      {
         id: "websites",
         title: "This website",
         blocks: [
@@ -241,20 +288,20 @@ export const en: Content = {
         id: "rights",
         title: "Your choices and rights",
         blocks: [
-          "You can see, change or delete your xDev account at id.xdev.asia. You can also ask us for a copy of the data we hold about you, or ask us to correct or delete it, by writing to [privacy@xdev.asia](mailto:privacy@xdev.asia).",
+          "You can see, change or delete your xDev account at id.xdev.asia. You can also ask us for a copy of the data we hold about you, or ask us to correct or delete it, by writing to [duy@xdev.asia](mailto:duy@xdev.asia).",
         ],
       },
       {
         id: "children",
         title: "Children",
-        blocks: ["The apps are tools for software developers. They are not directed at children, and we do not knowingly collect data from children."],
+        blocks: ["Our apps are for adults: developer tools and Say It OK. They are not directed at children, and we do not knowingly collect data from children under 13."],
       },
       {
         id: "changes",
         title: "Changes and contact",
         blocks: [
           "We post any change to this policy on this page with a new effective date.",
-          "Questions about your data: [privacy@xdev.asia](mailto:privacy@xdev.asia).",
+          "Questions about your data: [duy@xdev.asia](mailto:duy@xdev.asia).",
           "This policy is written in English and Vietnamese. If the two versions differ, the English version applies.",
         ],
       },
@@ -272,8 +319,9 @@ export const en: Content = {
         blocks: [
           {
             list: [
+              "Say It OK: [duy@xdev.asia](mailto:duy@xdev.asia). To delete your account, see [Delete your Say It OK account](/delete-account/).",
               "xDev UI: [open an issue](https://github.com/xdev-asia/xdev-ui/issues)",
-              "Your account or your data: [privacy@xdev.asia](mailto:privacy@xdev.asia)",
+              "Your account or your data: [duy@xdev.asia](mailto:duy@xdev.asia)",
             ],
           },
           "Please include your operating system version and the app version (in the app's About window).",
@@ -283,6 +331,45 @@ export const en: Content = {
         id: "legal",
         title: "Terms and privacy",
         blocks: ["The [Terms of Use](/terms/) and the [Privacy Policy](/privacy/) apply to every xDev app."],
+      },
+    ],
+  },
+
+  "delete-account": {
+    title: "Delete your Say It OK account",
+    stamp: `Say It OK by xDev · ${UPDATED}`,
+    summary: "You can delete your Say It OK account and all your learning data at any time, in the app or by email.",
+    sections: [
+      {
+        id: "in-app",
+        title: "Option 1: in the app",
+        blocks: [{ list: ["Open Say It OK and sign in.", "Go to **Profile → Delete account** and confirm. The account and its data are deleted at once."] }],
+      },
+      {
+        id: "by-email",
+        title: "Option 2: without the app",
+        blocks: [
+          "Email [duy@xdev.asia](mailto:duy@xdev.asia?subject=Delete%20my%20Say%20It%20OK%20account) with the subject \"Delete my Say It OK account\", from the email address you sign in with (Apple or Google). We confirm and delete it within 30 days.",
+        ],
+      },
+      {
+        id: "what",
+        title: "What is deleted",
+        blocks: [
+          {
+            list: [
+              "Account: user ID, email, display name.",
+              "Learning: form of address, goal, test results, progress, vocabulary, points, badges, AI conversations.",
+              "Subscription: transaction ID, plan, expiry date.",
+            ],
+          },
+          "We keep no copy after deletion, except the server's automatic backups, which are overwritten within 14 days.",
+        ],
+      },
+      {
+        id: "subscription",
+        title: "Your subscription",
+        blocks: ["Deleting the account does not cancel a Say It OK Plus subscription on the App Store. Cancel it in iPhone Settings → your name → Subscriptions."],
       },
     ],
   },
