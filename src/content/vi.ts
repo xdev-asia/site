@@ -150,7 +150,20 @@ export const vi: Content = {
               "Điều khoản sử dụng chuẩn của Apple ([EULA](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)) cũng áp dụng cho bản iPhone.",
             ],
           },
-          "Câu trả lời của gia sư và cố vấn AI có thể chưa chính xác. Đây là công cụ luyện tập, không thay thế giáo viên hay chứng chỉ chính thức.",
+          "**Nội dung do AI tạo.** Một số nội dung trong Say It OK được AI viết hoặc chấm: câu ví dụ, mục từ điển nằm ngoài danh sách từ của ứng dụng, câu trả lời của gia sư và cố vấn AI, và phần chấm điểm nói và viết của bạn. Nội dung này có thể sai hoặc chưa đầy đủ. Say It OK là công cụ hỗ trợ luyện tập, không phải lời khuyên chuyên môn, và không thay thế giáo viên.",
+          "**Kết quả trình độ là ước tính.** Trình độ CEFR từ bài kiểm tra đầu vào và điểm 0–600 của \"Kiểm tra trình độ\" là ước tính để định hướng việc luyện tập. Đây không phải chứng chỉ chính thức và không thay thế các kỳ thi như IELTS, TOEIC hay Cambridge.",
+          {
+            id: "sayitok-sources",
+            text: "**Kiểm tra từ điển.** Mục từ điển do AI viết được kiểm tra tự động với các nguồn dữ liệu mở:",
+          },
+          {
+            list: [
+              "từ loại, đối chiếu với [Open English WordNet](https://github.com/globalwordnet/english-wordnet), giấy phép CC BY 4.0;",
+              "phát âm kiểu Mỹ, đối chiếu với [CMU Pronouncing Dictionary](https://github.com/cmusphinx/cmudict), giấy phép kiểu BSD.",
+            ],
+          },
+          "Mục từ không qua được bước kiểm tra vẫn có thể hiển thị và được đưa vào hàng chờ để người kiểm duyệt. Nghĩa tiếng Việt được người kiểm duyệt dần theo thời gian.",
+          "**Đồng ý điều khoản.** Bạn đồng ý với các điều khoản này và [Chính sách quyền riêng tư](/vi/privacy/) khi đánh dấu vào ô đồng ý lúc tạo tài khoản trong ứng dụng. Nếu bạn tiếp tục dùng ứng dụng sau khi điều khoản thay đổi, bạn đồng ý với phiên bản mới kể từ ngày hiệu lực ghi ở đầu trang này.",
         ],
       },
       {
@@ -287,6 +300,7 @@ export const vi: Content = {
               "**Gói đăng ký (iPhone):** mã giao dịch Apple, loại gói và ngày hết hạn. Chúng tôi không nhận số thẻ hay thông tin thanh toán.",
             ],
           },
+          "Ứng dụng lưu thời điểm và phiên bản điều khoản bạn đã đồng ý.",
           "**Giọng nói.** Trên iPhone, giọng nói được nhận dạng ngay trên máy bằng công cụ của Apple. Trên Android, ứng dụng dùng dịch vụ nhận dạng giọng nói có sẵn của điện thoại (thường do Google cung cấp), dịch vụ đó xử lý âm thanh theo chính sách của nhà cung cấp. Ứng dụng không gửi bản ghi âm lên máy chủ của chúng tôi, chỉ gửi phần chữ khi cần chấm điểm hoặc trò chuyện với AI.",
           "**Camera, ảnh và dịch.** Tính năng \"Chụp chữ để học\" nhận chữ trong ảnh ngay trên điện thoại (Vision của Apple hoặc ML Kit của Google). Ảnh không được lưu và không gửi lên máy chủ; ứng dụng chỉ xin quyền camera khi bạn bấm chụp. Tính năng dịch dùng bộ dịch có sẵn trên điện thoại (Apple Translation hoặc ML Kit) và chạy không cần mạng; chữ cần dịch không gửi lên máy chủ của chúng tôi.",
           "**AI.** Khi có thể, AI chạy ngay trên máy. Khi cần AI mạnh hơn, phần chữ của câu hỏi được gửi qua máy chủ AI của xDev tới nhà cung cấp mô hình ngôn ngữ để tạo câu trả lời.",

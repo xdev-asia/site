@@ -1,5 +1,8 @@
-/** A paragraph (string) or a bullet list. Text may hold links as [label](url) and **bold**. */
-export type Block = string | { list: string[] };
+/**
+ * A paragraph (string), a bullet list, or a paragraph with a stable anchor id (linked from outside,
+ * for example a licence credit). Text may hold links as [label](url) and **bold**.
+ */
+export type Block = string | { list: string[] } | { id: string; text: string };
 
 export interface Section {
   id: string;

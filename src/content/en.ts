@@ -150,7 +150,20 @@ export const en: Content = {
               "Apple's standard licence ([EULA](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)) also applies to the iPhone version.",
             ],
           },
-          "Answers from the AI tutor and advisor can be wrong. Say It OK is a practice tool, not a replacement for a teacher or an official certificate.",
+          "**Content made with AI.** Some content in Say It OK is written or graded with AI: example sentences, dictionary entries outside the app's own word list, the replies of the AI tutor and advisor, and the scoring of your speaking and writing. It can be wrong or incomplete. Say It OK is a practice aid, not professional advice, and it does not replace a teacher.",
+          "**Level results are estimates.** The CEFR level from the entry test and the 0–600 score from the proficiency test (\"Kiểm tra trình độ\") are estimates to guide your practice. They are not an official certificate and do not replace an exam such as IELTS, TOEIC or Cambridge.",
+          {
+            id: "sayitok-sources",
+            text: "**Dictionary checks.** Dictionary entries written by AI are checked automatically against open data sources:",
+          },
+          {
+            list: [
+              "parts of speech against [Open English WordNet](https://github.com/globalwordnet/english-wordnet), licensed CC BY 4.0;",
+              "US pronunciation against the [CMU Pronouncing Dictionary](https://github.com/cmusphinx/cmudict), under a BSD-style licence.",
+            ],
+          },
+          "An entry that fails the check can still be shown, and it is queued for a person to review. Vietnamese meanings are reviewed by people over time.",
+          "**Accepting these terms.** You accept these terms and the [Privacy Policy](/privacy/) when you tick the box while creating your account in the app. If you keep using the app after these terms change, you accept the new version from the effective date shown at the top of this page.",
         ],
       },
       {
@@ -287,6 +300,7 @@ export const en: Content = {
               "**Subscription (iPhone):** the Apple transaction ID, plan and expiry date. We never receive card numbers or payment details.",
             ],
           },
+          "The app stores when you accepted the terms and which version.",
           "**Voice.** On iPhone, speech is recognised on the device by Apple's engine. On Android, the app uses the phone's built-in speech recognition service (usually Google's), which handles the audio under its provider's policy. The app never sends voice recordings to our server, only the recognised text when it needs scoring or an AI reply.",
           "**Camera, photos and translation.** \"Chụp chữ để học\" reads text in a photo on the phone itself (Apple Vision or Google ML Kit). Photos are not stored and never sent to our server; the app asks for the camera only when you tap to take a picture. Translation uses the phone's own translator (Apple Translation or ML Kit) and works offline; the text you translate is not sent to our server.",
           "**AI.** When it can, the AI runs on your device. When a stronger model is needed, the text of your question goes through xDev's AI server to a language model provider to write the reply.",

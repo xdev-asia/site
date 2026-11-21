@@ -31,6 +31,10 @@ export function Blocks({ blocks }: { blocks: Block[] }): ReactNode {
       <p key={i}>
         <Inline text={b} />
       </p>
+    ) : "id" in b ? (
+      <p key={i} id={b.id}>
+        <Inline text={b.text} />
+      </p>
     ) : (
       <ul key={i}>
         {b.list.map((item, j) => (
