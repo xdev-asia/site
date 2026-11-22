@@ -251,7 +251,7 @@ export const en: Content = {
     title: "Privacy Policy",
     stamp: `All xDev apps, websites and services · ${UPDATED}`,
     summary:
-      "We do not sell data. Our developer tools work on your device, with no advertising and no analytics. Say It OK stores your account and learning progress on our server, and its iPhone version has ads and Firebase analytics; the Say It OK section below lists each one.",
+      "We do not sell data. Our developer tools work on your device, with no advertising and no analytics. Say It OK stores your account and learning progress on our server, uses Firebase statistics and crash reports (you can turn them off in the app), and its iPhone version has ads; the Say It OK section below lists each one.",
     sections: [
       {
         id: "scope",
@@ -307,7 +307,8 @@ export const en: Content = {
           "**Voice.** On iPhone, speech is recognised on the device by Apple's engine. On Android, the app uses the phone's built-in speech recognition service (usually Google's), which handles the audio under its provider's policy. The app never sends voice recordings to our server, only the recognised text when it needs scoring or an AI reply.",
           "**Camera, photos and translation.** \"Chụp chữ để học\" reads text in a photo on the phone itself (Apple Vision or Google ML Kit). Photos are not stored and never sent to our server; the app asks for the camera only when you tap to take a picture. Translation uses the phone's own translator (Apple Translation or ML Kit) and works offline; the text you translate is not sent to our server.",
           "**AI.** When it can, the AI runs on your device. When a stronger model is needed, the text of your question goes through xDev's AI server to a language model provider to write the reply.",
-          "**Analytics and ads (iPhone only).** Firebase (Google) collects anonymous usage statistics and crash reports; we send only an internal user ID, never your email or name. Google AdMob shows ads in the free version; personalised ads are used only if you allow tracking in the iOS prompt, which you can turn off in Settings → Privacy & Security → Tracking. Plus members see no ads. The Android version has no ads and sends no analytics today.",
+          "**Statistics and crash reports (iOS, Android).** Firebase (Google) collects anonymous usage statistics (action names such as lesson started or finished, with a few numbers) and crash reports when the app fails; we send only an internal user ID, never your email, name, voice or answers. This is on by default; turn it off any time in the app: Hồ sơ → Gửi báo lỗi và thống kê.",
+          "**Ads (iPhone only).** Google AdMob shows ads in the free version; personalised ads are used only if you allow tracking in the iOS prompt, which you can turn off in Settings → Privacy & Security → Tracking. Plus members see no ads. The Android version has no ads today.",
           "The Say It OK service runs on our own server, reached through Cloudflare. Data is shared only with the providers named here, as far as needed to run the app.",
           "**Deleting your data.** In the app: Profile → Delete account. Without the app: see [Delete your Say It OK account](/delete-account/). All the data above is removed from our server when the account is deleted.",
         ],

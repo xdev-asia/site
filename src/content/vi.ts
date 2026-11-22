@@ -251,7 +251,7 @@ export const vi: Content = {
     title: "Chính sách quyền riêng tư",
     stamp: `Mọi ứng dụng, trang web và dịch vụ của xDev · ${UPDATED}`,
     summary:
-      "Chúng tôi không bán dữ liệu. Các công cụ cho lập trình viên chạy trên thiết bị của bạn, không quảng cáo, không analytics. Say It OK lưu tài khoản và tiến độ học trên máy chủ của chúng tôi, và bản iPhone có quảng cáo cùng thống kê Firebase; mục Say It OK bên dưới ghi rõ từng thứ.",
+      "Chúng tôi không bán dữ liệu. Các công cụ cho lập trình viên chạy trên thiết bị của bạn, không quảng cáo, không analytics. Say It OK lưu tài khoản và tiến độ học trên máy chủ của chúng tôi, có thống kê và báo lỗi Firebase (tắt được trong ứng dụng), và bản iPhone có quảng cáo; mục Say It OK bên dưới ghi rõ từng thứ.",
     sections: [
       {
         id: "scope",
@@ -307,7 +307,8 @@ export const vi: Content = {
           "**Giọng nói.** Trên iPhone, giọng nói được nhận dạng ngay trên máy bằng công cụ của Apple. Trên Android, ứng dụng dùng dịch vụ nhận dạng giọng nói có sẵn của điện thoại (thường do Google cung cấp), dịch vụ đó xử lý âm thanh theo chính sách của nhà cung cấp. Ứng dụng không gửi bản ghi âm lên máy chủ của chúng tôi, chỉ gửi phần chữ khi cần chấm điểm hoặc trò chuyện với AI.",
           "**Camera, ảnh và dịch.** Tính năng \"Chụp chữ để học\" nhận chữ trong ảnh ngay trên điện thoại (Vision của Apple hoặc ML Kit của Google). Ảnh không được lưu và không gửi lên máy chủ; ứng dụng chỉ xin quyền camera khi bạn bấm chụp. Tính năng dịch dùng bộ dịch có sẵn trên điện thoại (Apple Translation hoặc ML Kit) và chạy không cần mạng; chữ cần dịch không gửi lên máy chủ của chúng tôi.",
           "**AI.** Khi có thể, AI chạy ngay trên máy. Khi cần AI mạnh hơn, phần chữ của câu hỏi được gửi qua máy chủ AI của xDev tới nhà cung cấp mô hình ngôn ngữ để tạo câu trả lời.",
-          "**Thống kê và quảng cáo (chỉ bản iPhone).** Firebase (Google) thu thống kê sử dụng ẩn danh và báo lỗi; chúng tôi chỉ gửi mã người dùng nội bộ, không gửi email hay tên. Google AdMob hiển thị quảng cáo ở bản miễn phí; quảng cáo cá nhân hoá chỉ dùng khi bạn cho phép theo dõi trong hộp thoại của iOS, tắt được trong Cài đặt → Quyền riêng tư & Bảo mật → Theo dõi. Người dùng Plus không thấy quảng cáo. Bản Android hiện không có quảng cáo và không gửi thống kê.",
+          "**Thống kê và báo lỗi (iOS, Android).** Firebase (Google) thu thống kê sử dụng ẩn danh (tên thao tác như mở bài, xong bài, kèm vài con số) và báo lỗi khi ứng dụng gặp sự cố; chúng tôi chỉ gửi mã người dùng nội bộ, không gửi email, tên, giọng nói hay bài làm. Mục này bật sẵn; bạn tắt bất cứ lúc nào trong ứng dụng: Hồ sơ → Gửi báo lỗi và thống kê.",
+          "**Quảng cáo (chỉ bản iPhone).** Google AdMob hiển thị quảng cáo ở bản miễn phí; quảng cáo cá nhân hoá chỉ dùng khi bạn cho phép theo dõi trong hộp thoại của iOS, tắt được trong Cài đặt → Quyền riêng tư & Bảo mật → Theo dõi. Người dùng Plus không thấy quảng cáo. Bản Android hiện không có quảng cáo.",
           "Máy chủ của Say It OK chạy trên máy chủ của chúng tôi, truy cập qua Cloudflare. Dữ liệu chỉ được chia sẻ với các nhà cung cấp dịch vụ nêu trên, trong phạm vi cần để vận hành ứng dụng.",
           "**Xoá dữ liệu.** Trong ứng dụng: Hồ sơ → Xoá tài khoản. Không cần ứng dụng: xem trang [Xoá tài khoản Say It OK](/vi/delete-account/). Mọi dữ liệu trên đều bị xoá khỏi máy chủ khi tài khoản bị xoá.",
         ],
