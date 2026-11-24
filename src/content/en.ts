@@ -43,7 +43,7 @@ export const en: Content = {
         sayitok: {
           label: "Hungi",
           title: "Hungi teaches you to speak, listen, read and write",
-          body: "A language learning assistant for Vietnamese learners: Hungi the puppy hears each sentence you say and scores it at once. Every lesson goes speak, listen, read, write. English from zero to C2, and the first Japanese lessons. Formerly Say It OK. Not in the stores yet.",
+          body: "A language learning assistant for Vietnamese learners: Hungi the puppy hears each sentence you say and scores it at once. Every lesson goes speak, listen, read, write. English from zero to C2, and the first Japanese lessons. Not in the stores yet.",
         },
         ui: {
           label: "xDev UI",
@@ -141,9 +141,9 @@ export const en: Content = {
       },
       {
         id: "sayitok",
-        title: "Hungi (formerly Say It OK)",
+        title: "Hungi",
         blocks: [
-          "Hungi is xDev's language learning app, formerly named Say It OK. These terms keep applying to accounts created under the old name. The app teaches English today; Japanese has its first lessons.",
+          "Hungi is xDev's language learning app. The app teaches English today; Japanese has its first lessons.",
           "All Hungi lessons, the dictionary, reviews and the placement test are free. The free version shows ads (iPhone and Android) and limits AI tutor, AI advisor and server translation use per day.",
           "**Hungi Plus** is an auto-renewing subscription: monthly, yearly, or a yearly Family plan (shared through Apple Family Sharing).",
           {
@@ -252,7 +252,7 @@ export const en: Content = {
     title: "Privacy Policy",
     stamp: `All xDev apps, websites and services · ${UPDATED}`,
     summary:
-      "We do not sell data. Our developer tools work on your device, with no advertising and no analytics. Hungi (formerly Say It OK) stores your account and learning progress on our server, uses Firebase statistics and crash reports (you can turn them off in the app), and its free version has ads; the Hungi section below lists each one.",
+      "We do not sell data. Our developer tools work on your device, with no advertising and no analytics. Hungi stores your account and learning progress on our server, uses Firebase statistics and crash reports (you can turn them off in the app), and its free version has ads; the Hungi section below lists each one.",
     sections: [
       {
         id: "scope",
@@ -293,7 +293,7 @@ export const en: Content = {
       },
       {
         id: "sayitok",
-        title: "Hungi, formerly Say It OK (iOS, Android)",
+        title: "Hungi (iOS, Android)",
         blocks: [
           "Hungi stores on our server:",
           {
