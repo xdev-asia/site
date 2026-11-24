@@ -1,14 +1,14 @@
 import type { Content } from "./types";
 
-const UPDATED = "Có hiệu lực từ 21/11/2026";
+const UPDATED = "Có hiệu lực từ 25/11/2026";
 
 export const vi: Content = {
   meta: {
-    home: { title: "Trần Đức Duy: Solution Architect làm ứng dụng", description: "Trần Đức Duy thiết kế nền tảng y tế và bảo hiểm, và qua xDev làm công cụ AI như ứng dụng luyện nói tiếng Anh Say It OK." },
+    home: { title: "Trần Đức Duy: Solution Architect làm ứng dụng", description: "Trần Đức Duy thiết kế nền tảng y tế và bảo hiểm, và qua xDev làm công cụ AI như Hungi, trợ lý học ngôn ngữ." },
     terms: { title: "Điều khoản sử dụng · xDev", description: "Điều khoản áp dụng cho mọi ứng dụng, trang web và dịch vụ của xDev." },
     privacy: { title: "Chính sách quyền riêng tư · xDev", description: "Mỗi ứng dụng, trang web và dịch vụ của xDev làm gì với dữ liệu của bạn." },
     support: { title: "Hỗ trợ · xDev", description: "Cách nhận trợ giúp cho ứng dụng của xDev." },
-    "delete-account": { title: "Xoá tài khoản Say It OK · xDev", description: "Cách xoá tài khoản Say It OK và dữ liệu học tập, có hoặc không cần ứng dụng." },
+    "delete-account": { title: "Xoá tài khoản Hungi · xDev", description: "Cách xoá tài khoản Hungi và dữ liệu học tập, có hoặc không cần ứng dụng." },
     brand: { title: "Thương hiệu · xDev", description: "Logo xDev, logo của các hệ thống con, màu và quy tắc dùng, kèm file tải về." },
     notFound: { title: "Không tìm thấy trang · xDev", description: "Trang này không tồn tại." },
   },
@@ -34,16 +34,16 @@ export const vi: Content = {
   home: {
     title: "Trần Đức Duy, Solution Architect làm ứng dụng",
     lead: "Hơn 10 năm làm sản phẩm phần mềm. Mình thiết kế các nền tảng y tế và bảo hiểm, và qua xDev mình làm công cụ AI, ứng dụng và dạy học.",
-    proof: "Đang làm Say It OK, ứng dụng luyện nói tiếng Anh cho iOS và Android.",
-    artLabel: "Say It OK trên điện thoại: một câu để nói theo, được chấm từng từ, và kết quả kiểm tra trình độ 455 trên 600, mức B2.",
+    proof: "Đang làm Hungi, trợ lý học ngôn ngữ cho iOS và Android.",
+    artLabel: "Hungi trên điện thoại: chú cún Hungi nghe một câu bạn nói, chấm 92 điểm và tô màu từng chữ, kèm kết quả kiểm tra trình độ 455 trên 600, mức B2.",
     apps: {
       title: "Sản phẩm của xDev.",
       more: "Cho người học và cho lập trình viên.",
       items: {
         sayitok: {
-          label: "Say It OK",
-          title: "Say It OK luyện nói tiếng Anh",
-          body: "Luyện nói cho người Việt, từ con số 0 tới C2, có gia sư AI và các gói chủ đề. Chưa có trên kho ứng dụng.",
+          label: "Hungi",
+          title: "Hungi dạy nghe, nói, đọc, viết",
+          body: "Trợ lý học ngôn ngữ cho người Việt: chú cún Hungi nghe từng câu bạn nói và chấm ngay. Mỗi bài đi một vòng nói, nghe, đọc, viết. Tiếng Anh từ con số 0 tới C2, tiếng Nhật có các bài đầu. Trước đây tên là Say It OK. Chưa có trên kho ứng dụng.",
         },
         ui: {
           label: "xDev UI",
@@ -65,7 +65,7 @@ export const vi: Content = {
       figures: [
         { value: "10+", label: "năm làm sản phẩm phần mềm" },
         { value: "13", label: "thuật toán máy học viết tay bằng Python" },
-        { value: "600", label: "điểm tối đa của bài kiểm tra Say It OK, theo CEFR" },
+        { value: "600", label: "điểm tối đa của bài kiểm tra Hungi, theo CEFR" },
       ],
     },
     personas: {
@@ -103,7 +103,7 @@ export const vi: Content = {
         id: "scope",
         title: "Phạm vi của điều khoản",
         blocks: [
-          "Điều khoản này là thoả thuận giữa bạn và xDev (\"chúng tôi\"). Nó áp dụng cho mọi ứng dụng, trang web và dịch vụ trực tuyến do chúng tôi phát hành và có dẫn tới trang này: tài khoản xDev, ứng dụng Say It OK và trang web này. Dưới đây gọi chung là \"ứng dụng\".",
+          "Điều khoản này là thoả thuận giữa bạn và xDev (\"chúng tôi\"). Nó áp dụng cho mọi ứng dụng, trang web và dịch vụ trực tuyến do chúng tôi phát hành và có dẫn tới trang này: tài khoản xDev, ứng dụng Hungi và trang web này. Dưới đây gọi chung là \"ứng dụng\".",
           "Khi cài đặt hoặc sử dụng ứng dụng, bạn chấp nhận điều khoản này. Nếu không chấp nhận, bạn đừng sử dụng ứng dụng.",
           "Một ứng dụng có thể có thêm điều khoản riêng, hiển thị trong ứng dụng hoặc trên trang cửa hàng của nó. Chỗ nào khác với trang này thì điều khoản riêng được áp dụng cho ứng dụng đó.",
         ],
@@ -136,24 +136,25 @@ export const vi: Content = {
         id: "paid",
         title: "Tính năng trả phí",
         blocks: [
-          "Các ứng dụng liệt kê trên trang này miễn phí, trừ gói Say It OK Plus mô tả ở mục dưới. Nếu chúng tôi có gói hoặc giao dịch trả phí khác, bạn sẽ thấy giá và nội dung trước khi thanh toán, và điều khoản hiển thị tại thời điểm đó áp dụng cho giao dịch.",
+          "Các ứng dụng liệt kê trên trang này miễn phí, trừ gói Hungi Plus mô tả ở mục dưới. Nếu chúng tôi có gói hoặc giao dịch trả phí khác, bạn sẽ thấy giá và nội dung trước khi thanh toán, và điều khoản hiển thị tại thời điểm đó áp dụng cho giao dịch.",
         ],
       },
       {
         id: "sayitok",
-        title: "Say It OK",
+        title: "Hungi (trước đây là Say It OK)",
         blocks: [
-          "Toàn bộ khoá học, từ điển, ôn tập và bài kiểm tra đầu vào của Say It OK là miễn phí. Bản miễn phí trên iPhone có quảng cáo và giới hạn số lượt dùng gia sư AI và cố vấn AI mỗi ngày.",
-          "**Say It OK Plus** là gói đăng ký tự động gia hạn: theo tháng, theo năm, hoặc gói Gia đình theo năm (chia sẻ qua Chia sẻ trong gia đình của Apple).",
+          "Hungi là ứng dụng học ngôn ngữ của xDev, trước đây có tên Say It OK. Điều khoản này tiếp tục áp dụng cho tài khoản đã tạo dưới tên cũ. Ứng dụng hiện dạy tiếng Anh; tiếng Nhật mới có các bài đầu tiên.",
+          "Toàn bộ khoá học, từ điển, ôn tập và bài kiểm tra đầu vào của Hungi là miễn phí. Bản miễn phí có quảng cáo (iPhone và Android) và giới hạn số lượt dùng gia sư AI, cố vấn AI và dịch qua máy chủ mỗi ngày.",
+          "**Hungi Plus** là gói đăng ký tự động gia hạn: theo tháng, theo năm, hoặc gói Gia đình theo năm (chia sẻ qua Chia sẻ trong gia đình của Apple).",
           {
             list: [
               "Tiền được trừ vào tài khoản Apple ID khi bạn xác nhận mua. Gói tự gia hạn trừ khi bạn tắt tự động gia hạn ít nhất 24 giờ trước khi kỳ hiện tại kết thúc; tài khoản bị trừ tiền cho kỳ tiếp theo trong vòng 24 giờ trước khi kỳ hiện tại kết thúc.",
               "Gói năm có thể kèm 7 ngày dùng thử miễn phí cho lần đăng ký đầu tiên. Nếu không huỷ trước khi hết dùng thử, gói chuyển sang trả phí. Phần dùng thử còn lại mất khi bạn mua gói khác.",
-              "Quản lý và huỷ gói trong Cài đặt iPhone → tên của bạn → Đăng ký, hoặc trong ứng dụng tại Hồ sơ → Gói học. Hoàn tiền do Apple xử lý theo chính sách của App Store.",
+              "Quản lý và huỷ gói trong Cài đặt iPhone → tên của bạn → Đăng ký, hoặc trong ứng dụng tại Tôi → Cài đặt → Gói học. Hoàn tiền do Apple xử lý theo chính sách của App Store.",
               "Điều khoản sử dụng chuẩn của Apple ([EULA](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)) cũng áp dụng cho bản iPhone.",
             ],
           },
-          "**Nội dung do AI tạo.** Một số nội dung trong Say It OK được AI viết hoặc chấm: câu ví dụ, mục từ điển nằm ngoài danh sách từ của ứng dụng, câu trả lời của gia sư và cố vấn AI, và phần chấm điểm nói và viết của bạn. Nội dung này có thể sai hoặc chưa đầy đủ. Say It OK là công cụ hỗ trợ luyện tập, không phải lời khuyên chuyên môn, và không thay thế giáo viên.",
+          "**Nội dung do AI tạo.** Một số nội dung trong Hungi được AI viết hoặc chấm: câu ví dụ, mục từ điển nằm ngoài danh sách từ của ứng dụng, câu trả lời của gia sư và cố vấn AI, và phần chấm điểm nói và viết của bạn. Nội dung này có thể sai hoặc chưa đầy đủ. Hungi là công cụ hỗ trợ luyện tập, không phải lời khuyên chuyên môn, và không thay thế giáo viên.",
           "**Kết quả trình độ là ước tính.** Trình độ CEFR từ bài kiểm tra đầu vào và điểm 0–600 của \"Kiểm tra trình độ\" là ước tính để định hướng việc luyện tập. Đây không phải chứng chỉ chính thức và không thay thế các kỳ thi như IELTS, TOEIC hay Cambridge.",
           {
             id: "sayitok-sources",
@@ -251,7 +252,7 @@ export const vi: Content = {
     title: "Chính sách quyền riêng tư",
     stamp: `Mọi ứng dụng, trang web và dịch vụ của xDev · ${UPDATED}`,
     summary:
-      "Chúng tôi không bán dữ liệu. Các công cụ cho lập trình viên chạy trên thiết bị của bạn, không quảng cáo, không analytics. Say It OK lưu tài khoản và tiến độ học trên máy chủ của chúng tôi, có thống kê và báo lỗi Firebase (tắt được trong ứng dụng), và bản iPhone có quảng cáo; mục Say It OK bên dưới ghi rõ từng thứ.",
+      "Chúng tôi không bán dữ liệu. Các công cụ cho lập trình viên chạy trên thiết bị của bạn, không quảng cáo, không analytics. Hungi (trước đây là Say It OK) lưu tài khoản và tiến độ học trên máy chủ của chúng tôi, có thống kê và báo lỗi Firebase (tắt được trong ứng dụng), và bản miễn phí có quảng cáo; mục Hungi bên dưới ghi rõ từng thứ.",
     sections: [
       {
         id: "scope",
@@ -268,7 +269,7 @@ export const vi: Content = {
           {
             list: [
               "Chúng tôi không bán hay cho thuê dữ liệu cá nhân.",
-              "Không quảng cáo, không mã định danh quảng cáo và không analytics, trừ Say It OK bản iPhone (xem mục Say It OK).",
+              "Không quảng cáo, không mã định danh quảng cáo và không analytics, trừ Hungi (xem mục Hungi).",
               "Tệp và mã nguồn của bạn được xử lý trên thiết bị của bạn. Chúng tôi không nhận được chúng.",
             ],
           },
@@ -292,26 +293,27 @@ export const vi: Content = {
       },
       {
         id: "sayitok",
-        title: "Say It OK (iOS, Android)",
+        title: "Hungi, trước đây là Say It OK (iOS, Android)",
         blocks: [
-          "Say It OK lưu trên máy chủ của chúng tôi:",
+          "Hungi lưu trên máy chủ của chúng tôi:",
           {
             list: [
               "**Tài khoản:** mã người dùng xDev, email và tên hiển thị do Apple hoặc Google cung cấp khi bạn đăng nhập.",
-              "**Học tập:** cách xưng hô, mục tiêu, kết quả bài kiểm tra, tiến độ bài học, từ vựng, điểm và huy hiệu.",
+              "**Học tập:** cách xưng hô, mục tiêu, ngôn ngữ đang học, kết quả bài kiểm tra, tiến độ bài học, từ vựng, điểm và huy hiệu.",
               "**Hội thoại với AI:** chữ của câu bạn nói (sau khi được nhận dạng) và câu trả lời, để gia sư và cố vấn hiểu ngữ cảnh.",
+              "**Mức dùng AI:** số lần gọi AI theo từng tính năng, thời gian xử lý và số token, gắn với tài khoản để tính giới hạn mỗi ngày. Phần này không lưu nội dung câu hỏi hay câu trả lời.",
               "**Gói đăng ký (iPhone):** mã giao dịch Apple, loại gói và ngày hết hạn. Chúng tôi không nhận số thẻ hay thông tin thanh toán.",
             ],
           },
           "Ứng dụng lưu thời điểm và phiên bản điều khoản bạn đã đồng ý.",
-          "**Giọng nói.** Trên iPhone, giọng nói được nhận dạng ngay trên máy bằng công cụ của Apple. Trên Android, ứng dụng dùng dịch vụ nhận dạng giọng nói có sẵn của điện thoại (thường do Google cung cấp), dịch vụ đó xử lý âm thanh theo chính sách của nhà cung cấp. Ứng dụng không gửi bản ghi âm lên máy chủ của chúng tôi, chỉ gửi phần chữ khi cần chấm điểm hoặc trò chuyện với AI.",
-          "**Camera, ảnh và dịch.** Tính năng \"Chụp chữ để học\" nhận chữ trong ảnh ngay trên điện thoại (Vision của Apple hoặc ML Kit của Google). Ảnh không được lưu và không gửi lên máy chủ; ứng dụng chỉ xin quyền camera khi bạn bấm chụp. Tính năng dịch dùng bộ dịch có sẵn trên điện thoại (Apple Translation hoặc ML Kit) và chạy không cần mạng; chữ cần dịch không gửi lên máy chủ của chúng tôi.",
+          "**Giọng nói.** Trên iPhone, giọng nói được nhận dạng bằng công cụ của Apple: ngay trên máy khi máy hỗ trợ ngôn ngữ đó, nếu không thì qua máy chủ của Apple theo chính sách của Apple. Trên Android, ứng dụng dùng dịch vụ nhận dạng giọng nói có sẵn của điện thoại (thường do Google cung cấp), dịch vụ đó xử lý âm thanh theo chính sách của nhà cung cấp. Ứng dụng không gửi bản ghi âm lên máy chủ của chúng tôi, chỉ gửi phần chữ khi cần chấm điểm hoặc trò chuyện với AI.",
+          "**Camera, ảnh và dịch.** Tính năng \"Chụp chữ để học\" nhận chữ trong ảnh ngay trên điện thoại (Vision của Apple hoặc ML Kit của Google). Ảnh không được lưu và không gửi lên máy chủ; ứng dụng chỉ xin quyền camera khi bạn bấm chụp. Tính năng dịch dùng bộ dịch có sẵn trên điện thoại (Apple Translation hoặc ML Kit) khi có, chạy không cần mạng. Khi điện thoại chưa dịch được, phần chữ cần dịch (không kèm giọng nói hay ảnh) được gửi qua máy chủ AI của xDev tới nhà cung cấp mô hình ngôn ngữ để dịch; câu ngắn (tối đa 160 ký tự) và bản dịch của nó được lưu lại để dùng chung, không gắn với tài khoản của bạn.",
           "**AI.** Khi có thể, AI chạy ngay trên máy. Khi cần AI mạnh hơn, phần chữ của câu hỏi được gửi qua máy chủ AI của xDev tới nhà cung cấp mô hình ngôn ngữ để tạo câu trả lời.",
-          "**Học theo thói quen.** Ứng dụng tự học trên máy giờ bạn hay học và độ dài bài bạn hay học xong, để chọn giờ nhắc học và gợi ý số phút. Chỉ các con số tổng hợp (số lần học theo giờ và theo thứ, nhắc học có được làm theo không, tổng số phút) được lưu mã hoá trên máy và đồng bộ lên máy chủ của chúng tôi để dùng chung giữa các máy của bạn; không gửi nội dung bài, giọng nói hay mốc thời gian từng lần học. Mục này bật sẵn; tắt trong Hồ sơ → Học theo thói quen của tôi thì dữ liệu này bị xoá trên máy và trên máy chủ.",
-          "**Thống kê và báo lỗi (iOS, Android).** Firebase (Google) thu thống kê sử dụng ẩn danh (tên thao tác như mở bài, xong bài, kèm vài con số) và báo lỗi khi ứng dụng gặp sự cố; chúng tôi chỉ gửi mã người dùng nội bộ, không gửi email, tên, giọng nói hay bài làm. Mục này bật sẵn; bạn tắt bất cứ lúc nào trong ứng dụng: Hồ sơ → Gửi báo lỗi và thống kê.",
-          "**Quảng cáo (chỉ bản iPhone).** Google AdMob hiển thị quảng cáo ở bản miễn phí; quảng cáo cá nhân hoá chỉ dùng khi bạn cho phép theo dõi trong hộp thoại của iOS, tắt được trong Cài đặt → Quyền riêng tư & Bảo mật → Theo dõi. Người dùng Plus không thấy quảng cáo. Bản Android hiện không có quảng cáo.",
-          "Máy chủ của Say It OK chạy trên máy chủ của chúng tôi, truy cập qua Cloudflare. Dữ liệu chỉ được chia sẻ với các nhà cung cấp dịch vụ nêu trên, trong phạm vi cần để vận hành ứng dụng.",
-          "**Xoá dữ liệu.** Trong ứng dụng: Hồ sơ → Xoá tài khoản. Không cần ứng dụng: xem trang [Xoá tài khoản Say It OK](/vi/delete-account/). Mọi dữ liệu trên đều bị xoá khỏi máy chủ khi tài khoản bị xoá.",
+          "**Học theo thói quen.** Ứng dụng tự học trên máy giờ bạn hay học và độ dài bài bạn hay học xong, để chọn giờ nhắc học và gợi ý số phút. Chỉ các con số tổng hợp (số lần học theo giờ và theo thứ, nhắc học có được làm theo không, tổng số phút) được lưu mã hoá trên máy và đồng bộ lên máy chủ của chúng tôi để dùng chung giữa các máy của bạn; không gửi nội dung bài, giọng nói hay mốc thời gian từng lần học. Mục này bật sẵn; tắt trong Tôi → Cài đặt → Học theo thói quen của tôi thì dữ liệu này bị xoá trên máy và trên máy chủ.",
+          "**Thống kê và báo lỗi (iOS, Android).** Firebase (Google) thu thống kê sử dụng ẩn danh (tên thao tác như mở bài, xong bài, kèm vài con số, và lựa chọn lúc bắt đầu như ngôn ngữ muốn học hay bạn biết đến ứng dụng qua đâu) và báo lỗi khi ứng dụng gặp sự cố; chúng tôi chỉ gửi mã người dùng nội bộ, không gửi email, tên, giọng nói hay bài làm. Mục này bật sẵn; bạn tắt bất cứ lúc nào trong ứng dụng: Tôi → Cài đặt → Gửi báo lỗi và thống kê.",
+          "**Quảng cáo (bản miễn phí, iPhone và Android).** Google AdMob hiển thị quảng cáo ở bản miễn phí. Trên iPhone, quảng cáo cá nhân hoá chỉ dùng khi bạn cho phép theo dõi trong hộp thoại của iOS, tắt được trong Cài đặt → Quyền riêng tư & Bảo mật → Theo dõi. Trên Android, ứng dụng luôn yêu cầu quảng cáo không cá nhân hoá; AdMob vẫn nhận mã quảng cáo của máy, vị trí ước lượng theo địa chỉ IP và thông tin thiết bị để hiển thị quảng cáo, giới hạn tần suất và chống gian lận, theo chính sách của Google. Người dùng Plus không thấy quảng cáo.",
+          "Máy chủ của Hungi chạy trên máy chủ của chúng tôi, truy cập qua Cloudflare. Dữ liệu chỉ được chia sẻ với các nhà cung cấp dịch vụ nêu trên, trong phạm vi cần để vận hành ứng dụng.",
+          "**Xoá dữ liệu.** Trong ứng dụng: Tôi → Cài đặt → Xoá tài khoản. Không cần ứng dụng: xem trang [Xoá tài khoản Hungi](/vi/delete-account/). Mọi dữ liệu trên đều bị xoá khỏi máy chủ khi tài khoản bị xoá.",
         ],
       },
       {
@@ -338,7 +340,7 @@ export const vi: Content = {
       {
         id: "children",
         title: "Trẻ em",
-        blocks: ["Các ứng dụng của chúng tôi dành cho người lớn: công cụ cho lập trình viên và Say It OK. Chúng không hướng tới trẻ em, và chúng tôi không cố ý thu thập dữ liệu của trẻ em dưới 13 tuổi."],
+        blocks: ["Các ứng dụng của chúng tôi dành cho người lớn: công cụ cho lập trình viên và Hungi. Chúng không hướng tới trẻ em, và chúng tôi không cố ý thu thập dữ liệu của trẻ em dưới 13 tuổi."],
       },
       {
         id: "changes",
@@ -363,7 +365,7 @@ export const vi: Content = {
         blocks: [
           {
             list: [
-              "Say It OK: [duy@xdev.asia](mailto:duy@xdev.asia). Xoá tài khoản: xem [Xoá tài khoản Say It OK](/vi/delete-account/).",
+              "Hungi: [duy@xdev.asia](mailto:duy@xdev.asia). Xoá tài khoản: xem [Xoá tài khoản Hungi](/vi/delete-account/).",
               "xDev UI: [mở issue](https://github.com/xdev-asia/xdev-ui/issues)",
               "Tài khoản hoặc dữ liệu của bạn: [duy@xdev.asia](mailto:duy@xdev.asia)",
             ],
@@ -380,20 +382,20 @@ export const vi: Content = {
   },
 
   "delete-account": {
-    title: "Xoá tài khoản Say It OK",
-    stamp: `Say It OK của xDev · ${UPDATED}`,
-    summary: "Bạn có thể xoá tài khoản Say It OK và toàn bộ dữ liệu học tập bất cứ lúc nào, trong ứng dụng hoặc qua email.",
+    title: "Xoá tài khoản Hungi",
+    stamp: `Hungi của xDev · ${UPDATED}`,
+    summary: "Bạn có thể xoá tài khoản Hungi và toàn bộ dữ liệu học tập bất cứ lúc nào, trong ứng dụng hoặc qua email.",
     sections: [
       {
         id: "in-app",
         title: "Cách 1: trong ứng dụng",
-        blocks: [{ list: ["Mở Say It OK và đăng nhập.", "Vào **Hồ sơ → Xoá tài khoản** và xác nhận. Tài khoản và dữ liệu bị xoá ngay."] }],
+        blocks: [{ list: ["Mở Hungi và đăng nhập.", "Vào **Tôi → Cài đặt → Xoá tài khoản** và xác nhận. Tài khoản và dữ liệu bị xoá ngay."] }],
       },
       {
         id: "by-email",
         title: "Cách 2: không cần ứng dụng",
         blocks: [
-          "Gửi email tới [duy@xdev.asia](mailto:duy@xdev.asia?subject=Xo%C3%A1%20t%C3%A0i%20kho%E1%BA%A3n%20Say%20It%20OK) với tiêu đề \"Xoá tài khoản Say It OK\", từ địa chỉ email bạn dùng để đăng nhập (Apple hoặc Google). Chúng tôi xác nhận và xoá trong vòng 30 ngày.",
+          "Gửi email tới [duy@xdev.asia](mailto:duy@xdev.asia?subject=Xo%C3%A1%20t%C3%A0i%20kho%E1%BA%A3n%20Hungi) với tiêu đề \"Xoá tài khoản Hungi\", từ địa chỉ email bạn dùng để đăng nhập (Apple hoặc Google). Chúng tôi xác nhận và xoá trong vòng 30 ngày.",
         ],
       },
       {
@@ -413,7 +415,7 @@ export const vi: Content = {
       {
         id: "subscription",
         title: "Gói đăng ký",
-        blocks: ["Gói Say It OK Plus trên App Store không tự huỷ khi xoá tài khoản. Hãy huỷ trong Cài đặt iPhone → tên của bạn → Đăng ký."],
+        blocks: ["Gói Hungi Plus trên App Store không tự huỷ khi xoá tài khoản. Hãy huỷ trong Cài đặt iPhone → tên của bạn → Đăng ký."],
       },
     ],
   },
