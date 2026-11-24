@@ -43,7 +43,7 @@ export const vi: Content = {
         sayitok: {
           label: "Hungi",
           title: "Hungi dạy nghe, nói, đọc, viết",
-          body: "Trợ lý học ngôn ngữ cho người Việt: chú cún Hungi nghe từng câu bạn nói và chấm ngay. Mỗi bài đi một vòng nói, nghe, đọc, viết. Tiếng Anh từ con số 0 tới C2, tiếng Nhật có các bài đầu. Trước đây tên là Say It OK. Chưa có trên kho ứng dụng.",
+          body: "Trợ lý học ngôn ngữ cho người Việt: chú cún Hungi nghe từng câu bạn nói và chấm ngay. Mỗi bài đi một vòng nói, nghe, đọc, viết. Tiếng Anh từ con số 0 tới C2, tiếng Nhật có các bài đầu. Chưa có trên kho ứng dụng.",
         },
         ui: {
           label: "xDev UI",
@@ -141,9 +141,9 @@ export const vi: Content = {
       },
       {
         id: "sayitok",
-        title: "Hungi (trước đây là Say It OK)",
+        title: "Hungi",
         blocks: [
-          "Hungi là ứng dụng học ngôn ngữ của xDev, trước đây có tên Say It OK. Điều khoản này tiếp tục áp dụng cho tài khoản đã tạo dưới tên cũ. Ứng dụng hiện dạy tiếng Anh; tiếng Nhật mới có các bài đầu tiên.",
+          "Hungi là ứng dụng học ngôn ngữ của xDev. Ứng dụng hiện dạy tiếng Anh; tiếng Nhật mới có các bài đầu tiên.",
           "Toàn bộ khoá học, từ điển, ôn tập và bài kiểm tra đầu vào của Hungi là miễn phí. Bản miễn phí có quảng cáo (iPhone và Android) và giới hạn số lượt dùng gia sư AI, cố vấn AI và dịch qua máy chủ mỗi ngày.",
           "**Hungi Plus** là gói đăng ký tự động gia hạn: theo tháng, theo năm, hoặc gói Gia đình theo năm (chia sẻ qua Chia sẻ trong gia đình của Apple).",
           {
@@ -252,7 +252,7 @@ export const vi: Content = {
     title: "Chính sách quyền riêng tư",
     stamp: `Mọi ứng dụng, trang web và dịch vụ của xDev · ${UPDATED}`,
     summary:
-      "Chúng tôi không bán dữ liệu. Các công cụ cho lập trình viên chạy trên thiết bị của bạn, không quảng cáo, không analytics. Hungi (trước đây là Say It OK) lưu tài khoản và tiến độ học trên máy chủ của chúng tôi, có thống kê và báo lỗi Firebase (tắt được trong ứng dụng), và bản miễn phí có quảng cáo; mục Hungi bên dưới ghi rõ từng thứ.",
+      "Chúng tôi không bán dữ liệu. Các công cụ cho lập trình viên chạy trên thiết bị của bạn, không quảng cáo, không analytics. Hungi lưu tài khoản và tiến độ học trên máy chủ của chúng tôi, có thống kê và báo lỗi Firebase (tắt được trong ứng dụng), và bản miễn phí có quảng cáo; mục Hungi bên dưới ghi rõ từng thứ.",
     sections: [
       {
         id: "scope",
@@ -293,7 +293,7 @@ export const vi: Content = {
       },
       {
         id: "sayitok",
-        title: "Hungi, trước đây là Say It OK (iOS, Android)",
+        title: "Hungi (iOS, Android)",
         blocks: [
           "Hungi lưu trên máy chủ của chúng tôi:",
           {
