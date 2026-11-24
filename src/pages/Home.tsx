@@ -211,25 +211,24 @@ export function Home({ c }: { c: Content }) {
 
 /* ------------------------------------------------------------------ the app pictures (live HTML) */
 
-/** Say It OK's lesson screen on a phone: a sentence to repeat, scored word by word. The app's own words are Vietnamese. */
+/** Hungi's speaking step on a phone: a sentence said and scored, Hungi reacting. The app's own words are Vietnamese. */
 function SayItOkPhone() {
   const words: [string, "ok" | "near" | "miss"][] = [
     ["Could", "ok"],
     ["I", "ok"],
-    ["have", "ok"],
-    ["a", "ok"],
-    ["window", "near"],
-    ["seat,", "ok"],
+    ["see", "ok"],
+    ["the", "ok"],
+    ["menu,", "near"],
     ["please?", "ok"],
   ];
   return (
     <div className="ly-piece ly-piece--main sio-phone" aria-hidden="true">
         <div className="sio-top">
-          <img src="/assets/sayitok/icon.png" alt="" width={28} height={28} />
-          <span className="sio-top__name">Say It OK</span>
-          <span className="sio-top__chip">Nói theo</span>
+          <img src="/assets/hungi/icon.png" alt="" width={28} height={28} />
+          <span className="sio-top__name">Hungi</span>
+          <span className="sio-top__chip">Luyện nói</span>
         </div>
-        <p className="sio-label">Gói chủ đề · Du lịch</p>
+        <p className="sio-label">Bài hôm nay, Gọi món ở nhà hàng</p>
         <div className="sio-sentence">
           <p className="sio-sentence__en">
             {words.map(([w, s], i) => (
@@ -238,14 +237,15 @@ function SayItOkPhone() {
               </span>
             ))}
           </p>
-          <p className="sio-sentence__vi">Cho tôi một ghế cạnh cửa sổ được không?</p>
+          <p className="sio-sentence__vi">Cho tôi xem thực đơn được không?</p>
         </div>
         <div className="sio-score">
           <span className="sio-score__num">92</span>
           <span className="sio-score__txt">
-            <b>Phát âm tốt</b>
-            Nhấn mạnh âm đầu của <i>window</i>
+            <b>Chuẩn rồi.</b>
+            Nhấn âm đầu của <i>menu</i>
           </span>
+          <img className="sio-score__hungi" src="/assets/hungi/hungi-chomp.png" alt="" width={64} height={64} />
         </div>
         <div className="sio-mic">
           <span className="sio-wave">
@@ -258,11 +258,11 @@ function SayItOkPhone() {
         <div className="sio-next">
           <p className="sio-label">Câu tiếp theo</p>
           <p className="sio-next__row">
-            <span>Where is gate twelve?</span>
+            <span>I’d like the grilled fish.</span>
             <span className="sio-next__state">Đã nói</span>
           </p>
           <p className="sio-next__row">
-            <span>How long is the flight?</span>
+            <span>Is it very spicy?</span>
             <span className="sio-next__state sio-next__state--new">Mới</span>
           </p>
         </div>
@@ -302,7 +302,7 @@ function TestCard() {
   );
 }
 
-/** The AI tutor in Say It OK (chat fragment, rewritten). */
+/** The AI tutor in Hungi (chat fragment, rewritten). */
 function TutorChat() {
   return (
     <div className="ui ui-panel ui-chat" data-ui="chat">
@@ -314,13 +314,13 @@ function TutorChat() {
       </div>
       <div className="ui-chat__body">
         <div className="ui-msg ui-msg--me" data-chat-q>
-          <span className="ui-msg__text">Nói “cho tôi ghế cạnh cửa sổ” thế nào?</span>
+          <span className="ui-msg__text">Nói “cho tôi xem thực đơn” thế nào?</span>
         </div>
         <div className="ui-msg ui-msg--bot" data-chat-a>
           <span className="ui-agent ui-msg__av" aria-hidden="true" />
           <span className="ui-msg__col">
             <span className="ui-chat__answer">
-              Thử câu này: <b>Could I have a window seat, please?</b> Nhấn vào <b>win</b>-dow.
+              Thử câu này: <b>Could I see the menu, please?</b> Nhấn vào <b>men</b>-u.
             </span>
             <span className="ui-chat__srcs">
               <span className="ui-chat__src">

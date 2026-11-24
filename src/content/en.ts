@@ -1,14 +1,14 @@
 import type { Content } from "./types";
 
-const UPDATED = "Effective 21 November 2026";
+const UPDATED = "Effective 25 November 2026";
 
 export const en: Content = {
   meta: {
-    home: { title: "Duy Tran: solution architect and app builder", description: "Duy Tran designs healthcare and insurance platforms and, through xDev, builds AI tools such as the Say It OK English app." },
+    home: { title: "Duy Tran: solution architect and app builder", description: "Duy Tran designs healthcare and insurance platforms and, through xDev, builds AI tools such as Hungi, a language learning assistant." },
     terms: { title: "Terms of Use · xDev", description: "The terms that apply to every xDev app, website and service." },
     privacy: { title: "Privacy Policy · xDev", description: "What each xDev app, website and service does with your data." },
     support: { title: "Support · xDev", description: "How to get help with an xDev app." },
-    "delete-account": { title: "Delete your Say It OK account · xDev", description: "How to delete your Say It OK account and learning data, with or without the app." },
+    "delete-account": { title: "Delete your Hungi account · xDev", description: "How to delete your Hungi account and learning data, with or without the app." },
     brand: { title: "Brand · xDev", description: "The xDev logo, the marks of its systems, colours and rules, with files to download." },
     notFound: { title: "Page not found · xDev", description: "This page does not exist." },
   },
@@ -34,16 +34,16 @@ export const en: Content = {
   home: {
     title: "Duy Tran, solution architect and app builder",
     lead: "10+ years building software products. I design healthcare and insurance platforms, and through xDev I build AI tools and apps and teach.",
-    proof: "Building Say It OK, an English speaking app for iOS and Android.",
-    artLabel: "Say It OK on a phone: a sentence to repeat, scored word by word, and a proficiency test result of 455 out of 600, level B2.",
+    proof: "Building Hungi, a language learning assistant for iOS and Android.",
+    artLabel: "Hungi on a phone: Hungi the puppy hears a sentence, scores it 92 and colours each word, with a proficiency test result of 455 out of 600, level B2.",
     apps: {
       title: "Apps from xDev.",
       more: "For learners and for developers.",
       items: {
         sayitok: {
-          label: "Say It OK",
-          title: "Say It OK coaches spoken English",
-          body: "Speaking practice for Vietnamese learners, from zero to C2, with an AI tutor and topic packs. Not in the stores yet.",
+          label: "Hungi",
+          title: "Hungi teaches you to speak, listen, read and write",
+          body: "A language learning assistant for Vietnamese learners: Hungi the puppy hears each sentence you say and scores it at once. Every lesson goes speak, listen, read, write. English from zero to C2, and the first Japanese lessons. Formerly Say It OK. Not in the stores yet.",
         },
         ui: {
           label: "xDev UI",
@@ -65,7 +65,7 @@ export const en: Content = {
       figures: [
         { value: "10+", label: "years building software products" },
         { value: "13", label: "machine-learning algorithms written from scratch" },
-        { value: "600", label: "points at the top of the Say It OK test, on CEFR" },
+        { value: "600", label: "points at the top of the Hungi test, on CEFR" },
       ],
     },
     personas: {
@@ -103,7 +103,7 @@ export const en: Content = {
         id: "scope",
         title: "What these terms cover",
         blocks: [
-          "These terms are an agreement between you and xDev (\"we\"). They cover every app, website and online service that we publish and that links to this page: the xDev account, the Say It OK app and this website. Together we call them \"the apps\".",
+          "These terms are an agreement between you and xDev (\"we\"). They cover every app, website and online service that we publish and that links to this page: the xDev account, the Hungi app and this website. Together we call them \"the apps\".",
           "By installing or using an app you accept these terms. If you do not accept them, do not use the apps.",
           "An app may add terms of its own, shown in the app or on its store page. Where those differ from this page, the app's own terms apply to that app.",
         ],
@@ -136,24 +136,25 @@ export const en: Content = {
         id: "paid",
         title: "Paid features",
         blocks: [
-          "The apps listed on this site are free, except the Say It OK Plus plan described below. If we offer another paid plan or purchase, you will see the price and what it includes before you pay, and the terms shown at that point apply to the purchase.",
+          "The apps listed on this site are free, except the Hungi Plus plan described below. If we offer another paid plan or purchase, you will see the price and what it includes before you pay, and the terms shown at that point apply to the purchase.",
         ],
       },
       {
         id: "sayitok",
-        title: "Say It OK",
+        title: "Hungi (formerly Say It OK)",
         blocks: [
-          "All Say It OK lessons, the dictionary, reviews and the placement test are free. The free iPhone version shows ads and limits AI tutor and AI advisor use per day.",
-          "**Say It OK Plus** is an auto-renewing subscription: monthly, yearly, or a yearly Family plan (shared through Apple Family Sharing).",
+          "Hungi is xDev's language learning app, formerly named Say It OK. These terms keep applying to accounts created under the old name. The app teaches English today; Japanese has its first lessons.",
+          "All Hungi lessons, the dictionary, reviews and the placement test are free. The free version shows ads (iPhone and Android) and limits AI tutor, AI advisor and server translation use per day.",
+          "**Hungi Plus** is an auto-renewing subscription: monthly, yearly, or a yearly Family plan (shared through Apple Family Sharing).",
           {
             list: [
               "Payment is charged to your Apple ID when you confirm the purchase. The plan renews unless auto-renew is turned off at least 24 hours before the end of the current period; your account is charged for the next period within the 24 hours before the current one ends.",
               "The yearly plan may include a 7-day free trial for your first subscription. If you do not cancel before the trial ends, the plan becomes paid. Any unused trial ends when you buy another plan.",
-              "Manage or cancel in iPhone Settings → your name → Subscriptions, or in the app under Profile → Plan. Refunds are handled by Apple under App Store policy.",
+              "Manage or cancel in iPhone Settings → your name → Subscriptions, or in the app under Tôi → Cài đặt → Gói học (Me → Settings → Plan). Refunds are handled by Apple under App Store policy.",
               "Apple's standard licence ([EULA](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)) also applies to the iPhone version.",
             ],
           },
-          "**Content made with AI.** Some content in Say It OK is written or graded with AI: example sentences, dictionary entries outside the app's own word list, the replies of the AI tutor and advisor, and the scoring of your speaking and writing. It can be wrong or incomplete. Say It OK is a practice aid, not professional advice, and it does not replace a teacher.",
+          "**Content made with AI.** Some content in Hungi is written or graded with AI: example sentences, dictionary entries outside the app's own word list, the replies of the AI tutor and advisor, and the scoring of your speaking and writing. It can be wrong or incomplete. Hungi is a practice aid, not professional advice, and it does not replace a teacher.",
           "**Level results are estimates.** The CEFR level from the entry test and the 0–600 score from the proficiency test (\"Kiểm tra trình độ\") are estimates to guide your practice. They are not an official certificate and do not replace an exam such as IELTS, TOEIC or Cambridge.",
           {
             id: "sayitok-sources",
@@ -251,7 +252,7 @@ export const en: Content = {
     title: "Privacy Policy",
     stamp: `All xDev apps, websites and services · ${UPDATED}`,
     summary:
-      "We do not sell data. Our developer tools work on your device, with no advertising and no analytics. Say It OK stores your account and learning progress on our server, uses Firebase statistics and crash reports (you can turn them off in the app), and its iPhone version has ads; the Say It OK section below lists each one.",
+      "We do not sell data. Our developer tools work on your device, with no advertising and no analytics. Hungi (formerly Say It OK) stores your account and learning progress on our server, uses Firebase statistics and crash reports (you can turn them off in the app), and its free version has ads; the Hungi section below lists each one.",
     sections: [
       {
         id: "scope",
@@ -268,7 +269,7 @@ export const en: Content = {
           {
             list: [
               "We do not sell or rent personal data.",
-              "No advertising, advertising identifiers or analytics, except in the iPhone version of Say It OK (see its section).",
+              "No advertising, advertising identifiers or analytics, except in Hungi (see its section).",
               "Your files and code are processed on your device. We do not receive them.",
             ],
           },
@@ -292,26 +293,27 @@ export const en: Content = {
       },
       {
         id: "sayitok",
-        title: "Say It OK (iOS, Android)",
+        title: "Hungi, formerly Say It OK (iOS, Android)",
         blocks: [
-          "Say It OK stores on our server:",
+          "Hungi stores on our server:",
           {
             list: [
               "**Account:** your xDev user ID, and the email and display name that Apple or Google give us when you sign in.",
-              "**Learning:** how you want to be addressed, your goal, test results, lesson progress, vocabulary, points and badges.",
+              "**Learning:** how you want to be addressed, your goal, the language you are learning, test results, lesson progress, vocabulary, points and badges.",
               "**AI conversations:** the text of what you said (after speech recognition) and the replies, so the tutor and advisor keep the context.",
+              "**AI use:** how many AI calls each feature made, how long they took and their token counts, tied to your account to apply the daily limits. This record holds no question or answer text.",
               "**Subscription (iPhone):** the Apple transaction ID, plan and expiry date. We never receive card numbers or payment details.",
             ],
           },
           "The app stores when you accepted the terms and which version.",
-          "**Voice.** On iPhone, speech is recognised on the device by Apple's engine. On Android, the app uses the phone's built-in speech recognition service (usually Google's), which handles the audio under its provider's policy. The app never sends voice recordings to our server, only the recognised text when it needs scoring or an AI reply.",
-          "**Camera, photos and translation.** \"Chụp chữ để học\" reads text in a photo on the phone itself (Apple Vision or Google ML Kit). Photos are not stored and never sent to our server; the app asks for the camera only when you tap to take a picture. Translation uses the phone's own translator (Apple Translation or ML Kit) and works offline; the text you translate is not sent to our server.",
+          "**Voice.** On iPhone, speech is recognised by Apple's engine: on the device when it supports that language, otherwise through Apple's servers under Apple's policy. On Android, the app uses the phone's built-in speech recognition service (usually Google's), which handles the audio under its provider's policy. The app never sends voice recordings to our server, only the recognised text when it needs scoring or an AI reply.",
+          "**Camera, photos and translation.** \"Chụp chữ để học\" reads text in a photo on the phone itself (Apple Vision or Google ML Kit). Photos are not stored and never sent to our server; the app asks for the camera only when you tap to take a picture. Translation uses the phone's own translator (Apple Translation or ML Kit) when it is available, and that works offline. When the phone cannot translate, the text to translate (never voice or photos) goes through xDev's AI server to a language model provider; a short sentence (up to 160 characters) and its translation are kept for reuse, not tied to your account.",
           "**AI.** When it can, the AI runs on your device. When a stronger model is needed, the text of your question goes through xDev's AI server to a language model provider to write the reply.",
-          "**Learning your habits.** The app learns on the phone when you usually study and how long your finished lessons are, to pick the reminder time and the minutes it suggests. Only aggregate numbers (lessons per hour and weekday, whether reminders were followed, total minutes) are stored encrypted on the phone and synced to our server so your devices share them; no lesson content, voice or per-session timestamps are sent. This is on by default; turning off Hồ sơ → Học theo thói quen của tôi deletes this data on the phone and on the server.",
-          "**Statistics and crash reports (iOS, Android).** Firebase (Google) collects anonymous usage statistics (action names such as lesson started or finished, with a few numbers) and crash reports when the app fails; we send only an internal user ID, never your email, name, voice or answers. This is on by default; turn it off any time in the app: Hồ sơ → Gửi báo lỗi và thống kê.",
-          "**Ads (iPhone only).** Google AdMob shows ads in the free version; personalised ads are used only if you allow tracking in the iOS prompt, which you can turn off in Settings → Privacy & Security → Tracking. Plus members see no ads. The Android version has no ads today.",
-          "The Say It OK service runs on our own server, reached through Cloudflare. Data is shared only with the providers named here, as far as needed to run the app.",
-          "**Deleting your data.** In the app: Profile → Delete account. Without the app: see [Delete your Say It OK account](/delete-account/). All the data above is removed from our server when the account is deleted.",
+          "**Learning your habits.** The app learns on the phone when you usually study and how long your finished lessons are, to pick the reminder time and the minutes it suggests. Only aggregate numbers (lessons per hour and weekday, whether reminders were followed, total minutes) are stored encrypted on the phone and synced to our server so your devices share them; no lesson content, voice or per-session timestamps are sent. This is on by default; turning off Tôi → Cài đặt → Học theo thói quen của tôi deletes this data on the phone and on the server.",
+          "**Statistics and crash reports (iOS, Android).** Firebase (Google) collects anonymous usage statistics (action names such as lesson started or finished, with a few numbers, and first-run choices such as the language you picked or where you heard of the app) and crash reports when the app fails; we send only an internal user ID, never your email, name, voice or answers. This is on by default; turn it off any time in the app: Tôi → Cài đặt → Gửi báo lỗi và thống kê.",
+          "**Ads (free version, iPhone and Android).** Google AdMob shows ads in the free version. On iPhone, personalised ads are used only if you allow tracking in the iOS prompt, which you can turn off in Settings → Privacy & Security → Tracking. On Android the app always asks for non-personalised ads; AdMob still receives the device's advertising ID, an approximate location from the IP address and device information to show ads, cap their frequency and prevent fraud, under Google's policy. Plus members see no ads.",
+          "The Hungi service runs on our own server, reached through Cloudflare. Data is shared only with the providers named here, as far as needed to run the app.",
+          "**Deleting your data.** In the app: Tôi → Cài đặt → Xoá tài khoản (Me → Settings → Delete account). Without the app: see [Delete your Hungi account](/delete-account/). All the data above is removed from our server when the account is deleted.",
         ],
       },
       {
@@ -338,7 +340,7 @@ export const en: Content = {
       {
         id: "children",
         title: "Children",
-        blocks: ["Our apps are for adults: developer tools and Say It OK. They are not directed at children, and we do not knowingly collect data from children under 13."],
+        blocks: ["Our apps are for adults: developer tools and Hungi. They are not directed at children, and we do not knowingly collect data from children under 13."],
       },
       {
         id: "changes",
@@ -363,7 +365,7 @@ export const en: Content = {
         blocks: [
           {
             list: [
-              "Say It OK: [duy@xdev.asia](mailto:duy@xdev.asia). To delete your account, see [Delete your Say It OK account](/delete-account/).",
+              "Hungi: [duy@xdev.asia](mailto:duy@xdev.asia). To delete your account, see [Delete your Hungi account](/delete-account/).",
               "xDev UI: [open an issue](https://github.com/xdev-asia/xdev-ui/issues)",
               "Your account or your data: [duy@xdev.asia](mailto:duy@xdev.asia)",
             ],
@@ -380,20 +382,20 @@ export const en: Content = {
   },
 
   "delete-account": {
-    title: "Delete your Say It OK account",
-    stamp: `Say It OK by xDev · ${UPDATED}`,
-    summary: "You can delete your Say It OK account and all your learning data at any time, in the app or by email.",
+    title: "Delete your Hungi account",
+    stamp: `Hungi by xDev · ${UPDATED}`,
+    summary: "You can delete your Hungi account and all your learning data at any time, in the app or by email.",
     sections: [
       {
         id: "in-app",
         title: "Option 1: in the app",
-        blocks: [{ list: ["Open Say It OK and sign in.", "Go to **Profile → Delete account** and confirm. The account and its data are deleted at once."] }],
+        blocks: [{ list: ["Open Hungi and sign in.", "Go to **Tôi → Cài đặt → Xoá tài khoản (Me → Settings → Delete account)** and confirm. The account and its data are deleted at once."] }],
       },
       {
         id: "by-email",
         title: "Option 2: without the app",
         blocks: [
-          "Email [duy@xdev.asia](mailto:duy@xdev.asia?subject=Delete%20my%20Say%20It%20OK%20account) with the subject \"Delete my Say It OK account\", from the email address you sign in with (Apple or Google). We confirm and delete it within 30 days.",
+          "Email [duy@xdev.asia](mailto:duy@xdev.asia?subject=Delete%20my%20Hungi%20account) with the subject \"Delete my Hungi account\", from the email address you sign in with (Apple or Google). We confirm and delete it within 30 days.",
         ],
       },
       {
@@ -413,7 +415,7 @@ export const en: Content = {
       {
         id: "subscription",
         title: "Your subscription",
-        blocks: ["Deleting the account does not cancel a Say It OK Plus subscription on the App Store. Cancel it in iPhone Settings → your name → Subscriptions."],
+        blocks: ["Deleting the account does not cancel a Hungi Plus subscription on the App Store. Cancel it in iPhone Settings → your name → Subscriptions."],
       },
     ],
   },
