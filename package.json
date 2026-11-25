@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@xdev-asia/ui": "3.3.0",
+    "@xdev-asia/ui": "4.15.1",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },

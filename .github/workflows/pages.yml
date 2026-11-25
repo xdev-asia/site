@@ -19,9 +19,6 @@ jobs:
         with:
           node-version: 22
       - run: npm install
-        env:
-          # @xdev-asia/ui comes from GitHub Packages. NPM_TOKEN is a repository secret: a token with read:packages.
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: npm run typecheck
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
