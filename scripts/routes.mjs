@@ -33,6 +33,8 @@ function page(lang, name, meta, url) {
     .replace(/(<meta name="description" content=")[^"]*(")/, `$1${esc(meta.description)}$2`)
     .replace(/(<meta property="og:title" content=")[^"]*(")/, `$1${esc(meta.title)}$2`)
     .replace(/(<meta property="og:description" content=")[^"]*(")/, `$1${esc(meta.description)}$2`)
+    // a page with its own share picture (meta.image, 1200 x 750 like the site's); the others keep the shell's
+    .replace(/(<meta property="og:image" content=")[^"]*(")/, (m, a, b) => (meta.image ? `${a}${SITE}${meta.image}${b}` : m))
     .replace(/(<link rel="canonical" href=")[^"]*(")/, url ? `$1${SITE}${url}$2` : "$1$2")
     .replace("<!--app-html-->", `${markup(lang, name)}\n    ${kit}`);
   // the 404 page has no canonical address

@@ -123,9 +123,9 @@
 
 /* ---------------------------------------------------------------- text pages (terms, privacy, support, delete account, 404)
    A legal text is as long as it is: these pages flow, with the kit's padding, and keep a 62-character column. */
-html[data-page="doc"], html[data-page="brand"] { scroll-padding-top: calc(var(--nav) + var(--s-5)); }
-html:is([data-page="doc"], [data-page="brand"]) main > section.section:not(.hero) { height: auto; min-height: 0; padding: var(--padt) 0 var(--padb); }
-html:is([data-page="doc"], [data-page="brand"]) main > section.section:not(.hero) > .wrap { height: auto; }
+html[data-page="doc"], html[data-page="brand"], html[data-page="app"] { scroll-padding-top: calc(var(--nav) + var(--s-5)); }
+html:is([data-page="doc"], [data-page="brand"], [data-page="app"]) main > section.section:not(.hero) { height: auto; min-height: 0; padding: var(--padt) 0 var(--padb); }
+html:is([data-page="doc"], [data-page="brand"], [data-page="app"]) main > section.section:not(.hero) > .wrap { height: auto; }
 .doc--short { min-height: 60vh !important; }
 .doc__grid { align-items: start; }
 .doc__toc ol { list-style: none; margin: var(--s-3) 0 0; padding: 0; display: grid; gap: var(--s-1); counter-reset: toc; }
@@ -174,4 +174,64 @@ html:is([data-page="doc"], [data-page="brand"]) main > section.section:not(.hero
 }
 @media (min-width: 640px) and (max-width: 1023px) {
   .brand-swatches > * { grid-column: auto / span 6; }
+}
+
+/* ---------------------------------------------------------------- the Hungi page (/app/hungi-ai/, data-page="app")
+   The app's own colours, "Biển xanh": pastel sky ground, ink text, royal blue, and the four skill colours
+   (say coral, hear blue, read mint, write yellow). Its pictures are the app's daylight scenes, so the page
+   is light; the close and the footer stay dark, in the app's ink. Sections flow, as on the brand page. */
+html[data-page="app"] {
+  --p-bg: #eaf2ff; --p-surface: #ffffff; --p-ink: #14213d; --p-muted: #4b5876;
+  --p-accent: #2f6bff; --p-accent-ink: #ffffff; --p-action: #2f62e6; --p-action-ink: #ffffff;
+  --p-inv-bg: #14213d; --p-inv-surface: #1e2f57; --p-inv-ink: #eaf2ff; --p-inv-muted: #a9b8d8;
+  --p-inv-accent: #ffc93c; --p-inv-accent-ink: #14213d; --p-inv-action: #2f6bff; --p-inv-action-ink: #ffffff;
+  /* the app's readers include people over fifty: body text a step larger than the site's */
+  --t-body: 17px; --t-small: 15px;
+}
+html[data-page="app"] main > section.section:not(.hero) { padding: var(--s-9) 0 0; }
+html[data-page="app"] main > section.section:last-child { padding-bottom: var(--s-9); }
+.hungi-hero h1 { font-size: var(--ly-h1-col); }
+.hungi-soon { color: var(--ink); font-weight: 500; }
+.hungi-soon img { width: 28px; height: 28px; border-radius: 8px; }
+.hungi-method { display: grid; gap: var(--s-3); font: var(--display-weight) var(--t-h3)/1.25 var(--font-display); letter-spacing: var(--display-tracking); text-wrap: balance; }
+.hungi-band { display: flex; gap: 4px; width: 132px; }
+.hungi-band i { flex: 1; height: 6px; border-radius: 3px; }
+/* a scene is 3:2, whole in its frame; the hero's is cropped to the hero's height, kept on its two faces */
+.hungi-scene { --ratio: 66.667%; }
+.hungi-wide { --ratio: var(--wide-ratio, 41.667%); }
+.hungi-hero .hero__media > img { object-position: 66% 50%; }
+.hungi-words { display: flex; flex-direction: column; gap: var(--s-5); }
+.hungi-words .checks { font-size: var(--t-body); }
+.hungi-words strong, .hungi-notes strong { font-weight: 500; }
+.hungi-mascot { align-self: center; width: min(100%, 260px); height: auto; justify-self: end; }
+.hungi-facts { margin: var(--s-7) 0 0; }
+.hungi-facts > div { padding-top: var(--s-4); border-top: 1px solid var(--line-strong); display: grid; gap: var(--s-2); align-content: start; }
+.hungi-facts dd { margin: 0; }
+/* the four skills under their picture, each under its own Hungi, with its colour on the top line */
+.hungi-skills { margin-top: var(--s-5); }
+.hungi-skills > li { padding-top: var(--s-4); border-top: 6px solid var(--skill); display: grid; gap: var(--s-2); align-content: start; }
+.hungi-end { margin-top: var(--s-6); font-size: var(--t-lead); max-width: 60ch; }
+.hungi-chips { display: flex; flex-wrap: wrap; gap: var(--s-2); margin: 0; padding: 0; list-style: none; }
+.hungi-chips > li { height: 36px; padding: 0 var(--s-4); border-radius: 999px; display: inline-flex; align-items: center; background: var(--surface); box-shadow: inset 0 0 0 1px var(--line); font-size: var(--t-body); }
+.hungi-chips--stages > li { background: var(--accent); color: var(--accent-ink); box-shadow: none; font-weight: 500; }
+.hungi-chips--stages > li:first-child { background: #ffc93c; color: #14213d; }
+.hungi-plans .card--plan { align-self: stretch; }
+.hungi-plans .price { flex-wrap: wrap; }
+.hungi-plans .t-stat { font-variant-numeric: normal; font-size: clamp(26px, 1vw + 20px, 34px); }
+.hungi-notes { margin-top: var(--s-5); display: grid; gap: var(--s-2); max-width: 76ch; }
+.hungi-notes a, .hungi-words a:not(.btn) { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--action); }
+.hungi-stores { display: flex; align-items: center; gap: var(--s-3); font-weight: 500; }
+.hungi-stores .ic { width: 24px; height: 24px; object-fit: contain; }
+.hungi-links { margin: 0; padding: 0; list-style: none; }
+.hungi-links > li { display: block; }
+@media (max-width: 1023px) {
+  .hungi-mascot { display: none; }
+  .hungi-scene, .hungi-links { margin-top: var(--s-5); }
+  .hungi-skills > li, .hungi-facts > div { grid-column: auto / span 6; }
+  .hungi-wide { --ratio: var(--wide-ratio-sm, 41.667%); }
+}
+@media (max-width: 639px) {
+  html[data-page="app"] main > section.section:not(.hero) { padding-top: var(--s-8); }
+  .hungi-facts > div { grid-column: 1 / -1; }
+  .hungi-method { font-size: 22px; }
 }

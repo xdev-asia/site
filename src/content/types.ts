@@ -86,8 +86,50 @@ export interface HomeContent {
   close: { title: string; line: string };
 }
 
+/** One part of the Hungi page: a heading, one paragraph, a few short lines, and what its picture shows. */
+export interface HungiFeature {
+  title: string;
+  body: string;
+  /** Short lines under the paragraph (links and **bold** allowed). */
+  points: string[];
+  /** What the picture shows, for screen readers. */
+  alt: string;
+}
+
+/** The product page of Hungi (pages/Hungi.tsx). Picture files, skill colours and link targets live in the page. */
+export interface HungiContent {
+  /** The h1: the app's name as on the stores. */
+  name: string;
+  /** The method in one sentence, under the name. */
+  method: string;
+  lead: string;
+  /** The release state, shown where a store button would stand: the app is not on a store yet. */
+  soon: string;
+  /** The hero's one button, to the first part of the page. */
+  seeInside: string;
+  heroAlt: string;
+  intro: { title: string; body: string; facts: { title: string; body: string }[] };
+  /** Say, hear, read, write: always four, always in this order. */
+  skills: { title: string; body: string; alt: string; items: { name: string; body: string }[]; end: string };
+  call: HungiFeature;
+  lookup: HungiFeature;
+  play: HungiFeature;
+  /** The course: its stages in order, and the topic packs beside it. */
+  path: HungiFeature & { stages: string[]; packsTitle: string; packs: string[] };
+  plus: {
+    title: string;
+    body: string;
+    /** The free plan first, then the Plus plans: a name, a price with its period, and one to three lines. */
+    plans: { name: string; price: string; per: string; lines: string[] }[];
+    notes: string[];
+  };
+  /** Policy and support links, and the release state once more. */
+  more: { title: string; body: string; privacy: string; terms: string; support: string; deleteAccount: string };
+}
+
 export interface Content {
-  meta: Record<"home" | "brand" | "terms" | "privacy" | "support" | "delete-account" | "notFound", { title: string; description: string }>;
+  /** `image`: a page's own share picture (1200 x 750, a path on this site); the others share the site's. */
+  meta: Record<"home" | "brand" | "terms" | "privacy" | "support" | "delete-account" | "hungi" | "notFound", { title: string; description: string; image?: string }>;
   nav: {
     skip: string;
     menu: string;
@@ -112,6 +154,7 @@ export interface Content {
   };
   home: HomeContent;
   brand: BrandContent;
+  hungi: HungiContent;
   terms: Doc;
   privacy: Doc;
   support: Doc;

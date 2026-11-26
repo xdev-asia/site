@@ -5,6 +5,7 @@ import { Frame } from "./Frame";
 import { Brand } from "./pages/Brand";
 import { DocPage } from "./pages/DocPage";
 import { Home } from "./pages/Home";
+import { Hungi } from "./pages/Hungi";
 import { NotFound } from "./pages/NotFound";
 import type { Lang, PageName } from "./routes";
 
@@ -19,6 +20,8 @@ export function App({ lang, page }: { lang: Lang; page: PageName | null }) {
         <Home c={c} />
       ) : page === "brand" ? (
         <Brand c={c} />
+      ) : page === "hungi" ? (
+        <Hungi c={c} lang={lang} />
       ) : page === null ? (
         <NotFound c={c} lang={lang} />
       ) : (

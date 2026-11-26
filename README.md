@@ -10,6 +10,7 @@ The personal site of Trần Đức Duy (Duy Tran) and xDev: who he is, his perso
 | Privacy Policy | `/privacy/` | `/vi/privacy/` |
 | Support | `/support/` | `/vi/support/` |
 | Delete Say It OK account | `/delete-account/` | `/vi/delete-account/` |
+| Hungi (product page) | `/app/hungi-ai/` | `/vi/app/hungi-ai/` |
 
 English is the default. Each language has its own URL, so a store listing can link to one language.
 

@@ -107,7 +107,7 @@ export function Frame({ c, lang, page, children }: FrameProps) {
                 <h3>{c.footer.appsTitle}</h3>
                 <ul>
                   <li>
-                    <a href={sec("apps")}>Hungi</a>
+                    <a href={hrefFor("hungi", lang)}>Hungi</a>
                   </li>
                   <li>
                     <a href="https://ui.xdev.asia">xDev UI</a>
