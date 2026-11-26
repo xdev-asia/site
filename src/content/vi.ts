@@ -10,6 +10,11 @@ export const vi: Content = {
     support: { title: "Hỗ trợ · xDev", description: "Cách nhận trợ giúp cho ứng dụng của xDev." },
     "delete-account": { title: "Xoá tài khoản Hungi · xDev", description: "Cách xoá tài khoản Hungi và dữ liệu học tập, có hoặc không cần ứng dụng." },
     brand: { title: "Thương hiệu · xDev", description: "Logo xDev, logo của các hệ thống con, màu và quy tắc dùng, kèm file tải về." },
+    hungi: {
+      title: "Hungi AI: Trợ lý học ngôn ngữ · xDev",
+      description: "Hungi AI là trợ lý học tiếng Anh cho người Việt: nói, nghe, đọc, viết trong một bài, gọi Hungi luyện nói theo tình huống, ôn từ như chơi. Sắp ra mắt.",
+      image: "/assets/hungi/page/share.jpg",
+    },
     notFound: { title: "Không tìm thấy trang · xDev", description: "Trang này không tồn tại." },
   },
   nav: {
@@ -90,6 +95,97 @@ export const vi: Content = {
     close: {
       title: "Hợp tác, tư vấn kiến trúc và góp ý ứng dụng",
       line: "Viết bằng tiếng Việt hoặc tiếng Anh tới duy@xdev.asia.",
+    },
+  },
+
+  hungi: {
+    name: "Hungi AI: Trợ lý học ngôn ngữ",
+    method: "Nói được thì nghe được, đọc được thì viết được.",
+    lead: "Hungi là chú cún Phú Quốc đói chữ. Mỗi ngày vài phút, bạn nói một câu tiếng Anh, Hungi nghe, chấm ngay và chỉ chỗ cần sửa.",
+    soon: "Sắp ra mắt trên App Store và Google Play",
+    seeInside: "Xem Hungi dạy thế nào",
+    heroAlt: "Buổi sáng ở một quán nhỏ bên biển Phú Quốc: một cô ngoài năm mươi tuổi nói một câu tiếng Anh vào điện thoại, chú cún Hungi ngồi trên bàn, đưa chân lên tai lắng nghe.",
+    intro: {
+      title: "Một trợ lý học tiếng Anh cho người Việt.",
+      body: "Hungi dành cho người lớn, kể cả người đã mất gốc hay lâu rồi chưa học lại. Mỗi màn hình chỉ có một việc để làm: nói câu tiếp theo. Nói xong, bạn thấy một con số điểm và những chữ cần sửa. Bản đầu tiên dạy tiếng Anh, mọi lời giải thích đều bằng tiếng Việt.",
+      facts: [
+        { title: "Vài phút mỗi ngày", body: "Bài ngắn, có lời nhắc học đúng giờ bạn chọn." },
+        { title: "Chấm ngay từng câu", body: "Hungi nghe bạn nói, cho điểm và tô màu chữ cần sửa." },
+        { title: "Học miễn phí", body: "Toàn bộ bài học, từ điển và ôn tập đều miễn phí." },
+      ],
+    },
+    skills: {
+      title: "Bốn kỹ năng trong một bài.",
+      body: "Mỗi bài đi đủ bốn bước, luôn theo một thứ tự. Bạn nói trước, rồi nghe lại chính những câu vừa nói, sau đó đọc và viết.",
+      alt: "Bốn chú Hungi đứng thành một hàng: một chú đang nói, một chú đưa chân lên tai để nghe, một chú đọc sách, một chú cầm bút chì viết vào vở.",
+      items: [
+        { name: "Nói", body: "Nghe câu mẫu rồi nói theo. Hungi chấm và chỉ chỗ cần sửa." },
+        { name: "Nghe", body: "Nghe lại chính những câu đó ở tốc độ thật, rồi chọn nghĩa." },
+        { name: "Đọc", body: "Một bài đọc ngắn hoặc một điểm ngữ pháp của bài." },
+        { name: "Viết", body: "Viết lại một câu của bài. Ở các bậc đầu, bạn viết tay ngay trên màn hình." },
+      ],
+      end: "Xong bài, Hungi đánh dấu hai cặp: nói được, nghe được và đọc được, viết được.",
+    },
+    call: {
+      title: "Gọi Hungi luyện nói theo tình huống.",
+      body: "Chọn một tình huống thật rồi gọi Hungi. Bạn nói, Hungi đáp lại, sửa câu nhẹ nhàng và giải thích bằng tiếng Việt.",
+      points: [
+        "Hungi nhớ câu bạn từng nói chưa đúng, lần gọi sau sẽ khéo đưa câu đó trở lại.",
+        "Khi bạn nói đúng câu đó, Hungi khen một dòng và thôi không nhắc nữa.",
+        "Bản miễn phí gọi được 3 lần mỗi ngày.",
+      ],
+      alt: "Buổi tối ở nhà: một chú khoảng sáu mươi tuổi ngồi trên ghế sofa, cầm điện thoại nói chuyện. Hungi ngồi bên cạnh lắng nghe, phía trên là hình một quầy làm thủ tục ở sân bay, tình huống hai bên đang tập.",
+    },
+    lookup: {
+      title: "Tra từ và chụp chữ.",
+      body: "Gặp một từ lạ, bạn gõ vào ô tra từ. Gặp chữ trên thực đơn, biển hiệu hay trang sách, bạn chụp lại hoặc chọn một ảnh có sẵn, Hungi đọc chữ trong ảnh để bạn tra.",
+      points: [
+        "Mỗi từ có phiên âm, giọng Anh và giọng Mỹ để nghe.",
+        "Lưu từ vào Sổ từ, Hungi sẽ nhắc bạn ôn lại.",
+        "Ảnh được đọc ngay trên điện thoại và không được lưu lại.",
+      ],
+      alt: "Một quầy hàng ăn ở Phú Quốc: một chị giơ điện thoại chụp tấm bảng thực đơn, Hungi đứng trên ghế nhựa bên cạnh, soi bảng bằng một chiếc kính lúp.",
+    },
+    play: {
+      title: "Ôn từ như chơi.",
+      body: "Từ đã học sẽ quay lại đúng lúc bạn sắp quên. Hungi biến buổi ôn thành một ván chơi ngắn: không có đồng hồ, trả lời chưa đúng cũng không mất gì.",
+      points: [
+        "**Ghép cặp.** Cuối buổi ôn, bạn ghép từng từ với nghĩa của nó. Ghép đúng, Hungi ăn luôn chữ đó.",
+        "**Cho Hungi ăn chữ.** Một ván vài phút với những từ đến hạn ôn hôm nay, nhiều nhất tám từ.",
+        "Từ nào bạn trả lời chưa đúng, Hungi mời lại một lần ở cuối ván.",
+      ],
+      alt: "Hungi ngồi nhai ngon lành trước một chiếc bát xanh đầy những miếng chữ, bên cạnh là ba cặp miếng đã ghép đúng.",
+    },
+    path: {
+      title: "Một lộ trình, từ mất gốc đến C2.",
+      body: "Bạn bắt đầu ở chặng Nền móng với câu cứu nguy, chữ cái, con số và âm cuối, rồi lên từng bậc. Chưa biết mình đang ở đâu thì làm bài kiểm tra đầu vào, Hungi xếp chỗ bắt đầu cho bạn.",
+      points: ["Mục Khó nhớ gom những chỗ người Việt hay nhầm: make và do, say và tell, in, on, at, động từ bất quy tắc, âm cuối, trọng âm."],
+      alt: "Một sườn đồi bên biển Phú Quốc có bảy bậc thềm rộng dẫn lên ngọn hải đăng. Hungi đứng ở bậc thứ hai, vẫy hai người học đang bước lên bậc đầu tiên.",
+      stages: ["Nền móng", "A1", "A2", "B1", "B2", "C1", "C2"],
+      packsTitle: "Gói học theo chủ đề",
+      packs: ["Giao tiếp hằng ngày", "Du lịch", "Nhà hàng và mua sắm", "Công việc văn phòng", "Phỏng vấn xin việc", "Sức khoẻ", "IT", "IELTS Speaking khởi động"],
+    },
+    plus: {
+      title: "Học miễn phí. Plus để nói nhiều hơn.",
+      body: "Hungi không khoá bài học nào. Gói Plus dành cho người muốn nói cùng Hungi thoải mái và không thấy quảng cáo.",
+      plans: [
+        { name: "Miễn phí", price: "0đ", per: "", lines: ["Toàn bộ khoá học, từ điển, ôn tập và bài kiểm tra đầu vào", "Gọi Hungi 3 lần mỗi ngày", "Có quảng cáo, không bao giờ chen vào lúc học hay lúc nói"] },
+        { name: "Plus tháng", price: "99.000đ", per: "mỗi tháng", lines: ["Nói cùng Hungi thoải mái, không quảng cáo", "Tháng đầu 29.000đ"] },
+        { name: "Plus năm", price: "790.000đ", per: "mỗi năm", lines: ["Nói cùng Hungi thoải mái, không quảng cáo", "7 ngày dùng thử miễn phí"] },
+        { name: "Plus Gia đình", price: "1.190.000đ", per: "mỗi năm", lines: ["Plus cho tối đa 6 người trong gia đình", "7 ngày dùng thử miễn phí"] },
+      ],
+      notes: [
+        "Giá tại Việt Nam trên App Store. Giá bạn thấy trong ứng dụng lúc mua là giá đúng. Ưu đãi tháng đầu và dùng thử dành cho lần đăng ký đầu tiên.",
+        "Gói Plus mua trên iPhone và iPad, quản lý và huỷ trong Cài đặt của máy. Chi tiết ở [Điều khoản sử dụng](/vi/terms/#sayitok).",
+      ],
+    },
+    more: {
+      title: "Sắp ra mắt.",
+      body: "Hungi đang được chuẩn bị để lên App Store và Google Play. Trong lúc chờ, bạn có thể đọc trước cách Hungi giữ dữ liệu của bạn.",
+      privacy: "Chính sách quyền riêng tư",
+      terms: "Điều khoản sử dụng",
+      support: "Hỗ trợ",
+      deleteAccount: "Xoá tài khoản Hungi",
     },
   },
 

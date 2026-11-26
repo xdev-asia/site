@@ -10,6 +10,11 @@ export const en: Content = {
     support: { title: "Support · xDev", description: "How to get help with an xDev app." },
     "delete-account": { title: "Delete your Hungi account · xDev", description: "How to delete your Hungi account and learning data, with or without the app." },
     brand: { title: "Brand · xDev", description: "The xDev logo, the marks of its systems, colours and rules, with files to download." },
+    hungi: {
+      title: "Hungi AI: a language learning assistant · xDev",
+      description: "Hungi AI teaches English to Vietnamese speakers: say, hear, read and write in one lesson, call Hungi to practise a real situation, review words as play. Coming soon.",
+      image: "/assets/hungi/page/share.jpg",
+    },
     notFound: { title: "Page not found · xDev", description: "This page does not exist." },
   },
   nav: {
@@ -90,6 +95,97 @@ export const en: Content = {
     close: {
       title: "Partnerships, architecture advice and app feedback",
       line: "Write in English or Vietnamese to duy@xdev.asia.",
+    },
+  },
+
+  hungi: {
+    name: "Hungi AI: a language learning assistant",
+    method: "Say it and you can hear it. Read it and you can write it.",
+    lead: "Hungi is a Phú Quốc puppy who is hungry for words. A few minutes a day, you say a sentence in English; Hungi listens, scores it at once and shows what to fix.",
+    soon: "Coming soon to the App Store and Google Play",
+    seeInside: "See how Hungi teaches",
+    heroAlt: "Morning at a small café by the sea in Phú Quốc: a woman in her fifties says an English sentence to her phone, and Hungi the puppy sits on the table with a paw behind his ear, listening.",
+    intro: {
+      title: "An English learning assistant for Vietnamese speakers.",
+      body: "Hungi is for adults, also those who start from zero or have not studied for years. Each screen has one thing to do: say the next sentence. Then you see one score and the words to fix. The first release teaches English, and every explanation is in Vietnamese. The app's name on the stores is Hungi AI: Trợ lý học ngôn ngữ.",
+      facts: [
+        { title: "A few minutes a day", body: "Short lessons, with a reminder at the time you choose." },
+        { title: "Every sentence scored", body: "Hungi hears you speak, gives a score and colours the words to fix." },
+        { title: "Free to learn", body: "Every lesson, the dictionary and review are free." },
+      ],
+    },
+    skills: {
+      title: "Four skills in one lesson.",
+      body: "Every lesson takes four steps, always in the same order. You say the sentences first, then hear the same sentences again, then read and write.",
+      alt: "Four Hungis in a row: one speaking, one with a paw behind his ear to hear, one reading a book, one writing in a notebook with his pencil.",
+      items: [
+        { name: "Say", body: "Hear the model sentence and say it. Hungi scores it and shows what to fix." },
+        { name: "Hear", body: "Hear the same sentences at natural speed and choose the meaning." },
+        { name: "Read", body: "A short reading or one grammar point of the lesson." },
+        { name: "Write", body: "Write one of the lesson's sentences. At the first levels you write by hand on the screen." },
+      ],
+      end: "At the end of a lesson Hungi ticks two pairs: said and heard, read and written.",
+    },
+    call: {
+      title: "Call Hungi to practise a real situation.",
+      body: "Choose a real situation and call Hungi. You speak, Hungi answers, corrects a sentence gently and explains in Vietnamese.",
+      points: [
+        "Hungi remembers a sentence you got wrong and steers the next call back to it.",
+        "When you say that sentence right, Hungi praises you in one line and stops bringing it up.",
+        "The free plan has 3 calls a day.",
+      ],
+      alt: "Evening at home: a man of about sixty sits on a sofa and talks to his phone. Hungi sits beside him and listens; above them is an airport check-in desk, the situation they practise.",
+    },
+    lookup: {
+      title: "Look a word up, or photograph the text.",
+      body: "Type a new word into the dictionary. For text on a menu, a sign or a page, take a photograph or choose one you have, and Hungi reads the text in it so you can look words up.",
+      points: [
+        "Each word has its phonetic spelling, with a British and an American voice.",
+        "Save a word to your word book, and Hungi brings it back for review.",
+        "The photograph is read on the phone and is not kept.",
+      ],
+      alt: "A food stall in Phú Quốc: a woman holds up her phone to photograph the menu board, and Hungi stands on a plastic stool beside her, studying the board through a magnifying glass.",
+    },
+    play: {
+      title: "Review words as play.",
+      body: "A word you learnt comes back just before you would forget it. Hungi turns the review into a short game: no clock, and nothing is lost on a wrong answer.",
+      points: [
+        "**Ghép cặp (pairs).** At the end of a review you match each word with its meaning. On a right pair, Hungi eats the word.",
+        "**Cho Hungi ăn chữ (feed Hungi).** A round of a few minutes with the words due today, eight at most.",
+        "A word you got wrong is served once more at the end of the round.",
+      ],
+      alt: "Hungi munches happily in front of a blue bowl full of word tiles; beside him lie three pairs of matched tiles.",
+    },
+    path: {
+      title: "One course, from zero to C2.",
+      body: "You start at Foundation with survival sentences, the alphabet, numbers and final sounds, then go up level by level. If you do not know your level, take the placement test and Hungi finds where you start.",
+      points: ["A section named Khó nhớ (hard to remember) collects what Vietnamese learners mix up: make and do, say and tell, in, on, at, irregular verbs, final sounds, word stress."],
+      alt: "A hillside by the sea in Phú Quốc with seven broad terraces up to a lighthouse. Hungi stands on the second one and waves to two learners who step onto the first.",
+      stages: ["Foundation", "A1", "A2", "B1", "B2", "C1", "C2"],
+      packsTitle: "Topic packs",
+      packs: ["Everyday talk", "Travel", "Restaurants and shopping", "Office work", "Job interviews", "Health", "IT", "IELTS Speaking warm-up"],
+    },
+    plus: {
+      title: "Free to learn. Plus to speak more.",
+      body: "Hungi locks no lesson. Plus is for learners who want to speak with Hungi as much as they like, with no ads.",
+      plans: [
+        { name: "Free", price: "0đ", per: "", lines: ["The whole course, the dictionary, review and the placement test", "3 calls to Hungi a day", "Ads, never during a lesson or while you speak"] },
+        { name: "Plus Monthly", price: "99,000đ", per: "a month", lines: ["Speak with Hungi as much as you like, no ads", "First month 29,000đ"] },
+        { name: "Plus Yearly", price: "790,000đ", per: "a year", lines: ["Speak with Hungi as much as you like, no ads", "7-day free trial"] },
+        { name: "Plus Family", price: "1,190,000đ", per: "a year", lines: ["Plus for up to 6 people in your family", "7-day free trial"] },
+      ],
+      notes: [
+        "Prices for Vietnam on the App Store. The price shown in the app when you buy is the right one. The first-month price and the trial are for a first subscription.",
+        "Plus is bought on iPhone and iPad, and managed or cancelled in the device's Settings. Details are in the [Terms of Use](/terms/#sayitok).",
+      ],
+    },
+    more: {
+      title: "Coming soon.",
+      body: "Hungi is being prepared for the App Store and Google Play. Until then, you can read how Hungi keeps your data.",
+      privacy: "Privacy Policy",
+      terms: "Terms of Use",
+      support: "Support",
+      deleteAccount: "Delete your Hungi account",
     },
   },
 
